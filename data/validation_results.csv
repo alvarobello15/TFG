@@ -1,0 +1,755 @@
+rank,name,entity_type,lat,lon,score,status,nearest_known_site_km,nearest_site_type,is_hit
+1,Lima,settlement,-12.0466525903,-77.0299805199,0.864,candidate,300.03,ADE,False
+2,Amazonas,region,-3.0,-60.0,0.833,candidate,8.5,ADE,True
+3,Perú,region,-9.19,-75.02,0.804,candidate,41.85,ADE,True
+4,Santa Cruz de la Sierra,settlement,-17.78369,-63.1821039998,0.802,candidate,205.34,earthwork,False
+5,San Javier,settlement,-16.2741849999,-62.5044789997,0.798,candidate,42.33,ADE,True
+6,Archidona,settlement,-0.908762000166,-77.8069680003,0.798,candidate,117.49,ADE,False
+7,Chiquitos,region,-16.7872079996,-60.6749890004,0.789,candidate,192.68,ADE,False
+8,Bolivia,region,-16.5,-64.0,0.774,candidate,52.28,earthwork,False
+9,Marañón,river,-3.0,-59.0,0.725,candidate,19.24,ADE,True
+10,Ciudad de Lima,settlement,-12.0466525903,-77.0299805199,0.724,candidate,300.03,ADE,False
+11,República de Bolivia,region,-17.0,-65.0,0.711,candidate,76.65,earthwork,False
+12,Rio Aguarico,river,-0.962299000399,-75.1904979996,0.707,candidate,107.36,ADE,False
+13,San José de Chiquitos,settlement,-17.8454439996,-60.7419770004,0.704,candidate,298.17,ADE,False
+14,San Rafael,settlement,-16.7872079996,-60.6749890004,0.704,candidate,192.68,ADE,False
+15,misión de San Javier,settlement,-16.2741849999,-62.5044789997,0.7,candidate,42.33,ADE,True
+16,Trujillo,settlement,-8.11170157996,-79.0287608598,0.7,candidate,267.98,earthwork,False
+17,Ciudad de Archidona,settlement,-0.908762000166,-77.8069680003,0.7,candidate,117.49,ADE,False
+18,Cobija,settlement,-17.65,-68.75,0.7,candidate,359.87,ADE,False
+19,Tiaguanaco,settlement,-16.5526819997,-68.6815839999,0.697,candidate,273.01,earthwork,False
+20,San José,settlement,-16.33,-60.75,0.689,candidate,153.38,ADE,False
+21,Callao,settlement,-12.0627529299,-77.1488535303,0.682,candidate,311.63,ADE,False
+22,Santiago de Machaca,settlement,-17.0669439999,-69.1933330002,0.676,candidate,351.98,earthwork,False
+23,Viacha,settlement,-16.653513,-68.3015820002,0.676,candidate,255.44,earthwork,False
+24,San Luis de el Marañon,settlement,-2.89,-59.97,0.672,candidate,8.95,ADE,True
+25,Pueblo del Barco,settlement,-1.5,-75.5,0.672,candidate,165.24,ADE,False
+26,Anéte,settlement,-0.8,-75.5,0.672,candidate,102.64,ADE,False
+27,Orellana,river,-3.0,-60.0,0.671,candidate,8.5,ADE,True
+28,Mamoré,river,-10.15,-65.37,0.671,candidate,12.89,earthwork,True
+29,Omaguas,region,-4.28609000005,-73.4305490002,0.669,candidate,63.65,ADE,False
+30,Carmen de Moxos,settlement,-14.75,-64.5,0.668,candidate,6.03,earthwork,True
+31,ciudad de los Reyes,settlement,-12.05,-77.04,0.668,candidate,301.13,ADE,False
+32,San Carlos,settlement,-17.4045470003,-63.7323550004,0.668,candidate,135.66,earthwork,False
+33,finca San Julián,settlement,-16.1,-60.5,0.668,candidate,117.02,ADE,False
+34,Santa Ana,settlement,-16.28,-60.85,0.668,candidate,155.85,ADE,False
+35,San Ignacio,settlement,-16.28,-60.95,0.668,candidate,163.12,ADE,False
+36,Moxos,region,-14.3377089998,-64.903049,0.659,candidate,27.73,earthwork,True
+37,San Andrés de Machaca,settlement,-16.9583329996,-68.9700000002,0.658,candidate,326.87,earthwork,False
+38,Santa Cruz,settlement,-17.78,-63.18,0.648,candidate,205.19,earthwork,False
+39,Cotoca,settlement,-17.88,-63.28,0.648,candidate,206.77,earthwork,False
+40,Buena Vista,settlement,-17.4600369998,-63.6603189996,0.648,candidate,145.18,earthwork,False
+41,Payla,settlement,-17.6674290003,-62.7908300001,0.648,candidate,187.9,ADE,False
+42,Casalbasco,settlement,-15.0,-57.1,0.648,candidate,277.55,ADE,False
+43,Salinas,settlement,-15.28,-57.95,0.648,candidate,196.99,ADE,False
+44,Ucayalí,river,-4.51050200037,-73.5833509996,0.647,candidate,39.61,ADE,True
+45,Concepción,settlement,-16.25,-62.03,0.644,candidate,82.99,ADE,False
+46,Pirú,region,-9.19,-75.01,0.643,candidate,40.9,ADE,True
+47,Perü,region,-9.19,-75.01,0.643,candidate,40.9,ADE,True
+48,Encabellados,region,-0.407978000085,-76.6225079998,0.643,candidate,22.83,ADE,True
+49,Circuata,settlement,-16.6447580001,-67.2312710001,0.643,candidate,164.52,ADE,False
+50,Machifaro,settlement,-2.5,-60.0,0.642,candidate,15.06,ADE,True
+51,rio de las Amazonas,river,-3.75,-60.0,0.642,candidate,24.69,ADE,True
+52,Aparía,settlement,-1.5,-75.3,0.642,candidate,168.37,ADE,False
+53,provincia de Chiquitos,region,-16.33,-60.75,0.634,candidate,153.38,ADE,False
+54,Río Negro,river,-2.5,-60.5,0.632,candidate,20.72,ADE,True
+55,Guayaquil,settlement,-2.11515932964,-79.8353971004,0.63,candidate,377.97,ADE,False
+56,Quito,settlement,-0.2201689997,-78.5120910004,0.627,candidate,193.88,ADE,False
+57,Ciudad del Para,settlement,-1.45,-48.5,0.626,candidate,31.67,ADE,True
+58,San Lorenzo de la Frontera,settlement,-17.92,-65.33,0.623,candidate,173.36,earthwork,False
+59,cadena de Santiago,mountain,-16.33,-60.75,0.623,candidate,153.38,ADE,False
+60,Cavari,settlement,-17.0805043266,-66.9907403932,0.622,candidate,172.3,ADE,False
+61,Rio Canuris,river,-2.5,-60.0,0.621,candidate,15.06,ADE,True
+62,Sicasica,region,-17.3329520001,-67.7389620003,0.621,candidate,250.95,ADE,False
+63,Nueva Andalucía,region,-2.5,-58.0,0.619,candidate,23.03,ADE,True
+64,Marañon,region,-4.0,-60.0,0.619,candidate,32.32,ADE,True
+65,Machiparo,settlement,-3.5,-60.5,0.618,candidate,18.91,ADE,True
+66,Yanacaché,settlement,-16.05,-67.5,0.617,candidate,148.51,earthwork,False
+67,Irupana,settlement,-16.4653589999,-67.4541370001,0.616,candidate,179.13,ADE,False
+68,Indias,region,-5.0,-60.0,0.613,candidate,8.25,ADE,True
+69,Virreinato de la Plata,region,-16.0,-65.0,0.613,candidate,16.04,ADE,True
+70,Coca,settlement,-0.45,-76.98,0.612,candidate,23.87,ADE,True
+71,Ciudad de los Cofanes,settlement,0.65,-76.8,0.612,candidate,48.3,ADE,True
+72,río Marañón,river,-3.5,-72.5,0.612,candidate,197.92,ADE,False
+73,río Marañen,river,-3.75,-73.25,0.612,candidate,117.52,ADE,False
+74,Isla de los Cararies,settlement,-3.5,-72.5,0.612,candidate,197.92,ADE,False
+75,Caripuna,settlement,-2.2,-70.8,0.612,candidate,159.42,ADE,False
+76,Río Maraflón,river,-3.75,-73.25,0.612,candidate,117.52,ADE,False
+77,Río San Miguel,river,-16.1,-60.5,0.612,candidate,117.02,ADE,False
+78,Yarayes,settlement,-16.5,-61.5,0.612,candidate,145.86,ADE,False
+79,Potrero de Upayares,settlement,-16.3,-60.7,0.612,candidate,147.51,ADE,False
+80,Potrero de la Cruz,settlement,-16.15,-60.55,0.612,candidate,124.63,ADE,False
+81,Ramada del Medio,settlement,-16.3,-61.4,0.612,candidate,148.93,ADE,False
+82,Ramada de Tejas,settlement,-16.28,-61.45,0.612,candidate,143.22,ADE,False
+83,Ramada de Medio Monte,settlement,-16.3,-61.2,0.612,candidate,169.74,ADE,False
+84,Guarayito,settlement,-16.35,-60.95,0.612,candidate,168.77,ADE,False
+85,Ramada del Carmen,settlement,-16.33,-60.98,0.612,candidate,169.34,ADE,False
+86,Motacucito,settlement,-16.25,-60.82,0.612,candidate,151.23,ADE,False
+87,Santa Bárbara,settlement,-15.5,-60.9,0.612,candidate,112.75,ADE,False
+88,San Lorenzo,settlement,-16.28,-60.95,0.612,candidate,163.12,ADE,False
+89,San Juan Nama,settlement,-16.28,-60.95,0.612,candidate,163.12,ADE,False
+90,Reducción de San Pablo,settlement,-16.5,-61.35,0.612,candidate,160.67,ADE,False
+91,San Pablo,settlement,-14.88,-62.7,0.612,candidate,87.09,ADE,False
+92,Cochabamba,settlement,-17.41,-66.17,0.61,candidate,150.68,earthwork,False
+93,Conmuta,settlement,-2.5,-49.5,0.609,candidate,51.81,ADE,False
+94,río Babahoyo,river,-1.79893999958,-79.53227,0.605,candidate,332.4,ADE,False
+95,El Morro,mountain,-17.2838482799,-71.4477521599,0.605,candidate,516.58,earthwork,False
+96,Brasil,region,-10.0,-55.0,0.604,candidate,18.06,ADE,True
+97,Andes de Bolivia,mountain,-16.5,-65.5,0.602,candidate,28.73,earthwork,True
+98,ciudad de Cali,settlement,3.73694901039,-76.4479567196,0.602,candidate,380.53,ADE,False
+99,Coripata,settlement,-16.3133330003,-67.6038890001,0.602,candidate,178.49,earthwork,False
+100,Rio Curaray,river,-1.5,-75.5,0.595,candidate,165.24,ADE,False
+101,Chulumani,settlement,-16.409879,-67.5254560002,0.595,candidate,182.71,earthwork,False
+102,Provincia de los Tupinambás,region,-3.0,-59.0,0.593,candidate,19.24,ADE,True
+103,Mar del Norte,region,2.0,-60.0,0.593,candidate,111.3,ADE,False
+104,Departamento de Santa Cruz de la Sierra,region,-17.78,-63.18,0.593,candidate,205.19,earthwork,False
+105,Matto Grosso,region,-12.64,-55.5,0.593,candidate,79.98,ADE,False
+106,Chuchio,settlement,-18.08,-63.08,0.592,candidate,236.3,ADE,False
+107,Asusaqui,settlement,-18.22,-62.9,0.592,candidate,249.79,ADE,False
+108,alto de Calavera,settlement,-16.7,-61.1,0.592,candidate,193.83,ADE,False
+109,alto del Potrero Largo,settlement,-16.4,-60.8,0.592,candidate,162.8,ADE,False
+110,Río San Rafael,river,-16.7872079996,-60.6749890004,0.592,candidate,192.68,ADE,False
+111,Río Tucabara,river,-16.5,-60.5,0.592,candidate,155.82,ADE,False
+112,estancia San Francisco,settlement,-18.4,-61.9,0.592,candidate,284.16,ADE,False
+113,Tunas,settlement,-16.85,-61.65,0.592,candidate,152.49,ADE,False
+114,Purubi,settlement,-15.35,-58.25,0.592,candidate,171.04,ADE,False
+115,Yacuma,river,-13.7449520004,-65.4270600001,0.591,candidate,4.94,earthwork,True
+116,río del Marañón,river,-3.75,-73.25,0.591,candidate,117.52,ADE,False
+117,Río,river,-3.75,-73.25,0.591,candidate,117.52,ADE,False
+118,Marafión,river,-3.75,-73.25,0.591,candidate,117.52,ADE,False
+119,Putumayo,river,0.5,-72.5,0.591,candidate,65.55,ADE,False
+120,río Putumayo,river,0.5,-72.5,0.591,candidate,65.55,ADE,False
+121,Río Blanco,river,-14.95,-63.1,0.591,candidate,51.6,earthwork,False
+122,Río San Carlos,river,-17.4045470003,-63.7323550004,0.591,candidate,135.66,earthwork,False
+123,Santiago,settlement,-16.27,-68.97,0.589,candidate,269.35,earthwork,False
+124,provincia de la Canela,region,-1.5,-76.5,0.587,candidate,108.4,ADE,False
+125,Canela,region,-1.25,-76.5,0.587,candidate,82.45,ADE,False
+126,Pelayo,region,-1.2,-76.5,0.587,candidate,77.42,ADE,False
+127,valle de la Canela,region,-1.5,-76.5,0.587,candidate,108.4,ADE,False
+128,Totora,settlement,-17.5,-65.5,0.587,candidate,128.85,earthwork,False
+129,Chuquisaca,settlement,-19.0478619999,-65.2596020002,0.586,candidate,298.67,earthwork,False
+130,cerro Iaquaracuru,mountain,-3.6,-59.2,0.582,candidate,7.49,ADE,True
+131,Provincia de las Picotas,region,-5.5,-63.0,0.578,candidate,41.24,ADE,True
+132,Sumuqué,settlement,-16.55,-60.95,0.578,candidate,185.77,ADE,False
+133,río de la Madera,river,-8.76,-63.9,0.577,candidate,19.28,ADE,True
+134,ciudad de Zamora,settlement,-13.5,-70.15,0.576,candidate,151.33,earthwork,False
+135,Santo Corazón,settlement,-17.9760928696,-58.8043894409,0.575,candidate,326.52,ADE,False
+136,Potosí,settlement,-19.5892809997,-65.7535109998,0.571,candidate,362.46,earthwork,False
+137,Orinoco,river,2.5,-62.0,0.571,candidate,242.54,ADE,False
+138,Tacna,settlement,-18.0061189997,-70.2479850004,0.571,candidate,503.95,earthwork,False
+139,Río Barbados,river,-15.15,-57.5,0.571,candidate,238.62,ADE,False
+140,La Paz,settlement,-16.4962550002,-68.1341060004,0.57,candidate,230.74,earthwork,False
+141,Cuenca,settlement,-2.9,-78.99,0.568,candidate,290.65,ADE,False
+142,Macas,settlement,-2.3,-78.13,0.566,candidate,241.94,ADE,False
+143,Chucuito,settlement,-15.8944750002,-69.8900199998,0.566,candidate,290.28,earthwork,False
+144,Río Itenes,river,-11.5,-64.5,0.565,candidate,33.59,ADE,True
+145,Barbados,river,-12.5,-62.5,0.565,candidate,39.46,earthwork,True
+146,Verde,river,-12.5,-62.5,0.565,candidate,39.46,earthwork,True
+147,Serre,river,-12.5,-62.5,0.565,candidate,39.46,earthwork,True
+148,Rio Tumguragua,river,-2.5,-73.8,0.565,candidate,228.88,ADE,False
+149,meseta boliviana,region,-17.5,-68.5,0.565,candidate,328.57,ADE,False
+150,Mecapata,settlement,-16.48,-68.18,0.564,candidate,232.22,earthwork,False
+151,Capitanía de Benito Maziel Pariente,region,-3.8,-58.5,0.563,candidate,19.08,ADE,True
+152,Río de las Amazonas,river,-3.5,-60.0,0.557,candidate,19.62,ADE,True
+153,Iea,region,-5.0,-62.0,0.557,candidate,34.05,ADE,True
+154,Tupinambás,region,-6.0,-62.0,0.557,candidate,39.22,ADE,True
+155,Yuracarés,region,-16.5,-64.5,0.557,candidate,9.29,earthwork,True
+156,Provincia de los Negros,region,-2.5,-63.5,0.557,candidate,112.2,ADE,False
+157,Comao,region,-2.5,-70.0,0.557,candidate,130.43,ADE,False
+158,Provincia de los Encabellados,region,0.5,-72.0,0.557,candidate,97.36,ADE,False
+159,río Paranaíba,river,-10.5,-50.5,0.557,candidate,193.06,ADE,False
+160,República del Alto Perú,region,-17.0,-65.0,0.557,candidate,76.65,earthwork,False
+161,Puerto de Ñapo,settlement,-1.04249599979,-77.7940030004,0.556,candidate,121.7,ADE,False
+162,Quebrada de Palca,route,-17.92,-70.42,0.555,candidate,507.15,earthwork,False
+163,Usungani,settlement,-17.0817419997,-66.9987309999,0.552,candidate,172.99,ADE,False
+164,San Francisco del Quito,settlement,-0.22,-78.51,0.55,candidate,193.65,ADE,False
+165,Ávila,settlement,-0.632340999937,-77.4244420002,0.55,candidate,69.21,ADE,False
+166,Aparia,settlement,-2.8,-61.5,0.548,candidate,35.59,ADE,True
+167,San Nicolás,settlement,-13.3102981847,-62.9508224102,0.548,candidate,8.27,earthwork,True
+168,San Joaquín,settlement,-13.45,-63.4999999998,0.548,candidate,8.1,earthwork,True
+169,Arani,settlement,-17.5740520002,-65.769934,0.547,candidate,144.8,earthwork,False
+170,Picuro,other,-3.65,-59.25,0.546,candidate,13.29,ADE,True
+171,Calana,settlement,-17.75,-70.35,0.546,candidate,487.07,earthwork,False
+172,Potopoto,settlement,-16.55,-68.18,0.546,candidate,238.43,earthwork,False
+173,sierra de Santiago,mountain,-16.33,-60.75,0.546,candidate,153.38,ADE,False
+174,América,region,-15.0,-60.0,0.543,candidate,18.16,ADE,True
+175,Lucumbios,region,0.3,-75.5,0.543,candidate,63.76,ADE,False
+176,rio Ginipape,river,-3.8,-58.5,0.541,candidate,19.08,ADE,True
+177,Chirca,settlement,-16.3874830302,-67.582924108,0.539,candidate,183.96,earthwork,False
+178,Suri,settlement,-16.7485310003,-67.1891550004,0.539,candidate,166.14,ADE,False
+179,Coroico,settlement,-16.18,-67.73,0.539,candidate,175.53,earthwork,False
+180,Charapacce,settlement,-16.92,-67.3,0.539,candidate,186.33,ADE,False
+181,Chinchiri,settlement,-17.1841079998,-66.6097059996,0.539,candidate,156.38,ADE,False
+182,Zaparará,region,-1.5,-46.0,0.537,candidate,211.64,ADE,False
+183,valle del Tucabaca,region,-16.5,-60.5,0.537,candidate,155.82,ADE,False
+184,Tacora,mountain,-17.72,-69.6,0.536,candidate,434.53,earthwork,False
+185,Chacaltaya,mountain,-16.35,-68.2,0.536,candidate,222.03,earthwork,False
+186,rio Vrixamina,river,-2.0,-58.5,0.535,candidate,44.55,ADE,True
+187,Rio de los Encabellados,river,0.3,-72.0,0.535,candidate,103.52,ADE,False
+188,Blanco,river,-16.0,-61.5,0.535,candidate,134.0,ADE,False
+189,arroyo San Pedro,river,-16.32,-60.76,0.535,candidate,153.14,ADE,False
+190,Laguna de los Migueleños,river,-15.65,-60.6,0.535,candidate,89.65,ADE,False
+191,arroyo de Santiago,river,-16.33,-60.75,0.535,candidate,153.38,ADE,False
+192,Provincia de Macas,region,-2.3,-78.1,0.533,candidate,239.92,ADE,False
+193,San Benito,settlement,-17.65,-65.75,0.532,candidate,151.97,earthwork,False
+194,Villorrio del Tacora,settlement,-17.73,-69.6,0.531,candidate,435.36,earthwork,False
+195,Punata,settlement,-19.794444,-65.5058330004,0.527,candidate,382.48,earthwork,False
+196,Pasto,settlement,1.21462899963,-77.2782519999,0.526,candidate,130.57,ADE,False
+197,Ciudad de Pasto,settlement,1.21462899963,-77.2782519999,0.526,candidate,130.57,ADE,False
+198,Pueblo de Ambato,settlement,-1.0434929999,-78.5902480001,0.526,candidate,205.27,ADE,False
+199,Quillacollo,settlement,-17.3976030003,-66.2816509997,0.526,candidate,157.47,earthwork,False
+200,Mizque,settlement,-17.942726,-65.3417099996,0.526,candidate,175.93,earthwork,False
+201,Chilón,settlement,-18.0992923601,-64.57647023,0.526,candidate,187.2,earthwork,False
+202,sierra San José,mountain,-17.68,-62.35,0.526,candidate,194.06,ADE,False
+203,Las Chaquiras,mountain,-17.68,-62.32,0.526,candidate,194.79,ADE,False
+204,Sierra de San José,mountain,-17.75,-63.4,0.526,candidate,187.56,earthwork,False
+205,San Lorenzo de Ipias,mountain,-17.2,-62.3,0.526,candidate,144.22,ADE,False
+206,Choqueyapu,river,-16.4,-68.18,0.525,candidate,225.09,earthwork,False
+207,Fuisonga,settlement,-17.0717419999,-66.9187309997,0.525,candidate,166.28,ADE,False
+208,Cuti,settlement,-17.0332999997,-66.8832999999,0.525,candidate,160.58,ADE,False
+209,Caimani,settlement,-17.0817419997,-66.9187309997,0.525,candidate,167.09,ADE,False
+210,Maynas,region,-4.66854400041,-77.2063469998,0.523,candidate,43.22,ADE,True
+211,Yungas,region,-16.3,-67.5,0.522,candidate,170.96,earthwork,False
+212,Beni,river,-14.82,-67.53,0.521,candidate,46.24,earthwork,True
+213,Itenes,river,-12.68,-63.42,0.521,candidate,31.93,ADE,True
+214,Guaporé,river,-12.68,-63.42,0.521,candidate,31.93,ADE,True
+215,Securi,river,-16.5,-65.5,0.521,candidate,28.73,earthwork,True
+216,Yetaú,river,0.3,-71.5,0.521,candidate,119.57,ADE,False
+217,arroyo Sapococh,river,-14.92,-63.05,0.521,candidate,55.06,earthwork,False
+218,Guarayos,region,-15.8999999996,-63.3063889999,0.519,candidate,22.25,ADE,True
+219,Delinguil,mountain,-17.6,-69.35,0.519,candidate,407.08,earthwork,False
+220,Carmen,settlement,-14.65,-65.1,0.518,candidate,20.14,earthwork,True
+221,Trinidad,settlement,-14.83,-64.9,0.518,candidate,8.27,earthwork,True
+222,Loreto de Moxos,settlement,-14.4,-65.3,0.518,candidate,15.02,earthwork,True
+223,San Miguel,settlement,-16.33,-60.95,0.518,candidate,167.14,ADE,False
+224,Ascensión,settlement,-14.95,-62.85,0.518,candidate,76.38,earthwork,False
+225,Zamora,settlement,-4.06742200023,-78.957421,0.517,candidate,162.12,ADE,False
+226,arroyo del Pari,river,-17.78,-63.18,0.515,candidate,205.19,earthwork,False
+227,Río Cotoca,river,-17.88,-63.28,0.515,candidate,206.77,earthwork,False
+228,Tucabaca,river,-18.0,-61.0,0.515,candidate,292.09,ADE,False
+229,Latiriquiqui,river,-18.0,-61.0,0.515,candidate,292.09,ADE,False
+230,Kihusos,river,-17.82,-63.3,0.515,candidate,200.24,earthwork,False
+231,Laguna de Yarayés,river,-18.4,-60.7,0.515,candidate,346.56,ADE,False
+232,Pongo,settlement,-16.12,-67.55,0.513,candidate,157.92,earthwork,False
+233,Arica,settlement,-18.4780181201,-70.32071566,0.512,candidate,548.14,earthwork,False
+234,Quijos,region,-0.5,-77.5,0.511,candidate,77.74,ADE,False
+235,Mar del Sur,region,-5.0,-80.0,0.511,candidate,160.41,ADE,False
+236,Caguasqui,region,0.513260999995,-78.2124850003,0.511,candidate,189.16,ADE,False
+237,valle de Jauja,region,-12.27,-75.48,0.511,candidate,214.11,ADE,False
+238,Andes,mountain,-16.5,-68.15,0.511,candidate,232.16,earthwork,False
+239,provincia de Ayopaya,region,-17.5,-66.2,0.511,candidate,160.48,earthwork,False
+240,arroyo Dolores,river,-16.65,-62.15,0.511,candidate,98.64,ADE,False
+241,Corocoro,settlement,-16.6,-68.1,0.51,candidate,236.64,earthwork,False
+242,Cargadero,mountain,-16.0,-67.2,0.51,candidate,125.77,earthwork,False
+243,Charula,settlement,-17.4,-66.6,0.51,candidate,176.91,ADE,False
+244,Parangani,settlement,-17.52,-66.22,0.51,candidate,163.54,earthwork,False
+245,Sipe-Sipe,settlement,-17.52,-66.22,0.51,candidate,163.54,earthwork,False
+246,provincia de Paria,region,-17.8,-67.0,0.509,candidate,236.4,ADE,False
+247,Popayán,settlement,2.44185199987,-76.6060619996,0.508,candidate,236.61,ADE,False
+248,Cuzco,settlement,-13.5167180001,-71.9788799999,0.508,candidate,324.96,earthwork,False
+249,Loja,settlement,-3.98652576985,-79.3605050704,0.508,candidate,185.4,ADE,False
+250,Otavalo,settlement,0.228435999822,-78.2629629997,0.508,candidate,185.07,ADE,False
+251,Jauja,settlement,-11.7759480003,-75.5002069998,0.508,candidate,164.68,ADE,False
+252,Ciudad de Quito,settlement,-0.2201689997,-78.5120910004,0.508,candidate,193.88,ADE,False
+253,Pachía,settlement,-17.8837810004,-70.1374440001,0.508,candidate,486.01,earthwork,False
+254,Desaguadero,settlement,-16.5666000003,-69.0333000001,0.508,candidate,298.43,earthwork,False
+255,Moquegua,settlement,-17.1931490003,-70.9350260003,0.508,candidate,472.31,earthwork,False
+256,Arequipa,settlement,-16.3982233699,-71.53672669,0.508,candidate,459.34,earthwork,False
+257,Pampa Grande,settlement,-18.0932,-64.1139000002,0.506,candidate,190.34,earthwork,False
+258,Angostura,route,-18.1167,-65.7333000004,0.506,candidate,201.17,earthwork,False
+259,Poso,other,-16.6,-60.5,0.504,candidate,165.97,ADE,False
+260,río Ginipape,river,-10.0,-52.0,0.501,candidate,84.11,ADE,False
+261,Alto Perú,region,-17.0,-66.0,0.501,candidate,105.08,earthwork,False
+262,Coripaloma,mountain,-17.6,-65.2,0.501,candidate,137.88,earthwork,False
+263,Chicanoma,mountain,-16.4438829997,-67.479273,0.5,candidate,181.0,ADE,False
+264,Chipicani,mountain,-17.68,-69.4,0.498,low_priority,417.3,earthwork,False
+265,Apacheta de La Paz,mountain,-16.55,-68.2,0.498,low_priority,239.78,earthwork,False
+266,Porongo,settlement,-17.8533330001,-63.3086109998,0.498,low_priority,202.57,earthwork,False
+267,Paurito,settlement,-17.8807029996,-62.9414549998,0.498,low_priority,212.52,ADE,False
+268,Bibosi,settlement,-17.35,-63.25,0.498,low_priority,161.47,ADE,False
+269,San Juan,settlement,-17.95,-61.25,0.498,low_priority,271.38,ADE,False
+270,San Juan Bautista,settlement,-18.05,-61.7,0.498,low_priority,256.18,ADE,False
+271,Matto-Grosso,settlement,-15.6,-56.1,0.498,low_priority,302.01,ADE,False
+272,Cayaba,settlement,-15.85,-56.0,0.498,low_priority,323.63,ADE,False
+273,Villa Bella do Matto-Grosso,settlement,-15.6,-56.1,0.498,low_priority,302.01,ADE,False
+274,Ciudad de Avila,settlement,-0.632340999937,-77.4244420002,0.494,low_priority,69.21,ADE,False
+275,Viscachal,mountain,-16.18,-67.32,0.494,low_priority,149.51,earthwork,False
+276,rio Pacaxá,river,-1.8,-50.2,0.493,low_priority,29.19,ADE,True
+277,Curichi de San Miguel,river,-15.5,-60.7,0.493,low_priority,92.26,ADE,False
+278,Cumpa,settlement,-4.2,-58.0,0.492,low_priority,42.09,ADE,True
+279,Quema,settlement,-1.5,-75.0,0.492,low_priority,165.46,ADE,False
+280,Juntas de los Ríos,settlement,-0.95,-76.15,0.492,low_priority,74.59,ADE,False
+281,Cangai,region,-2.35,-77.85,0.491,low_priority,229.13,ADE,False
+282,lago Titicaca,river,-15.84,-69.33,0.491,low_priority,249.1,earthwork,False
+283,arroyo de Turino,river,-17.98,-63.4,0.491,low_priority,208.3,earthwork,False
+284,Aygaderia,river,-16.8,-68.8,0.487,low_priority,301.67,earthwork,False
+285,Muñecas,region,-15.1,-68.5,0.485,low_priority,135.63,earthwork,False
+286,Cordillera de los Andes,mountain,-15.0,-70.0,0.484,low_priority,236.51,earthwork,False
+287,Machupo,river,-14.5,-65.8,0.483,low_priority,8.29,earthwork,True
+288,Caguaqui,settlement,0.65,-77.45,0.483,low_priority,109.6,ADE,False
+289,Santiago de las Montañas,settlement,-3.0,-71.5,0.483,low_priority,221.96,ADE,False
+290,Cajapi,settlement,-16.18,-67.58,0.483,low_priority,165.13,earthwork,False
+291,Milluhualla,settlement,-16.38,-67.58,0.483,low_priority,183.09,earthwork,False
+292,Ocovaya,settlement,-16.42,-67.58,0.483,low_priority,186.8,earthwork,False
+293,Río de Meguilla,river,-16.58,-67.78,0.483,low_priority,213.52,earthwork,False
+294,La Vega,settlement,-16.52,-67.55,0.483,low_priority,190.72,ADE,False
+295,Corachapi,settlement,-16.87,-67.17,0.483,low_priority,171.78,ADE,False
+296,Huala,settlement,-16.86,-67.16,0.483,low_priority,170.27,ADE,False
+297,Carava,settlement,-17.42,-66.58,0.483,low_priority,177.97,ADE,False
+298,Pacoani,settlement,-17.4,-66.73,0.483,low_priority,183.54,ADE,False
+299,Challhuani,settlement,-17.35,-65.65,0.483,low_priority,116.99,earthwork,False
+300,Aldea de Curupatuba,settlement,-3.5,-59.0,0.48,low_priority,17.14,ADE,True
+301,Cachun,mountain,-18.0,-69.5,0.48,low_priority,448.08,ADE,False
+302,Gualillas,mountain,-17.8,-69.55,0.48,low_priority,437.74,earthwork,False
+303,rio Ñapo,river,-1.04249599979,-77.7940030004,0.479,low_priority,121.7,ADE,False
+304,Irimara,settlement,-2.25,-72.85,0.478,low_priority,184.82,ADE,False
+305,Para,settlement,-1.46,-48.5,0.476,low_priority,30.9,ADE,True
+306,Gran Para,settlement,-1.46,-48.5,0.476,low_priority,30.9,ADE,True
+307,Zumaco,settlement,-0.65,-77.45,0.476,low_priority,72.24,ADE,False
+308,Lita,settlement,0.784639999736,-78.6581609996,0.476,low_priority,243.09,ADE,False
+309,Santiago de Guayaquil,settlement,-2.19,-79.9,0.476,low_priority,388.16,ADE,False
+310,Audiencia de Charcas,settlement,-19.04,-65.26,0.474,low_priority,297.79,earthwork,False
+311,Cordillera de Bolivia,mountain,-17.5,-66.5,0.473,low_priority,181.85,earthwork,False
+312,Palca,settlement,-17.95,-69.45,0.473,low_priority,440.74,ADE,False
+313,Baeza,settlement,-0.463397999918,-77.889474,0.472,low_priority,121.24,ADE,False
+314,Oruro,settlement,-17.9694660002,-67.1143640003,0.472,low_priority,258.79,ADE,False
+315,Puno,settlement,-15.8405700001,-70.0278860002,0.472,low_priority,296.06,earthwork,False
+316,Pocona,settlement,-17.6777396898,-65.4151595404,0.472,low_priority,147.1,earthwork,False
+317,Rio de la Coca,river,-0.8,-76.5,0.471,low_priority,42.19,ADE,True
+318,Rio Caquéta,river,-1.2,-72.5,0.471,low_priority,64.8,ADE,False
+319,Lípez,region,-19.5,-66.5,0.471,low_priority,372.32,earthwork,False
+320,Tipuani,settlement,-15.5646,-68.0156999999,0.47,low_priority,143.66,earthwork,False
+321,Clisa,settlement,-17.5913029998,-65.9341440002,0.47,low_priority,153.76,earthwork,False
+322,Toco,settlement,-17.62678,-65.9271440003,0.47,low_priority,156.94,earthwork,False
+323,Pulquina,settlement,-18.0959365003,-64.4352716802,0.47,low_priority,186.63,earthwork,False
+324,Caiconi,settlement,-16.42,-67.93,0.469,low_priority,209.64,earthwork,False
+325,río Ñapo,river,-1.04249599979,-77.7940030004,0.465,low_priority,121.7,ADE,False
+326,Nueva Granada,region,4.57,-74.3,0.464,low_priority,429.78,ADE,False
+327,Colombia,region,4.57,-74.3,0.464,low_priority,429.78,ADE,False
+328,Provincia de los Tapajosos,region,-4.5,-55.5,0.463,low_priority,19.92,ADE,True
+329,Provincia de Moxos,region,-15.28,-65.61,0.463,low_priority,16.23,earthwork,True
+330,Provincia de los Aguas,region,-3.5,-70.0,0.463,low_priority,70.5,ADE,False
+331,ciudad de la Dávila,settlement,-0.5,-77.0,0.462,low_priority,23.22,ADE,True
+332,fuerte del Destierro,settlement,-4.5,-55.0,0.462,low_priority,40.88,ADE,True
+333,Castillo,settlement,-15.05,-65.6,0.462,low_priority,18.32,earthwork,True
+334,San Luis Gonzaga,settlement,-14.95,-65.35,0.462,low_priority,16.04,earthwork,True
+335,Guema,settlement,-2.5,-75.5,0.462,low_priority,258.65,ADE,False
+336,Arimaraeses,settlement,-2.5,-74.8,0.462,low_priority,247.59,ADE,False
+337,Punta de San Juan,settlement,-2.5,-71.0,0.462,low_priority,198.44,ADE,False
+338,Tumburagua,settlement,-3.5,-71.5,0.462,low_priority,196.39,ADE,False
+339,Río de Coroico,river,-16.18,-67.73,0.462,low_priority,175.53,earthwork,False
+340,Río Challhuani,river,-17.92,-65.42,0.462,low_priority,173.96,earthwork,False
+341,La Piedra,settlement,-15.6,-60.85,0.462,low_priority,111.2,ADE,False
+342,Guarayeto,settlement,-16.1,-60.8,0.462,low_priority,137.64,ADE,False
+343,Asunta,settlement,-14.9,-62.75,0.462,low_priority,84.07,ADE,False
+344,Sierra de Cocapata,mountain,-18.5,-63.9,0.46,low_priority,239.61,earthwork,False
+345,Cerro Largo,mountain,-18.5,-63.6,0.46,low_priority,249.72,earthwork,False
+346,Tola Palca,mountain,-19.5,-66.5,0.46,low_priority,372.32,earthwork,False
+347,Tola Pampa,mountain,-19.5,-66.5,0.46,low_priority,372.32,earthwork,False
+348,rio Amazonas,river,-3.5,-59.0,0.459,low_priority,17.14,ADE,True
+349,Larecaja,region,-15.35,-68.75,0.458,low_priority,171.42,earthwork,False
+350,Sacaba,settlement,-17.4038860004,-66.0403710003,0.456,low_priority,141.78,earthwork,False
+351,tierra de los Quijos,region,-0.5,-77.5,0.455,low_priority,77.74,ADE,False
+352,Quixos,region,-0.5,-77.5,0.455,low_priority,77.74,ADE,False
+353,Gobierno de los Quixos,region,-0.5,-77.5,0.455,low_priority,77.74,ADE,False
+354,las Animas,region,-16.48,-68.1,0.455,low_priority,226.9,earthwork,False
+355,Pucuna,region,-17.7,-65.2,0.455,low_priority,148.99,earthwork,False
+356,Chuncuri,region,-17.75,-65.15,0.455,low_priority,154.89,earthwork,False
+357,Río de Azufre,river,-17.75,-69.65,0.454,low_priority,440.55,earthwork,False
+358,Carangas,region,-17.8433330003,-68.4086110004,0.453,low_priority,341.78,ADE,False
+359,Samaypata,settlement,-18.18,-63.87,0.453,low_priority,206.43,earthwork,False
+360,Río Piray,river,-18.4550899999,-63.2101600004,0.453,low_priority,263.68,earthwork,False
+361,Piray,river,-18.4550899999,-63.2101600004,0.453,low_priority,263.68,earthwork,False
+362,Chochiis,mountain,-17.15,-62.1,0.453,low_priority,147.76,ADE,False
+363,Timana,settlement,1.97422900017,-75.9324560004,0.452,low_priority,195.76,ADE,False
+364,San Francisco de Quito,settlement,-0.22,-78.51,0.452,low_priority,193.65,ADE,False
+365,villa de Timaná,settlement,1.97422900017,-75.9324560004,0.452,low_priority,195.76,ADE,False
+366,San Francisco de el Quito,settlement,-0.22,-78.51,0.452,low_priority,193.65,ADE,False
+367,Real Audiencia de Quito,settlement,-0.22,-78.51,0.452,low_priority,193.65,ADE,False
+368,Pachia,settlement,-17.8837810004,-70.1374440001,0.452,low_priority,486.01,earthwork,False
+369,Río Desaguadero,river,-16.5666000003,-69.0333000001,0.452,low_priority,298.43,earthwork,False
+370,Tungasuca,settlement,-14.1639000002,-71.4767000002,0.452,low_priority,309.21,earthwork,False
+371,Tinta,settlement,-14.1447320003,-71.4063410003,0.452,low_priority,301.79,earthwork,False
+372,Choquecamata,settlement,-16.9150999997,-66.6186999998,0.452,low_priority,132.25,ADE,False
+373,Calacala,settlement,-18.5266670002,-66.4844440004,0.452,low_priority,272.9,earthwork,False
+374,Tiquipaya,settlement,-17.3380719997,-66.218803,0.452,low_priority,148.08,earthwork,False
+375,Paso,settlement,-18.3219000002,-64.6791999996,0.452,low_priority,212.72,earthwork,False
+376,Paredón,settlement,-17.7788889998,-65.9322219997,0.452,low_priority,172.47,earthwork,False
+377,Chaluani,settlement,-17.98,-65.48,0.452,low_priority,181.27,earthwork,False
+378,Tintín,settlement,-18.0305830001,-65.4552939999,0.452,low_priority,186.56,earthwork,False
+379,Ayquile,settlement,-18.2020990001,-65.1820499996,0.452,low_priority,204.84,earthwork,False
+380,Pasorapa,settlement,-18.3219000002,-64.6791999996,0.452,low_priority,212.72,earthwork,False
+381,Islay,settlement,-16.39,-72.08,0.45,low_priority,506.95,earthwork,False
+382,Río Mizque,river,-17.942726,-65.3417099996,0.449,low_priority,175.93,earthwork,False
+383,Río Chilón,river,-18.0992923601,-64.57647023,0.449,low_priority,187.2,earthwork,False
+384,Río Samaypata,river,-18.3,-63.77,0.449,low_priority,222.51,earthwork,False
+385,Marribuique,settlement,-2.3,-70.5,0.448,low_priority,145.09,ADE,False
+386,Caritán,settlement,-2.35,-70.45,0.448,low_priority,146.49,ADE,False
+387,Cordillera,mountain,-1.0,-78.0,0.448,low_priority,141.08,ADE,False
+388,Cruz,mountain,-16.1,-67.2,0.447,low_priority,135.57,earthwork,False
+389,Bacas,mountain,-16.05,-67.25,0.447,low_priority,133.25,earthwork,False
+390,río Curaray,river,-1.35,-75.5,0.445,low_priority,152.58,ADE,False
+391,valle de San Miguel de Sapa,settlement,-18.55,-70.25,0.445,low_priority,547.29,ADE,False
+392,Apolobamba,region,-14.7157259997,-68.4176639997,0.445,low_priority,92.51,earthwork,False
+393,Inquisivi,settlement,-16.9070550001,-67.1371069996,0.445,low_priority,171.37,ADE,False
+394,Capiñata,settlement,-17.1333000004,-66.9832999997,0.445,low_priority,175.97,ADE,False
+395,Machacamarca,settlement,-17.1217419998,-66.8687309998,0.445,low_priority,166.88,ADE,False
+396,Tarata,settlement,-17.4746140002,-70.0326440002,0.445,low_priority,443.95,earthwork,False
+397,Puerto de Páyamino,settlement,-0.4,-77.3,0.444,low_priority,58.37,ADE,False
+398,Cordilleras de Guanuco,mountain,-12.07,-75.5,0.444,low_priority,194.24,ADE,False
+399,Páramo de Antezana,mountain,-0.5,-78.5,0.444,low_priority,188.67,ADE,False
+400,Cordilleras de Guanuco de los Caballeros,mountain,-12.07,-75.13,0.444,low_priority,182.27,ADE,False
+401,Guaina-Potosí,mountain,-18.2,-65.5,0.444,low_priority,205.81,earthwork,False
+402,Virgen de San Isidro,mountain,-16.4,-67.55,0.444,low_priority,183.19,earthwork,False
+403,Pumulá,mountain,-16.82,-67.12,0.444,low_priority,164.24,ADE,False
+404,Omagua,region,-3.5,-67.0,0.443,low_priority,47.88,ADE,True
+405,Guayana,region,4.5,-59.0,0.443,low_priority,410.62,ADE,False
+406,Tasajos,settlement,-18.65,-63.2,0.442,low_priority,283.0,earthwork,False
+407,Potrero del rey,settlement,-17.72,-63.25,0.442,low_priority,195.26,earthwork,False
+408,La Guardia,settlement,-17.6,-63.2,0.442,low_priority,186.52,ADE,False
+409,Tijeras,settlement,-18.0,-63.1,0.442,low_priority,227.84,ADE,False
+410,Itapaque,settlement,-17.95,-63.22,0.442,low_priority,216.82,earthwork,False
+411,Sauce,settlement,-18.02,-63.15,0.442,low_priority,227.52,earthwork,False
+412,Gran Diosa,settlement,-18.18,-62.95,0.442,low_priority,245.74,ADE,False
+413,Coromechi,settlement,-18.24,-62.88,0.442,low_priority,251.88,ADE,False
+414,Rinconada de Chaney,settlement,-18.08,-63.05,0.442,low_priority,235.85,ADE,False
+415,Asusaquí,settlement,-17.48,-63.38,0.442,low_priority,166.44,earthwork,False
+416,Naranjal,settlement,-17.38,-63.28,0.442,low_priority,165.68,ADE,False
+417,Turobo,settlement,-17.4,-63.26,0.442,low_priority,167.07,ADE,False
+418,Naico,settlement,-17.25,-63.25,0.442,low_priority,151.01,ADE,False
+419,la Víbora,settlement,-17.42,-63.32,0.442,low_priority,166.47,earthwork,False
+420,Chaney,settlement,-17.95,-63.1,0.442,low_priority,222.35,ADE,False
+421,Sutos,settlement,-16.4,-60.6,0.442,low_priority,150.94,ADE,False
+422,Villa Bella de Matto Grosso,settlement,-15.5,-56.5,0.442,low_priority,312.61,ADE,False
+423,Urina,settlement,-17.65,-62.8,0.442,low_priority,185.99,ADE,False
+424,Ramadilla,settlement,-16.8,-61.2,0.442,low_priority,189.25,ADE,False
+425,la Cola,settlement,-16.5,-60.9,0.442,low_priority,178.11,ADE,False
+426,Pauro,settlement,-17.65,-63.1,0.442,low_priority,189.54,ADE,False
+427,Kitooch,settlement,-17.6,-62.95,0.442,low_priority,181.57,ADE,False
+428,Botija,settlement,-17.5,-62.75,0.442,low_priority,169.24,ADE,False
+429,Tapera de San Juan,settlement,-17.35,-62.5,0.442,low_priority,154.93,ADE,False
+430,alto de San Lorenzo,settlement,-17.3,-62.4,0.442,low_priority,151.75,ADE,False
+431,Ipias,settlement,-17.1,-62.0,0.442,low_priority,148.37,ADE,False
+432,alto de Ipias,settlement,-17.05,-61.9,0.442,low_priority,149.95,ADE,False
+433,parada de Chochiis,settlement,-17.15,-62.1,0.442,low_priority,147.76,ADE,False
+434,Potrero de Yupees,settlement,-17.0,-61.8,0.442,low_priority,152.47,ADE,False
+435,La Cal,settlement,-16.75,-60.35,0.442,low_priority,176.24,ADE,False
+436,ramada de Santo Tomás,settlement,-17.95,-60.9,0.442,low_priority,294.85,ADE,False
+437,Tapatioch,settlement,-18.25,-61.75,0.442,low_priority,274.21,ADE,False
+438,puesto del Pato,settlement,-15.45,-58.95,0.442,low_priority,103.41,ADE,False
+439,río Coca,river,-0.65,-76.98,0.441,low_priority,21.24,ADE,True
+440,Rio de los Tapajosos,river,-4.5,-55.5,0.441,low_priority,19.92,ADE,True
+441,río de la Trinidad,river,-2.8,-71.2,0.441,low_priority,210.04,ADE,False
+442,Rio Payamino,river,-0.488979846842,-77.2921735996,0.441,low_priority,55.01,ADE,False
+443,Rio Marañon,river,-3.5,-71.5,0.441,low_priority,196.39,ADE,False
+444,rio de los Tocantines,river,-3.5,-49.0,0.441,low_priority,60.87,ADE,False
+445,Zamora de los Alcaides,settlement,-4.06742200023,-78.957421,0.44,low_priority,162.12,ADE,False
+446,Esmeraldas,region,0.963510999833,-79.6535400004,0.439,low_priority,355.48,ADE,False
+447,Choluncoy,settlement,-17.88,-70.45,0.438,low_priority,504.88,earthwork,False
+448,Motín,region,-1.0,-76.5,0.437,low_priority,58.24,ADE,False
+449,Capua,region,-2.0,-76.0,0.437,low_priority,182.06,ADE,False
+450,Chalcoma,region,-1.25,-76.45,0.437,low_priority,84.89,ADE,False
+451,la Canela,region,-1.0,-76.5,0.437,low_priority,58.24,ADE,False
+452,Prouincia de los Encabellados,region,-1.5,-76.0,0.437,low_priority,136.41,ADE,False
+453,Antisuyo,region,-12.0,-70.0,0.437,low_priority,104.39,earthwork,False
+454,Carcuata,settlement,-16.22,-67.38,0.437,low_priority,156.6,earthwork,False
+455,Baca,settlement,-17.55,-65.45,0.437,low_priority,133.45,earthwork,False
+456,lago de Aracoyo,river,-17.7,-69.48,0.433,low_priority,424.48,earthwork,False
+457,rio Colquiri,river,-17.38,-66.55,0.433,low_priority,172.58,ADE,False
+458,Valle Grande,region,-18.4851490002,-64.1083650003,0.433,low_priority,233.25,earthwork,False
+459,Santa Fe de Bogotá,settlement,4.71,-74.08,0.432,low_priority,434.55,ADE,False
+460,Ayacucho,settlement,-13.16,-74.21,0.432,low_priority,306.81,ADE,False
+461,Camaypata,settlement,-18.18,-63.87,0.432,low_priority,206.43,earthwork,False
+462,sierra de San Juan,mountain,-18.0,-61.7,0.432,low_priority,251.19,ADE,False
+463,cadena de San Juan,mountain,-17.9,-61.35,0.432,low_priority,260.69,ADE,False
+464,Tarouch,mountain,-17.75,-63.05,0.432,low_priority,199.55,ADE,False
+465,cordillera de Santa Cruz,mountain,-17.5,-63.5,0.432,low_priority,159.37,earthwork,False
+466,Río Punata,river,-19.794444,-65.5058330004,0.429,low_priority,382.48,earthwork,False
+467,Nueva Castilla,region,-9.0,-77.5,0.428,low_priority,241.35,ADE,False
+468,Viriayanca,region,-4.55,-79.45,0.428,low_priority,137.94,ADE,False
+469,Curapatuba,settlement,-9.5,-54.0,0.428,low_priority,111.19,ADE,False
+470,Caupolicán,region,-16.8,-67.5,0.428,low_priority,197.86,ADE,False
+471,provincia de Tapacarí,region,-17.5,-66.5,0.428,low_priority,181.85,earthwork,False
+472,Pacu,settlement,-17.98,-63.08,0.428,low_priority,225.31,ADE,False
+473,isla de Guano,settlement,-18.48,-70.29,0.424,low_priority,546.14,earthwork,False
+474,Aguas,region,-2.0,-72.5,0.423,low_priority,143.05,ADE,False
+475,provincia de Guayaquil,region,-2.19,-79.89,0.421,low_priority,387.18,ADE,False
+476,Isla del Sol,settlement,-0.8,-47.5,0.421,low_priority,95.38,ADE,False
+477,valle de Lluta,settlement,-18.42,-70.35,0.421,low_priority,545.45,earthwork,False
+478,Río San Juan,river,-18.2,-60.5,0.421,low_priority,336.77,ADE,False
+479,Paraguay,river,-19.5,-57.5,0.421,low_priority,538.22,ADE,False
+480,Yapacaní,river,-17.5,-63.0,0.421,low_priority,171.26,ADE,False
+481,Bokis,river,-17.8,-63.32,0.421,low_priority,197.18,earthwork,False
+482,río Paraguay,river,-17.95,-62.5,0.421,low_priority,220.93,ADE,False
+483,Río Santo Tomás,river,-17.95,-60.85,0.421,low_priority,298.43,ADE,False
+484,Ciudad vieja,settlement,-2.19,-79.89,0.42,low_priority,387.18,ADE,False
+485,pueblo de los lemos,settlement,-2.19,-79.89,0.42,low_priority,387.18,ADE,False
+486,Casa Blanca,settlement,-17.8,-70.32,0.42,low_priority,490.32,earthwork,False
+487,río Tunguragua,river,-1.22,-78.44,0.419,low_priority,195.48,ADE,False
+488,provincia de Cliza,region,-17.65,-65.8,0.418,low_priority,153.83,earthwork,False
+489,Pitajaya,settlement,-17.98,-63.38,0.418,low_priority,209.48,earthwork,False
+490,Santiago de Chiquitos,settlement,-18.3400099999,-59.5982840004,0.418,low_priority,347.3,ADE,False
+491,Nyuta,mountain,-17.8,-69.5,0.417,low_priority,434.33,earthwork,False
+492,Niyuta,mountain,-17.8,-69.5,0.417,low_priority,434.33,earthwork,False
+493,Calacote,settlement,-17.35,-69.2,0.417,low_priority,375.62,earthwork,False
+494,Coropata,mountain,-16.48,-67.48,0.417,low_priority,182.25,ADE,False
+495,Hulmus,mountain,-16.26,-67.41,0.417,low_priority,162.06,earthwork,False
+496,Pincaluna,mountain,-16.24,-67.39,0.417,low_priority,159.05,earthwork,False
+497,San Juan de Mayo,mountain,-16.48,-67.5,0.417,low_priority,184.28,ADE,False
+498,Pumulú,mountain,-16.78,-67.1,0.417,low_priority,159.98,ADE,False
+499,Chulpa Chirca,mountain,-17.25,-66.7,0.417,low_priority,167.66,ADE,False
+500,ciudad de Baeza,settlement,-0.463397999918,-77.889474,0.416,low_priority,121.24,ADE,False
+501,Chimbo,settlement,-1.68495699977,-79.0251299999,0.416,low_priority,276.03,ADE,False
+502,Río Maure,river,-17.3321789996,-69.909388,0.416,low_priority,423.83,earthwork,False
+503,Cusco,settlement,-13.53,-71.98,0.416,low_priority,325.55,earthwork,False
+504,Caracato,settlement,-16.9935017733,-67.8090837716,0.416,low_priority,236.98,ADE,False
+505,Palca Grande,settlement,-17.48,-66.28,0.416,low_priority,164.16,earthwork,False
+506,Calamarca,settlement,-16.9059559998,-68.1152610001,0.416,low_priority,262.2,ADE,False
+507,Morochata,settlement,-17.2727785626,-66.4903776481,0.416,low_priority,159.09,ADE,False
+508,Tiraque,settlement,-17.4261760004,-65.7226189998,0.416,low_priority,127.67,earthwork,False
+509,Laguna del Dorado,river,-1.5,-76.0,0.415,low_priority,136.41,ADE,False
+510,Tomebamba,region,-2.9,-78.99,0.415,low_priority,290.65,ADE,False
+511,Pacajes,region,-16.5,-68.8,0.415,low_priority,277.11,earthwork,False
+512,Chayanta,region,-18.4608660001,-66.4430469997,0.415,low_priority,264.38,earthwork,False
+513,Ayopaya,region,-17.45,-66.35,0.415,low_priority,166.68,earthwork,False
+514,provincia de Quillacollo,region,-17.4,-66.25,0.415,low_priority,155.39,earthwork,False
+515,valle de Clisa,region,-17.55,-65.95,0.415,low_priority,150.49,earthwork,False
+516,Verenguela,settlement,-16.6,-68.7,0.414,low_priority,278.16,earthwork,False
+517,Crassacara,settlement,-15.84,-69.33,0.414,low_priority,249.1,earthwork,False
+518,Laja,settlement,-16.45,-68.2,0.414,low_priority,230.81,earthwork,False
+519,Huarinas,settlement,-16.2,-68.5,0.414,low_priority,231.26,earthwork,False
+520,Tipoani,settlement,-16.6,-68.2,0.414,low_priority,243.9,earthwork,False
+521,Los Obrages,settlement,-16.52,-68.17,0.414,low_priority,235.21,earthwork,False
+522,Colcapirgua,settlement,-17.39,-66.2,0.414,low_priority,151.04,earthwork,False
+523,San Pedro,settlement,-17.4,-66.25,0.414,low_priority,155.39,earthwork,False
+524,Sacacirca,settlement,-17.6,-65.85,0.414,low_priority,150.75,earthwork,False
+525,Omaga,region,-3.8,-60.2,0.413,low_priority,1.81,ADE,True
+526,Oníguayal,region,-4.5,-59.5,0.413,low_priority,26.06,ADE,True
+527,provincia de San Juan,region,-2.5,-61.5,0.413,low_priority,34.86,ADE,True
+528,Río Chaluani,river,-18.4,-63.8,0.413,low_priority,231.98,earthwork,False
+529,Sunsas,mountain,-17.85,-63.45,0.411,low_priority,193.37,earthwork,False
+530,altos de la Sienega,settlement,-16.6,-61.0,0.41,low_priority,193.43,ADE,False
+531,batalla de las Salinas,route,-13.67,-76.13,0.409,low_priority,384.74,ADE,False
+532,Paguana,region,-4.2,-66.5,0.408,low_priority,63.81,ADE,False
+533,Alcázares,region,5.0,-73.5,0.408,low_priority,447.19,ADE,False
+534,Monte Grande,region,-17.5,-63.5,0.408,low_priority,159.37,earthwork,False
+535,Yarayés,region,-17.5,-62.3,0.408,low_priority,175.99,ADE,False
+536,Cofanes,region,0.5,-76.5,0.407,low_priority,20.66,ADE,True
+537,Qumaco,region,-1.8,-77.0,0.407,low_priority,138.04,ADE,False
+538,Dorado,region,-1.0,-77.0,0.407,low_priority,52.11,ADE,False
+539,Provincia de Micóa,region,1.5,-72.0,0.407,low_priority,88.75,ADE,False
+540,Provincia del Algodonal,region,1.0,-71.5,0.407,low_priority,130.19,ADE,False
+541,Provincia de los Maynas,region,-3.0,-71.5,0.407,low_priority,221.96,ADE,False
+542,río de Tapajosos,river,-8.77,-55.75,0.407,low_priority,99.86,ADE,False
+543,río de los Tocantines,river,-10.2,-48.3,0.407,low_priority,392.31,ADE,False
+544,Río Parapiti,river,-18.5,-64.5,0.407,low_priority,231.5,earthwork,False
+545,río de Santa Barbóla,river,-0.8,-78.2,0.406,low_priority,157.16,ADE,False
+546,Sorata,mountain,-15.7729319998,-68.6507509999,0.406,low_priority,206.2,earthwork,False
+547,Tamampaya,river,-16.38,-67.88,0.406,low_priority,202.77,earthwork,False
+548,Chahuara,river,-16.23,-67.4,0.406,low_priority,158.66,earthwork,False
+549,arroyo de la Plata,river,-16.88,-67.35,0.406,low_priority,188.37,ADE,False
+550,rio Ayupaya,river,-17.42,-66.5,0.406,low_priority,174.44,ADE,False
+551,Chapare,river,-16.9157999996,-65.807496,0.405,low_priority,83.93,earthwork,False
+552,Andes orientales,mountain,-17.55,-66.25,0.404,low_priority,168.12,earthwork,False
+553,rio Curupahuba,river,-3.5,-59.0,0.403,low_priority,17.14,ADE,True
+554,Iriquiriqui,river,-3.5,-59.0,0.403,low_priority,17.14,ADE,True
+555,Silata,mountain,-16.35,-67.55,0.403,low_priority,178.54,earthwork,False
+556,Paraguaxo,mountain,-3.7,-59.3,0.402,low_priority,18.6,ADE,True
+557,Candelaria,settlement,-18.7440199996,-65.3761630002,0.402,low_priority,265.11,earthwork,False
+558,Yumbo,region,3.58202999968,-76.4927300001,0.401,low_priority,363.22,ADE,False
+559,Itapaqué,settlement,-17.95,-63.35,0.4,low_priority,208.56,earthwork,False
+560,reino del Perú,region,-12.0,-75.0,0.397,low_priority,172.31,ADE,False
+561,valle de Jaquijaguana,region,-13.65,-71.85,0.397,low_priority,317.14,earthwork,False
+562,provincias de Quito,region,-0.22,-78.51,0.397,low_priority,193.65,ADE,False
+563,provincia del Pirú,region,-12.0,-75.0,0.397,low_priority,172.31,ADE,False
+564,Provincia de Quito,region,-0.22,-78.51,0.397,low_priority,193.65,ADE,False
+565,Virreinato de Lima,region,-12.0,-75.0,0.397,low_priority,172.31,ADE,False
+566,Tapacarí,region,-17.5163290003,-66.6204060002,0.397,low_priority,189.48,ADE,False
+567,Yacamiaba,mountain,-1.0,-61.0,0.396,low_priority,55.95,ADE,False
+568,Pocolualle,settlement,-17.85,-70.28,0.396,low_priority,493.0,earthwork,False
+569,Alto del Rosario,mountain,-16.38,-60.82,0.396,low_priority,162.34,ADE,False
+570,Sierra de San Carlos,mountain,-16.95,-62.35,0.396,low_priority,116.33,ADE,False
+571,Río Pocona,river,-17.6777396898,-65.4151595404,0.395,low_priority,147.1,earthwork,False
+572,Yoriman,region,-4.0,-70.0,0.393,low_priority,21.77,ADE,True
+573,Río Pulquina,river,-18.0959365003,-64.4352716802,0.393,low_priority,186.63,earthwork,False
+574,Río de Tucumariri,river,-16.88,-67.18,0.392,low_priority,173.29,ADE,False
+575,Morro de Arica,mountain,-18.48,-70.31,0.39,low_priority,547.54,earthwork,False
+576,Chupé,settlement,-16.3832,-67.7335000002,0.389,low_priority,193.02,earthwork,False
+577,Lanza,settlement,-17.2316899997,-67.1259399999,0.389,low_priority,194.35,ADE,False
+578,Machaca,settlement,-17.1217419998,-66.8687309998,0.389,low_priority,166.88,ADE,False
+579,Santa Rosa,settlement,-17.141502,-66.7096339997,0.389,low_priority,158.22,ADE,False
+580,Río de Ochusuma,river,-18.05,-70.3,0.388,low_priority,511.22,earthwork,False
+581,Pampa,region,-17.75,-63.15,0.387,low_priority,201.51,ADE,False
+582,Río Soboreca,river,-17.32,-61.8,0.386,low_priority,180.51,ADE,False
+583,Tapanakich,river,-17.75,-61.05,0.386,low_priority,267.73,ADE,False
+584,Ivari,river,-14.8,-65.5,0.385,low_priority,1.27,earthwork,True
+585,Río Guapaix,river,-14.5,-64.8,0.385,low_priority,25.63,earthwork,True
+586,río del Cuzco,river,-3.5,-72.0,0.385,low_priority,244.83,ADE,False
+587,Curichi de Quita Calzón,river,-16.2,-60.6,0.385,low_priority,132.25,ADE,False
+588,Sapococh,river,-16.32,-61.05,0.385,low_priority,173.82,ADE,False
+589,arroyo La Puente,river,-16.55,-61.25,0.385,low_priority,172.62,ADE,False
+590,Itonamas,river,-15.2,-62.8,0.385,low_priority,50.32,ADE,False
+591,Tierras del Tucujú,region,-3.0,-57.5,0.383,low_priority,15.8,ADE,True
+592,Canaribamba,region,-3.23604331205,-79.3399667069,0.382,low_priority,262.47,ADE,False
+593,Sampaya,settlement,-17.43,-66.31,0.382,low_priority,162.15,earthwork,False
+594,Río de Arica,river,-18.48,-70.4,0.379,low_priority,553.93,earthwork,False
+595,rio Ayopaya,river,-17.45,-66.35,0.379,low_priority,166.68,earthwork,False
+596,Ancomarca,mountain,-18.05,-70.3,0.378,low_priority,511.22,earthwork,False
+597,cadena del Sunsas,mountain,-16.5,-60.25,0.376,low_priority,146.59,ADE,False
+598,Sierra de Sunsas,mountain,-17.95,-61.3,0.376,low_priority,268.28,ADE,False
+599,Seriocoma,mountain,-18.05,-61.5,0.376,low_priority,266.16,ADE,False
+600,montaña de Tañemené,mountain,-18.5,-62.0,0.376,low_priority,291.62,ADE,False
+601,cerros de Santiago,mountain,-18.25,-61.6,0.376,low_priority,280.8,ADE,False
+602,cadena del Ipias,mountain,-18.2,-61.8,0.376,low_priority,267.05,ADE,False
+603,cadena de San Lorenzo,mountain,-18.15,-61.75,0.376,low_priority,264.02,ADE,False
+604,barranco de Santa Bárbara,mountain,-16.5,-62.05,0.372,low_priority,94.91,ADE,False
+605,Río Quisere,river,-16.4,-60.85,0.371,low_priority,166.07,ADE,False
+606,Quebrada de Muelles,river,-18.1,-70.25,0.367,low_priority,512.13,earthwork,False
+607,Tuna,region,-2.4,-78.1,0.365,low_priority,248.91,ADE,False
+608,repartimiento de Yagual,region,-2.19,-79.89,0.365,low_priority,387.18,ADE,False
+609,Lago Dorado,river,-4.0,-69.0,0.365,low_priority,56.51,ADE,False
+610,Grande,river,-17.5,-63.5,0.365,low_priority,159.37,earthwork,False
+611,Río Tasajos,river,-18.65,-63.2,0.365,low_priority,283.0,earthwork,False
+612,Río Tembladeras,river,-18.75,-63.1,0.365,low_priority,297.85,earthwork,False
+613,Yunga de Yuracarés,region,-17.2,-65.4,0.365,low_priority,94.18,earthwork,False
+614,Projera,river,-17.68,-63.32,0.365,low_priority,187.0,earthwork,False
+615,arroyo de Chaney,river,-18.08,-63.05,0.365,low_priority,235.85,ADE,False
+616,arroyo Birubiru,river,-17.7,-63.25,0.365,low_priority,193.62,earthwork,False
+617,Río Pari,river,-17.8,-63.2,0.365,low_priority,205.41,earthwork,False
+618,Jaoru,river,-15.5,-56.5,0.365,low_priority,312.61,ADE,False
+619,Oxuquis,river,-18.5,-60.5,0.365,low_priority,368.65,ADE,False
+620,Tucubaca,river,-17.5,-62.2,0.365,low_priority,179.2,ADE,False
+621,Río San Pedro,river,-17.28,-61.9,0.365,low_priority,170.96,ADE,False
+622,Río Uracirchikia,river,-17.34,-61.75,0.365,low_priority,185.37,ADE,False
+623,Río San Luis,river,-17.36,-61.7,0.365,low_priority,190.28,ADE,False
+624,Río Tayoé,river,-17.38,-61.65,0.365,low_priority,195.23,ADE,False
+625,Oxukis,river,-17.5,-61.5,0.365,low_priority,215.53,ADE,False
+626,Río Jaru,river,-18.2,-61.1,0.365,low_priority,303.19,ADE,False
+627,Río Tapanakis,river,-18.15,-61.65,0.365,low_priority,268.49,ADE,False
+628,arroyo Las Conchas,river,-18.35,-61.85,0.365,low_priority,280.67,ADE,False
+629,Paranaiba,river,-1.2,-50.8,0.364,low_priority,63.47,ADE,False
+630,Chojla,settlement,-16.1,-67.53,0.363,low_priority,154.85,earthwork,False
+631,sierra Paraguaxo,mountain,-10.5,-51.0,0.362,low_priority,158.73,ADE,False
+632,Quebrada de los Malos Nombres,river,-18.75,-70.2,0.362,low_priority,554.6,ADE,False
+633,Poopó,region,-18.3801910002,-66.9658010003,0.361,low_priority,287.51,earthwork,False
+634,provincia de Mizque,region,-17.95,-65.6,0.361,low_priority,179.99,earthwork,False
+635,Casa del Inca,settlement,-18.48,-63.62,0.361,low_priority,246.86,earthwork,False
+636,Tomebaniba,settlement,-0.35,-78.12,0.36,low_priority,148.35,ADE,False
+637,Neiba,settlement,1.8,-76.4,0.36,low_priority,165.62,ADE,False
+638,Carangueques,settlement,0.5,-78.0,0.36,low_priority,165.53,ADE,False
+639,Obrajes,settlement,-16.58,-68.08,0.36,low_priority,233.56,earthwork,False
+640,Choquehapu,settlement,-16.5,-68.15,0.36,low_priority,232.16,earthwork,False
+641,Opaña,settlement,-16.45,-67.95,0.36,low_priority,213.55,earthwork,False
+642,Chunquiaguillo,settlement,-16.4,-67.95,0.36,low_priority,209.43,earthwork,False
+643,Río de La Paz,river,-16.55,-67.85,0.36,low_priority,215.29,earthwork,False
+644,Cascavi,settlement,-17.38,-66.62,0.36,low_priority,175.9,ADE,False
+645,Belén,settlement,-17.5,-66.7,0.36,low_priority,191.67,ADE,False
+646,Suanca,settlement,-17.38,-66.75,0.36,low_priority,182.73,ADE,False
+647,Coacollo,settlement,-17.46,-66.67,0.36,low_priority,186.25,ADE,False
+648,Yuncayancani,settlement,-17.48,-66.65,0.36,low_priority,187.24,ADE,False
+649,Viloma,settlement,-17.5,-66.35,0.36,low_priority,170.75,earthwork,False
+650,Duraznillo,settlement,-17.88,-65.38,0.36,low_priority,169.19,earthwork,False
+651,Viña Perdida,settlement,-17.98,-65.5,0.36,low_priority,181.54,earthwork,False
+652,Quilcaylita,region,-0.3,-78.4,0.359,low_priority,179.98,ADE,False
+653,lago de Larata,river,-17.35,-66.25,0.358,low_priority,151.31,earthwork,False
+654,Songo,route,-15.7229319999,-68.7007509998,0.356,low_priority,206.49,earthwork,False
+655,Naranjo,other,-16.65,-60.45,0.354,low_priority,169.11,ADE,False
+656,Potrero,other,-16.7,-60.4,0.354,low_priority,172.54,ADE,False
+657,cuesta de Petaca,mountain,-17.9,-63.4,0.352,low_priority,200.96,earthwork,False
+658,río de los Gigantes,river,-4.5,-68.5,0.351,low_priority,119.19,ADE,False
+659,río Basururú,river,-5.0,-67.0,0.351,low_priority,166.03,ADE,False
+660,río Pacaxa,river,-11.0,-49.5,0.351,low_priority,312.21,ADE,False
+661,Río Sauce,river,-18.02,-63.15,0.351,low_priority,227.52,earthwork,False
+662,Río de Acero,river,-17.5,-63.5,0.351,low_priority,159.37,earthwork,False
+663,Ibabo,river,-17.5,-63.0,0.351,low_priority,171.26,ADE,False
+664,Andes bolivianos,mountain,-17.0,-66.0,0.35,low_priority,105.08,earthwork,False
+665,Illimani,mountain,-16.65,-68.13,0.35,low_priority,242.91,earthwork,False
+666,Cordillera Oriental,mountain,-16.5,-68.15,0.35,low_priority,232.16,earthwork,False
+667,cordillera de La Paz,mountain,-16.5,-68.15,0.35,low_priority,232.16,earthwork,False
+668,Cerro de San Sebastián,mountain,-17.43,-66.19,0.348,low_priority,153.75,earthwork,False
+669,Quebrada de los Gallinazos,river,-18.55,-70.3,0.347,low_priority,551.82,ADE,False
+670,Ancumani,mountain,-16.2,-68.2,0.344,low_priority,209.28,earthwork,False
+671,cadena de Diamantino,mountain,-14.4,-56.45,0.344,low_priority,215.31,ADE,False
+672,río de su nombre,river,-2.19,-79.89,0.343,low_priority,387.18,ADE,False
+673,Lile,region,2.5,-76.5,0.341,low_priority,242.91,ADE,False
+674,nuevo reino de Granada,region,4.5,-74.0,0.341,low_priority,409.57,ADE,False
+675,Parapití,river,-19.5,-63.5,0.341,low_priority,358.11,earthwork,False
+676,provincia de Apolobamba,region,-14.5,-70.5,0.341,low_priority,261.29,earthwork,False
+677,lago de Parco,river,-17.85,-65.75,0.34,low_priority,173.08,earthwork,False
+678,Vilca,settlement,-18.35,-63.85,0.34,low_priority,225.07,earthwork,False
+679,Lluta,river,-16.0154689996,-72.0147609998,0.339,low_priority,480.08,earthwork,False
+680,Río Cañamiña,river,-16.6366436996,-67.2510517836,0.339,low_priority,166.01,ADE,False
+681,Río Tamborada,river,-17.5,-66.05,0.339,low_priority,151.19,earthwork,False
+682,Tuyuncané,river,-17.55,-69.28,0.337,low_priority,398.05,earthwork,False
+683,Río de Rocha,river,-17.41,-66.17,0.337,low_priority,150.68,earthwork,False
+684,Cañares,region,-6.04610999998,-79.2646999996,0.334,low_priority,82.78,earthwork,False
+685,Cabo del Norte,mountain,0.5,-46.0,0.334,low_priority,311.61,ADE,False
+686,Arque,region,-17.8212085628,-66.4042621015,0.334,low_priority,202.0,earthwork,False
+687,Quilca,settlement,0.8,-77.15,0.333,low_priority,88.12,ADE,False
+688,puente de Abancay,settlement,-13.64,-72.63,0.333,low_priority,396.11,earthwork,False
+689,Poto Poto,settlement,-16.52,-68.13,0.333,low_priority,232.32,earthwork,False
+690,Ojacucho,settlement,-16.28,-67.55,0.333,low_priority,172.12,earthwork,False
+691,Tajesi,settlement,-16.22,-67.6,0.333,low_priority,169.95,earthwork,False
+692,Guequere,settlement,-16.5,-67.5,0.333,low_priority,184.96,ADE,False
+693,Sila,settlement,-16.93,-67.27,0.333,low_priority,184.32,ADE,False
+694,Titipacha,settlement,-16.85,-67.15,0.333,low_priority,168.76,ADE,False
+695,Acutani,settlement,-16.84,-67.14,0.333,low_priority,167.25,ADE,False
+696,Laurani,settlement,-17.44,-66.69,0.333,low_priority,185.3,ADE,False
+697,San Martín,mountain,-19.5903389999,-65.7461939997,0.33,low_priority,362.46,earthwork,False
+698,Quebrada de La Paz,other,-16.5,-68.15,0.328,low_priority,232.16,earthwork,False
+699,Quebrada del Escrito,river,-18.62,-70.25,0.323,low_priority,551.32,ADE,False
+700,Laguna de Pansa,river,-18.8,-67.5,0.319,low_priority,359.06,ADE,False
+701,Lasa,settlement,-16.45,-67.45,0.319,low_priority,178.2,ADE,False
+702,Río de Suri,river,-16.2,-67.35,0.319,low_priority,153.04,earthwork,False
+703,Río Colquiri,river,-16.72,-67.08,0.319,low_priority,154.57,ADE,False
+704,Río Copi,river,-17.75,-65.1,0.319,low_priority,155.43,earthwork,False
+705,Cuesta de la Yesera,mountain,-17.8,-70.4,0.318,low_priority,494.53,earthwork,False
+706,Río Chacjro,river,-16.08,-67.52,0.313,low_priority,152.45,earthwork,False
+707,Calientes,river,-14.4511412197,-71.0760211496,0.312,low_priority,296.74,earthwork,False
+708,Río Chupé,river,-16.3832,-67.7335000002,0.312,low_priority,193.02,earthwork,False
+709,Río Conda,river,-17.5,-65.4,0.312,low_priority,127.28,earthwork,False
+710,Río Machacamarca,river,-17.1217419998,-66.8687309998,0.312,low_priority,166.88,ADE,False
+711,Provincia de Valle Grande,region,-18.05,-63.5,0.309,low_priority,209.33,earthwork,False
+712,provincia de Cordillera,region,-18.0,-63.5,0.309,low_priority,204.54,earthwork,False
+713,Culata,region,-1.0,-78.0,0.305,low_priority,141.08,ADE,False
+714,Guachicuna,region,1.5,-76.0,0.305,low_priority,143.95,ADE,False
+715,Chaparra,region,-4.5,-79.5,0.305,low_priority,145.77,ADE,False
+716,Cuna,region,-2.4,-77.9,0.305,low_priority,236.74,ADE,False
+717,Jaquijaguana,region,-13.5,-71.95,0.305,low_priority,321.4,earthwork,False
+718,Rio Bamba,river,-1.4,-78.6,0.305,low_priority,219.71,ADE,False
+719,Yunga,region,-16.5,-68.15,0.305,low_priority,232.16,earthwork,False
+720,valle de Sacaba,region,-17.45,-66.1,0.305,low_priority,149.64,earthwork,False
+721,Chayenta,region,-17.55,-65.4,0.305,low_priority,132.8,earthwork,False
+722,país de los Yuracarés,region,-17.5,-64.5,0.302,low_priority,120.32,earthwork,False
+723,arroyo de Samaypata,river,-18.18,-63.87,0.299,low_priority,206.43,earthwork,False
+724,Coronilla,mountain,-18.6,-63.5,0.298,low_priority,264.05,earthwork,False
+725,Cuesta de Caraca,mountain,-17.8,-70.3,0.294,low_priority,489.28,earthwork,False
+726,Río de Bueyes,river,-18.55,-63.55,0.287,low_priority,256.87,earthwork,False
+727,río Santa Barbóla,river,-2.95,-78.95,0.283,low_priority,284.57,ADE,False
+728,Río de Huanctata,river,-16.52,-68.1,0.283,low_priority,230.11,earthwork,False
+729,Río de Cutusuma,river,-16.43,-67.47,0.283,low_priority,179.62,ADE,False
+730,Río Ponacaché,river,-17.43,-66.08,0.283,low_priority,146.59,earthwork,False
+731,Quisna,region,-2.5,-78.0,0.278,low_priority,252.02,ADE,False
+732,puna de Miguilla,region,-16.27,-67.38,0.278,low_priority,161.38,earthwork,False
+733,Valle Fuerte,region,-17.95,-65.45,0.278,low_priority,177.59,earthwork,False
+734,Cerro del Inca,mountain,-18.25,-63.8,0.274,low_priority,216.21,earthwork,False
+735,La Cueva,mountain,-18.42,-63.68,0.274,low_priority,238.34,earthwork,False
+736,Puri,river,-16.48,-67.42,0.269,low_priority,176.16,ADE,False
+737,San Andrés,mountain,-16.65,-68.0,0.267,low_priority,233.93,earthwork,False
+738,Quiliquila,mountain,-16.5,-67.5,0.267,low_priority,184.96,ADE,False
+739,Subluche,mountain,-16.8,-67.45,0.267,low_priority,193.14,ADE,False
+740,Cocasuyo,mountain,-16.95,-67.25,0.267,low_priority,183.87,ADE,False
+741,Cerro de Quioma,mountain,-17.85,-65.35,0.267,low_priority,165.67,earthwork,False
+742,Río de las Astas,river,-18.45,-63.65,0.263,low_priority,242.59,earthwork,False
+743,Jaquijagoana,region,-13.5,-75.8,0.258,low_priority,354.74,ADE,False
+744,Río de Chacjro,river,-16.3,-67.48,0.256,low_priority,169.79,earthwork,False
+745,Juan de Mayo,river,-16.5,-67.4,0.256,low_priority,174.85,ADE,False
+746,Río de Porocote,river,-16.48,-67.52,0.256,low_priority,186.32,ADE,False
+747,Cotuma,river,-16.95,-67.25,0.256,low_priority,183.87,ADE,False
+748,Río Copachuncho,river,-17.85,-65.35,0.256,low_priority,165.67,earthwork,False
+749,Río Pojo,river,-17.95,-65.45,0.256,low_priority,177.59,earthwork,False
+750,Abras,mountain,-18.4,-63.7,0.247,low_priority,235.51,earthwork,False
+751,Solocama,river,-16.42,-67.48,0.242,low_priority,180.34,ADE,False
+752,Río de Piedras Blancas,river,-18.28,-63.78,0.236,low_priority,220.06,earthwork,False
+753,Río Colorado,river,-18.32,-63.75,0.236,low_priority,225.32,earthwork,False
+754,Río Laja,river,-18.32,-63.75,0.236,low_priority,225.32,earthwork,False

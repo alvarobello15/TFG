@@ -1,0 +1,51 @@
+type,x,y,source,name
+earthwork,-52.383,-3.317,de Souza et al. 2018,Geoglifo Marajó
+earthwork,-53.069,-0.871,de Souza et al. 2018,Monte Alegre complex
+ring_village,-52.35,-12.85,de Souza et al. 2018,Upper Xingu ring village 1
+ring_village,-53.10,-12.50,de Souza et al. 2018,Upper Xingu ring village 2
+ring_village,-53.50,-12.75,de Souza et al. 2018,Upper Xingu ring village 3
+ring_village,-53.00,-13.00,Heckenberger et al. 2008,Kuikuro village complex
+ring_village,-53.20,-12.90,Heckenberger et al. 2008,Ipatse historic site
+ring_village,-53.60,-13.10,Heckenberger et al. 2008,Upper Xingu garden city
+earthwork,-64.70,-14.80,Prümers et al. 2022,Cotoca monumental site
+earthwork,-64.90,-14.70,Prümers et al. 2022,Landívar site
+earthwork,-64.60,-14.90,Prümers et al. 2022,Salvatierra site
+earthwork,-65.10,-14.60,Prümers et al. 2022,Casarabe culture site 1
+earthwork,-65.30,-14.50,Prümers et al. 2022,Casarabe culture site 2
+earthwork,-65.00,-15.00,Prümers et al. 2022,Casarabe culture site 3
+geoglyph,-68.75,-10.50,Saunaluoma & Schaan 2012,Geoglifo Acre 1
+geoglyph,-68.50,-10.20,Saunaluoma & Schaan 2012,Geoglifo Acre 2
+geoglyph,-69.00,-10.80,Saunaluoma & Schaan 2012,Geoglifo Acre 3
+geoglyph,-68.20,-9.90,Saunaluoma & Schaan 2012,Geoglifo Acre 4
+geoglyph,-69.30,-10.30,Saunaluoma & Schaan 2012,Geoglifo Acre 5
+geoglyph,-67.80,-10.10,Saunaluoma & Schaan 2012,Geoglifo Acre 6
+ADE,-59.95,-3.12,Neves et al. 2003,Terra Preta Manaus 1
+ADE,-60.10,-3.05,Neves et al. 2003,Terra Preta Manaus 2
+ADE,-58.50,-3.35,Neves et al. 2003,Terra Preta Itacoatiara
+ADE,-55.50,-2.50,Neves et al. 2003,Terra Preta Santarém 1
+ADE,-54.70,-2.43,Neves et al. 2003,Terra Preta Santarém 2
+ADE,-56.00,-2.80,Neves et al. 2003,Terra Preta Belterra
+ADE,-60.50,-3.40,Neves et al. 2003,Terra Preta Lago Janauacá
+ADE,-59.00,-3.20,Neves et al. 2003,Terra Preta Rio Preto da Eva
+earthwork,-48.50,-1.00,Roosevelt 1991,Marajó mound complex 1
+earthwork,-49.00,-0.70,Roosevelt 1991,Marajó mound complex 2
+earthwork,-49.50,-1.20,Roosevelt 1991,Marajó mound complex 3
+earthwork,-49.20,-0.90,Roosevelt 1991,Teso dos Bichos
+mound,-65.35,-13.50,Lombardo et al. 2020,Forest island Llanos de Mojos 1
+mound,-65.00,-13.70,Lombardo et al. 2020,Forest island Llanos de Mojos 2
+mound,-64.80,-13.90,Lombardo et al. 2020,Forest island Llanos de Mojos 3
+mound,-65.20,-14.00,Lombardo et al. 2020,Forest island Llanos de Mojos 4
+mound,-65.50,-13.30,Lombardo et al. 2020,Forest island Llanos de Mojos 5
+earthwork,-60.00,-2.00,Iriarte et al. 2020,Baixo Tapajós site 1
+earthwork,-55.20,-2.30,Iriarte et al. 2020,Baixo Tapajós site 2
+earthwork,-54.90,-2.60,Iriarte et al. 2020,Baixo Tapajós site 3
+ring_village,-51.80,-7.50,de Souza et al. 2018,Southern Amazon ring village 1
+ring_village,-52.00,-8.00,de Souza et al. 2018,Southern Amazon ring village 2
+ring_village,-51.50,-9.00,de Souza et al. 2018,Southern Amazon ring village 3
+ring_village,-52.50,-8.50,de Souza et al. 2018,Southern Amazon ring village 4
+ring_village,-53.30,-10.00,de Souza et al. 2018,Southern Amazon ring village 5
+ADE,-67.50,-5.00,McMichael et al. 2014,ADE Rio Juruá 1
+ADE,-66.00,-4.50,McMichael et al. 2014,ADE Rio Juruá 2
+ADE,-62.00,-4.00,McMichael et al. 2014,ADE Central Amazonia 1
+ADE,-61.50,-3.80,McMichael et al. 2014,ADE Central Amazonia 2
+ADE,-63.00,-3.50,McMichael et al. 2014,ADE Rio Purus 1
