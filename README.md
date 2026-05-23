@@ -58,24 +58,7 @@ ollama pull qwen2.5:14b
 
 ## Configuracio (.env)
 
-El fitxer `src/.env` controla quin LLM s'usa i amb quins parametres:
-
-```env
-# Provider: "claude" (cloud) o "ollama" (local)
-# Si Claude falla, es fa fallback automatic a Ollama
-LLM_PROVIDER=claude
-
-# Claude (Anthropic)
-ANTHROPIC_API_KEY=sk-ant-...
-CLAUDE_MODEL=claude-haiku-4-5-20251001
-
-# Ollama (local)
-OLLAMA_MODEL=qwen2.5:14b
-OLLAMA_HOST=http://localhost:11434
-
-# Parametres comuns
-LLM_TEMPERATURE=0.1
-LLM_MAX_TOKENS=4096
+El fitxer `src/.env` controla quin LLM s'usa i amb quins paramet
 ```
 
 ## Com executar el projecte
