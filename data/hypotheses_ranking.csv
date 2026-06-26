@@ -1,136 +1,303 @@
 rank,score,status,name,type,confidence,lat,lon,description,source
-1,0.79,candidate,Amazonas,river,high,-3.0,-60.0,"río grande descubierto por Francisco de Orellana, continuación del Marañón después de su unión con el Ucayalí",carvajal_1542_cronica
-2,0.711,candidate,Omagua,region,high,-3.5,-71.8,señorío y tierra donde se encontraban muchas poblaciones grandes y tierra fructífera,carvajal_1542_clean
-3,0.676,candidate,Paguana,region,medium,-3.8,-71.5,"tierra y señorío de un señor llamado Paguana con mucha gente doméstica, rica en plata y ovejas del Perú",carvajal_1542_clean
-4,0.676,candidate,Provincia de las Picotas,region,medium,-5.5,-63.0,"provincia con siete picotas clavadas con muchas cabezas de muertos, duraba setenta leguas por el río abajo",carvajal_1542_cronica
-5,0.672,candidate,Pueblo del Barco,settlement,medium,-1.5,-75.5,"pueblo situado riberas del río sobre mano izquierda, en una barranca alta",carvajal_1542_clean
-6,0.668,candidate,Lima,settlement,high,-12.05,-77.04,"ciudad donde estaba el Gobernador, cercada por indios",carvajal_1542_clean
-7,0.668,candidate,ciudad de los Reyes,settlement,high,-12.05,-77.04,ciudad donde sirvió Juan de Illanes en acompañamiento del virrey,carvajal_1542_clean
-8,0.664,candidate,Perú,region,high,-9.19,-75.01,región donde el testigo conoció a Cristóbal de Segovia y donde se realizaron conquistas y descubrimientos,carvajal_1542_clean
-9,0.655,candidate,Iea,region,medium,-5.0,-62.0,"grandísimo señor la tierra adentro hacia el Sur, con muy gran riqueza de oro y plata",carvajal_1542_cronica
-10,0.655,candidate,Provincia de los Negros,region,medium,-2.5,-63.5,"provincia poblada con gente grande y trasquilada, tiznada de negro, que atacó a la expedición",carvajal_1542_cronica
-11,0.646,candidate,Aparia,settlement,high,-2.8,-61.5,"pueblo y señorío donde se construyó el bergantín, gobernado por un principal señor",carvajal_1542_clean
-12,0.644,candidate,Guayaquil,settlement,high,-2.19,-79.88,provincia conquistada y poblada con el capitán Francisco de Orellana,carvajal_1542_clean
-13,0.644,candidate,Archidona,settlement,high,-0.9,-77.8,ciudad poblada por Andrés Contero,carvajal_1542_clean
-14,0.643,candidate,Pirú,region,high,-9.19,-75.01,tierra que estaba perdida según informes,carvajal_1542_clean
-15,0.643,candidate,Perü,region,high,-9.19,-75.01,región donde abundan las llamas,carvajal_1542_clean
-16,0.642,candidate,Machifaro,settlement,medium,-2.5,-60.0,gran poblazón donde salieron indios a recibir a los españoles; provincia con guerra contra otras,carvajal_1542_clean
-17,0.642,candidate,Aparía,settlement,medium,-1.5,-75.3,poblaciones donde Orellana se detuvo antes de penetrar en el Río Maraflón,carvajal_1542_clean
-18,0.633,candidate,Río Grande,river,medium,-3.8,-64.5,"río muy grande y poderoso, mayor que el río que llevaban",carvajal_1542_cronica
-19,0.627,candidate,Marañón,river,high,-3.0,-59.0,"río descubierto, identificado como el gran río navegado desde su boca hasta la isla de Cubagua",carvajal_1542_clean
-20,0.619,candidate,Ucayalí,river,high,-8.5,-74.5,río que se reúne con el Marañón,carvajal_1542_cronica
-21,0.619,candidate,Nueva Andalucía,region,high,-2.5,-58.0,tierra a descubrir y poblar en el río de las Amazonas,carvajal_1542_clean
-22,0.617,candidate,Canela,region,medium,-1.5,-75.5,provincias descubiertas en jornada de Gonzalo Pizarro,carvajal_1542_clean
-23,0.613,candidate,Indias,region,high,-5.0,-60.0,destino general de expediciones,carvajal_1542_clean
-24,0.613,candidate,Bolivia,region,high,-16.5,-64.0,región donde abundan las llamas,carvajal_1542_clean
-25,0.612,candidate,río Marañen,river,high,-3.75,-73.25,río navegado por Orellana y Ginés Hernández en bergantín y canoas; más de mil quinientas leguas hasta la Mar del Norte,carvajal_1542_clean
-26,0.612,candidate,ciudad de Baeza,settlement,medium,-0.42,-77.13,ciudad poblada en la jornada de descubrimiento,carvajal_1542_clean
-27,0.612,candidate,Coca,settlement,medium,-0.45,-76.98,valle por donde pasa un hermoso y caudaloso río,carvajal_1542_clean
-28,0.612,candidate,Isla de los Cararies,settlement,medium,-3.5,-72.5,isla donde salió García de Arce y la armada del gobernador Pedro de Ursúa,carvajal_1542_clean
-29,0.612,candidate,Caripuna,settlement,medium,-2.2,-70.8,pueblo de indios considerados contrarios,carvajal_1542_clean
-30,0.612,candidate,Río Maraflón,river,high,-3.75,-73.25,"río donde Diego de Ordaz intentó comenzar sus descubrimientos en 1531, con calmas, corrientes y bajíos",carvajal_1542_clean
-31,0.593,candidate,Mar del Norte,region,high,2.0,-60.0,océano donde desembocó el río Marañen tras navegación de más de mil quinientas leguas,carvajal_1542_clean
-32,0.591,candidate,río del Marañón,river,high,-3.75,-73.25,"río navegado por Orellana y Ginés Hernández en busca de comida, descubrimiento de tierras",carvajal_1542_clean
-33,0.591,candidate,Río,river,high,-3.75,-73.25,"río de las Amazonas, destino de la expedición de Orellana",carvajal_1542_clean
-34,0.591,candidate,Marafión,river,high,-3.75,-73.25,río por el cual viajó Juan de Vargas con Orellana,carvajal_1542_clean
-35,0.59,candidate,Quema,settlement,medium,-1.5,-75.0,pueblo en unas cabanas ciento treinta leguas de Quito,carvajal_1542_cronica
-36,0.59,candidate,Machiparo,settlement,medium,-2.5,-73.5,lugar donde ocurrió un combate durante el viaje de descubrimiento,carvajal_1542_clean
-37,0.59,candidate,Río Negro,river,high,-2.5,-60.5,"río grande que entra por la mano siniestra con agua negra como tinta, corre con ferocidad sin revolver con la otra agua",carvajal_1542_cronica
-38,0.587,candidate,provincia de la Canela,region,medium,-1.5,-76.5,provincia rica y poblada que se buscaba conquistar y descubrir,carvajal_1542_clean
-39,0.587,candidate,Zamora,settlement,high,-4.05,-78.96,ciudad conquistada y poblada por Alonso de Mercadillo y Hernando de Benavente; ciudad de los Alcaides,carvajal_1542_clean
-40,0.587,candidate,Pelayo,region,medium,-1.2,-76.5,tierra descubierta por Gonzalo Díaz de Pineda con noticia de esmeraldas y riqueza,carvajal_1542_clean
-41,0.587,candidate,valle de la Canela,region,medium,-1.5,-76.5,valle que Gonzalo Pizarro buscaba descubrir,carvajal_1542_clean
-42,0.576,candidate,ciudad de Zamora,settlement,medium,-13.5,-70.15,ciudad donde se realizó la probanza de Ginés Hernández,carvajal_1542_clean
-43,0.568,candidate,Pasto,settlement,high,1.21,-77.28,villa mencionada en relación a cabanas y caminos,carvajal_1542_cronica
-44,0.568,candidate,Popayán,settlement,high,2.44,-76.61,villa mencionada en relación a cabanas y caminos,carvajal_1542_cronica
-45,0.566,candidate,río Marañón,river,high,-3.75,-59.5,"gran río descubierto en la expedición, identificado como el Marañón, con aproximadamente cuatrocientas cincuenta leguas desde su boca hasta la isla de Cubagua",carvajal_1542_cronica
-46,0.566,candidate,Macas,settlement,high,-2.3,-78.13,provincia conquistada y pacificada; ciudad poblada nuevamente bajo capitán Hernando de Benavente,carvajal_1542_clean
-47,0.566,candidate,Baeza,settlement,high,-0.42,-77.93,ciudad poblada en 1558 por Rodrigo Núñez de Bonilla,carvajal_1542_clean
-48,0.557,candidate,Río de las Amazonas,river,high,-3.5,-60.0,río principal navegado durante la expedición,carvajal_1542_cronica
-49,0.557,candidate,Comao,region,medium,-2.5,-70.0,"tierra con grandes sabanas y sementeras, poblada por indios",carvajal_1542_clean
-50,0.55,candidate,Quito,settlement,high,-0.22,-78.51,villa donde estaba Gonzalo Pizarro como gobernador,carvajal_1542_cronica
-51,0.539,candidate,río de la Trinidad,river,high,-2.8,-71.2,"río poderoso que entra por la mano diestra, mayor que el río principal, con tres islas en su entrada",carvajal_1542_clean
-52,0.535,candidate,Motín,region,medium,-1.0,-76.5,provincia donde estaba Gonzalo Pizarro con su real,carvajal_1542_cronica
-53,0.522,candidate,Guema,settlement,medium,-1.2,-75.8,pueblo de poca vecindad con algunas comidas,carvajal_1542_clean
-54,0.511,candidate,Omaga,region,medium,-3.8,-60.2,"gran señor que confina con Machiparo, amigos que se juntan para dar guerra á otros señores",carvajal_1542_cronica
-55,0.511,candidate,Oníguayal,region,medium,-4.5,-59.5,"señorío no menor que Machiparo, con pueblo de guarnición al principio de su tierra",carvajal_1542_cronica
-56,0.511,candidate,provincia de San Juan,region,medium,-2.5,-61.5,"provincia poblada donde entraron el día de San Juan, con más de ciento cincuenta leguas de costa",carvajal_1542_cronica
-57,0.511,candidate,Quijos,region,high,-0.5,-77.5,provincia conquistada por Gonzalo Pizarro,carvajal_1542_clean
-58,0.511,candidate,Mar del Sur,region,high,-5.0,-80.0,océano donde se pasó á embarcar después de volver á Nombre de Dios,carvajal_1542_clean
-59,0.511,candidate,valle de Jauja,region,high,-12.27,-75.48,valle donde se juntó con el Presidente Gasea,carvajal_1542_clean
-60,0.51,candidate,Timana,settlement,medium,1.95,-76.27,villa poblada por el Capitán Benalcázar después de pasar las sierras nevadas,carvajal_1542_clean
-61,0.509,candidate,Caguasqui,region,medium,-0.25,-78.35,provincia de Quito donde estaban rebelados los indios,carvajal_1542_clean
-62,0.494,low_priority,Trujillo,settlement,high,-8.13,-79.03,ciudad donde participó en conquistas,carvajal_1542_clean
-63,0.491,low_priority,Cangai,region,medium,-2.35,-77.85,provincia conquistada y pacificada,carvajal_1542_clean
-64,0.483,low_priority,Quilca,settlement,medium,0.75,-77.35,pueblo conquistado y pacificado,carvajal_1542_clean
-65,0.483,low_priority,Caguaqui,settlement,medium,0.65,-77.45,pueblo conquistado y pacificado,carvajal_1542_clean
-66,0.478,low_priority,Irimara,settlement,medium,-2.25,-72.85,pueblo donde se tomó posesión,carvajal_1542_clean
-67,0.476,low_priority,Zumaco,settlement,high,-0.65,-77.45,"pueblo donde llegó Gonzalo Pizarro, donde hoy está fundada la ciudad de Ávila",carvajal_1542_clean
-68,0.476,low_priority,Santiago de Guayaquil,settlement,high,-2.19,-79.9,ciudad donde estaban rebelados los naturales,carvajal_1542_clean
-69,0.476,low_priority,Ávila,settlement,high,-0.65,-77.45,"ciudad poblada por Andrés Contero, gobernación de Melchor Vázquez de Ávila",carvajal_1542_clean
-70,0.474,low_priority,ciudad de Cali,settlement,high,3.44,-76.53,ciudad pacificada con el capitán Miguel Muñoz,carvajal_1542_clean
-71,0.47,low_priority,Cuenca,settlement,high,-2.9,-78.99,ciudad poblada en la provincia de Tomebamba donde se descubrieron minas ricas del río Santa Barbóla,carvajal_1542_clean
-72,0.464,low_priority,Nueva Granada,region,high,4.57,-74.3,provincia donde se localizan los Alcázares,carvajal_1542_clean
-73,0.462,low_priority,ciudad de la Dávila,settlement,medium,-0.5,-77.0,ciudad poblada en la jornada de descubrimiento,carvajal_1542_clean
-74,0.462,low_priority,Arimaraeses,settlement,medium,-2.5,-74.8,pueblo de hasta 200 vecinos donde hallaron buena provisión de comida,carvajal_1542_clean
-75,0.462,low_priority,Punta de San Juan,settlement,medium,-2.5,-71.0,lugar donde Orellana buscaba rescatar oro o plata,carvajal_1542_clean
-76,0.459,low_priority,río Amazonas,river,high,-3.5,-60.0,río principal por el cual navegaban los expedicionarios,carvajal_1542_cronica
-77,0.458,low_priority,Santiago,settlement,medium,-0.35,-78.5,ciudad poblada y conquistada por Francisco de Orellana en nombre de Su Majestad,carvajal_1542_cronica
-78,0.455,low_priority,tierra de los Quijos,region,medium,-0.5,-77.5,tierra descubierta por Gonzalo Días de Pineda,carvajal_1542_clean
-79,0.452,low_priority,Loja,settlement,high,-4.0,-79.2,"ciudad poblada después de la pacificación de Copiz, Cerrán y Goancabamba",carvajal_1542_clean
-80,0.452,low_priority,Otavalo,settlement,high,0.23,-78.26,provincia cuyos caciques se habían concertado para alzarse contra los españoles,carvajal_1542_clean
-81,0.452,low_priority,San Francisco del Quito,settlement,high,-0.22,-78.51,ciudad donde se realizó la información de méritos de Pedro Domínguez Miradero,carvajal_1542_clean
-82,0.452,low_priority,San Francisco de Quito,settlement,high,-0.22,-78.51,ciudad donde se rindió información en 1571,carvajal_1542_clean
-83,0.448,low_priority,Marribuique,settlement,medium,-2.3,-70.5,islas en el río,carvajal_1542_clean
-84,0.448,low_priority,Caritán,settlement,medium,-2.35,-70.45,islas en el río,carvajal_1542_clean
-85,0.445,low_priority,río Curaray,river,medium,-1.35,-75.5,río mencionado en relación al viaje de Orellana,carvajal_1542_clean
-86,0.443,low_priority,Brasil,region,high,-10.0,-55.0,costa donde supuestamente salió Orellana; en demarcación del Rey de Portugal,carvajal_1542_clean
-87,0.441,low_priority,río Coca,river,high,-0.65,-76.98,río donde llegó el ejército de Pizarro durante la expedición,carvajal_1542_clean
-88,0.437,low_priority,Capua,region,medium,-2.0,-76.0,provincia a la que se llegó desde la tierra de la Canela,carvajal_1542_clean
-89,0.437,low_priority,Chalcoma,region,medium,-1.25,-76.45,tierra descubierta por Gonzalo Díaz de Pineda con noticia de esmeraldas y riqueza,carvajal_1542_clean
-90,0.437,low_priority,la Canela,region,medium,-1.0,-76.5,tierra descubierta por Gonzalo Días de Pineda,carvajal_1542_clean
-91,0.435,low_priority,Guaca,region,medium,5.0,-75.5,provincia descubierta y pacificada,carvajal_1542_clean
-92,0.428,low_priority,Nueva Castilla,region,medium,-9.0,-77.5,región donde se encuentra la ciudad de Santiago,carvajal_1542_clean
-93,0.428,low_priority,Yumbo,region,medium,-0.35,-78.65,provincia rebelada conquistada y pacificada por Ginés Hernández,carvajal_1542_clean
-94,0.428,low_priority,Viriayanca,region,medium,-4.55,-79.45,provincia cuyos indios habían muerto españoles mercaderes; ahora de jurisdición de Loja,carvajal_1542_clean
-95,0.421,low_priority,provincia de Guayaquil,region,high,-2.19,-79.89,provincia conquistada por Orellana,carvajal_1542_clean
-96,0.42,low_priority,Ciudad vieja,settlement,medium,-2.19,-79.89,sitio al que se trasladó Guayaquil,carvajal_1542_clean
-97,0.42,low_priority,pueblo de los lemos,settlement,medium,-2.19,-79.89,pueblo en encomienda de Rodrigo de Vargas,carvajal_1542_clean
-98,0.416,low_priority,Cuzco,settlement,high,-13.53,-71.98,"ciudad donde estaba Hernando Pizarro, cercada por indios",carvajal_1542_clean
-99,0.416,low_priority,Jauja,settlement,high,-12.07,-75.49,valle cuarenta leguas de Lima donde estaba el presidente Pedro de la Gasea,carvajal_1542_clean
-100,0.415,low_priority,Laguna del Dorado,river,medium,-1.5,-76.0,laguna legendaria asociada a tierra rica y poblada,carvajal_1542_clean
-101,0.415,low_priority,Tomebamba,region,high,-2.9,-78.99,provincia cincuenta leguas de Quito donde se desagravió á los naturales de vejaciones,carvajal_1542_clean
-102,0.414,low_priority,Zamora de los Alcaides,settlement,medium,-4.05,-78.12,lugar donde se realizó información de méritos y servicios,carvajal_1542_clean
-103,0.409,low_priority,batalla de las Salinas,route,medium,-13.67,-76.13,batalla después de la cual Pizarro envió a Orellana a conquistar Guayaquil,carvajal_1542_clean
-104,0.407,low_priority,Qumaco,region,medium,-1.8,-77.0,"provincia a sesenta leguas de Quito, gran poblazón donde se sentó el real",carvajal_1542_clean
-105,0.407,low_priority,Dorado,region,medium,-1.0,-77.0,región descubierta en expedición con Gonzalo Pizarro,carvajal_1542_clean
-106,0.406,low_priority,río de Santa Barbóla,river,medium,-0.8,-78.2,río donde se descubrieron minas ricas,carvajal_1542_clean
-107,0.399,low_priority,río Babahoyo,river,high,-1.67,-79.55,río en cuya boca se hizo primera fundación de Guayaquil,carvajal_1542_clean
-108,0.397,low_priority,reino del Perú,region,high,-12.0,-75.0,reino donde retornaron los expedicionarios,carvajal_1542_clean
-109,0.397,low_priority,valle de Jaquijaguana,region,high,-13.65,-71.85,valle donde se dio batalla al tirano Gonzalo Pizarro,carvajal_1542_clean
-110,0.397,low_priority,Esmeraldas,region,high,0.5,-78.5,provincia descubierta en expedición con Francisco de Orellana,carvajal_1542_clean
-111,0.397,low_priority,provincias de Quito,region,high,-0.22,-78.51,provincias de donde salió Orellana con Gonzalo Pizarro,carvajal_1542_clean
-112,0.397,low_priority,provincia del Pirú,region,high,-12.0,-75.0,región donde aportó el piloto mayor Francisco López,carvajal_1542_clean
-113,0.396,low_priority,villa de Timaná,settlement,medium,1.87,-76.27,villa fundada en la región de Popayán,carvajal_1542_clean
-114,0.365,low_priority,Tuna,region,medium,-2.4,-78.1,provincia rebelada conquistada y pacificada,carvajal_1542_clean
-115,0.365,low_priority,repartimiento de Yagual,region,medium,-2.19,-79.89,repartimiento en la provincia de Guayaquil,carvajal_1542_clean
-116,0.36,low_priority,Tomebaniba,settlement,medium,-0.35,-78.12,pueblo en tierra de Quito desde donde se escribió la carta,carvajal_1542_clean
-117,0.36,low_priority,Neiba,settlement,medium,1.8,-76.4,villa poblada por el Capitán Juan Cabrera y Cristóbal de Segovia,carvajal_1542_clean
-118,0.36,low_priority,Carangueques,settlement,medium,0.5,-78.0,pueblo de la provincia de Quito donde asentó real el corregidor,carvajal_1542_clean
-119,0.36,low_priority,Chimbo,settlement,medium,-1.67,-79.0,pueblo donde se guardó un paso durante la rebelión de Francisco Hernández Girón,carvajal_1542_clean
-120,0.359,low_priority,Quilcaylita,region,medium,-0.3,-78.4,provincia de Quito donde estaban rebelados los indios,carvajal_1542_clean
-121,0.343,low_priority,río de su nombre,river,medium,-2.19,-79.89,río donde Orellana hizo la población de Guayaquil,carvajal_1542_clean
-122,0.341,low_priority,Lile,region,medium,2.5,-76.5,provincias conquistadas junto con Popayán,carvajal_1542_clean
-123,0.341,low_priority,Cañares,region,medium,-2.9,-78.62,provincia donde se encuentra Tomebamba,carvajal_1542_clean
-124,0.333,low_priority,Lita,settlement,medium,0.85,-77.25,pueblo conquistado y pacificado,carvajal_1542_clean
-125,0.333,low_priority,puente de Abancay,settlement,medium,-13.64,-72.63,lugar donde Alonso de Cabrera alcanzó al Presidente Gasea,carvajal_1542_clean
-126,0.305,low_priority,Culata,region,medium,-1.0,-78.0,región en gobernación junto a Quito y Puerto Viejo,carvajal_1542_clean
-127,0.305,low_priority,Guachicuna,region,medium,1.5,-76.0,provincias donde la expedición de Benalcázar sufrió hambre,carvajal_1542_clean
-128,0.305,low_priority,Alcázares,region,medium,1.5,-76.5,región conquistada junto con Perú y Popayán,carvajal_1542_clean
-129,0.305,low_priority,Chaparra,region,medium,-4.5,-79.5,provincia cuyos indios habían muerto españoles mercaderes y robado mercancías,carvajal_1542_clean
-130,0.305,low_priority,Cuna,region,medium,-2.4,-77.9,provincia conquistada y pacificada,carvajal_1542_clean
-131,0.305,low_priority,Jaquijaguana,region,medium,-13.5,-71.95,lugar de batalla contra Gonzalo Pizarro,carvajal_1542_clean
-132,0.299,low_priority,Canaribamba,region,medium,-3.5,-79.0,provincia setenta leguas de Quito pacificada por Pero Martín Montanero; donde se descubrieron minas ricas,carvajal_1542_clean
-133,0.283,low_priority,río Santa Barbóla,river,medium,-2.95,-78.95,río donde se descubrieron minas ricas de oro en provincias de Canaribamba y Tomebamba,carvajal_1542_clean
-134,0.278,low_priority,Quisna,region,medium,-2.5,-78.0,provincia rebelada conquistada y pacificada,carvajal_1542_clean
-135,0.258,low_priority,Jaquijagoana,region,medium,-13.5,-75.8,valle donde se dio batalla en que Gonzalo Pizarro fué desbaratado,carvajal_1542_clean
+1,0.864,candidate,Lima,settlement,high,-12.0466525903,-77.0299805199,"ciudad donde estaba el Gobernador, cercada por indios",carvajal_1542_clean
+2,0.833,candidate,Amazonas,region,high,-3.0,-60.0,provincia buscada en la expedición,carvajal_1542_clean
+3,0.804,candidate,Perú,region,high,-9.19,-75.02,región donde el testigo conoció a Cristóbal de Segovia y donde se realizaron conquistas y descubrimientos,carvajal_1542_clean
+4,0.798,candidate,Archidona,settlement,high,-0.908762000166,-77.8069680003,ciudad poblada por Andrés Contero,carvajal_1542_clean
+5,0.774,candidate,Bolivia,region,high,-16.5,-64.0,república donde se extiende una rama de los tobas desde el Pilcomayo hasta los contrafuertes de los Andes,orbigny_tomo1
+6,0.747,candidate,Chiquitos,region,high,-16.7872079996,-60.6749890004,provincia en Bolivia con bosques,orbigny_tomo1
+7,0.725,candidate,Marañón,river,high,-3.0,-59.0,"río descubierto, identificado como el gran río navegado desde su boca hasta la isla de Cubagua",carvajal_1542_clean
+8,0.724,candidate,Ciudad de Lima,settlement,high,-12.0466525903,-77.0299805199,"Corte del nuevo mundo, donde se consulto el caso",acuna_1641
+9,0.724,candidate,Barra,settlement,high,-3.12,-60.02,asentamiento a diez millas de la boca del Rio Negro donde estaban los oficiales de aduanas,the_naturalist
+10,0.707,candidate,Rio Aguarico,river,high,-0.962299000399,-75.1904979996,"río también llamado río del oro, entrada al Amazonas",acuna_1641
+11,0.704,candidate,Santa Cruz de la Sierra,settlement,high,-17.78369,-63.1821039998,lugar donde se practicaba la caza del jaguar con cuchillo,orbigny_tomo1
+12,0.7,candidate,Trujillo,settlement,high,-8.11170157996,-79.0287608598,ciudad donde participó en conquistas,carvajal_1542_clean
+13,0.7,candidate,Ciudad de Archidona,settlement,high,-0.908762000166,-77.8069680003,"ciudad en el gobierno de los Quixos, jurisdicción de Quito",acuna_1641
+14,0.7,candidate,San Javier,settlement,high,-16.2741849999,-62.5044789997,puesto donde el autor permaneció doce días realizando colecciones de animales,orbigny_tomo2
+15,0.693,candidate,Amazons,region,high,-3.0,-60.0,regiao onde o autor viajou e observou serpentes e animais,the_naturalist
+16,0.674,candidate,Villa Nova,settlement,high,-1.88,-55.42,location in the Lower Amazons where lakes dry up in fine months,the_naturalist
+17,0.672,candidate,Pueblo del Barco,settlement,medium,-1.5,-75.5,"pueblo situado riberas del río sobre mano izquierda, en una barranca alta",carvajal_1542_clean
+18,0.672,candidate,San Luis de el Marañon,settlement,medium,-2.89,-59.97,ciudad donde asistia el Gobernador,acuna_1641
+19,0.672,candidate,Anéte,settlement,medium,-0.8,-75.5,"población del Capitán Juan de Palacios, muerto por los naturales",acuna_1641
+20,0.671,candidate,Orellana,river,high,-3.0,-60.0,nombre antiguo del río de las Amazonas,acuna_1641
+21,0.669,candidate,Omaguas,region,high,-4.28609000005,-73.4305490002,nombre común impropio para la Provincia de los Aguas,acuna_1641
+22,0.668,candidate,ciudad de los Reyes,settlement,high,-12.05,-77.04,ciudad donde sirvió Juan de Illanes en acompañamiento del virrey,carvajal_1542_clean
+23,0.668,candidate,Caicara,settlement,high,-3.15,-73.0,"a small village of semi-civilised Indians, about twenty miles to the west of Ega",the_naturalist
+24,0.665,candidate,Catua,settlement,high,-3.25,-64.6,"sand-bank island about six miles long, almost entirely encircled by praia; location of second turtle egg excavation 60 miles below Shimuni; eleven hours journey by paddle and current from Shimuni",the_naturalist
+25,0.647,candidate,Ucayalí,river,high,-4.51050200037,-73.5833509996,río que se reúne con el Marañón,carvajal_1542_clean
+26,0.643,candidate,Pirú,region,high,-9.19,-75.01,tierra que estaba perdida según informes,carvajal_1542_clean
+27,0.643,candidate,Perü,region,high,-9.19,-75.01,región donde abundan las llamas,carvajal_1542_clean
+28,0.643,candidate,Encabellados,region,medium,-0.407978000085,-76.6225079998,"provincia poblada de naturales, donde se dejó parte del ejercito",acuna_1641
+29,0.643,candidate,Peru,region,high,-9.19,-75.01,region marking the extent of Jupura distribution,the_naturalist
+30,0.642,candidate,Machifaro,settlement,medium,-2.5,-60.0,gran poblazón donde salieron indios a recibir a los españoles; provincia con guerra contra otras,carvajal_1542_clean
+31,0.642,candidate,Aparía,settlement,medium,-1.5,-75.3,poblaciones donde Orellana se detuvo antes de penetrar en el Río Maraflón,carvajal_1542_clean
+32,0.642,candidate,rio de las Amazonas,river,high,-3.75,-60.0,gran río explorado por la expedición de Pedro Texeira y documentado por Acuña; navegado por más de mil y trescientas leguas,acuna_1641
+33,0.632,candidate,Río Negro,river,high,-2.5,-60.5,"río grande que entra por la mano siniestra con agua negra como tinta, que corría con ferocidad sin revolver con la otra agua",carvajal_1542_clean
+34,0.627,candidate,Quito,settlement,high,-0.2201689997,-78.5120910004,ciudad donde Acuña fue profesor de Teología moral y rector del colegio; punto de embarque para la expedición del Amazonas,acuna_1641
+35,0.626,candidate,Ciudad del Para,settlement,high,-1.45,-48.5,puerto donde llegó la expedición después de diez meses de viaje,acuna_1641
+36,0.621,candidate,Rio Canuris,river,high,-2.5,-60.0,nombre local del río de las Amazonas,acuna_1641
+37,0.621,candidate,Rio Negro,river,high,-2.5,-60.67,rio donde se encontro la boca y donde el Uakari escapo del barco,the_naturalist
+38,0.619,candidate,Nueva Andalucía,region,high,-2.5,-58.0,tierra a descubrir y poblar en el río de las Amazonas,carvajal_1542_clean
+39,0.619,candidate,Marañon,region,high,-4.0,-60.0,región donde se encuentra el río Amazonas; gobierno administrativo,acuna_1641
+40,0.618,candidate,Machiparo,settlement,medium,-3.5,-60.5,pueblo mencionado como punto de referencia anterior en la expedición,carvajal_1542_clean
+41,0.617,candidate,Moxos,region,high,-14.3377089998,-64.903049,vasta provincia en el centro de América donde se encuentran inmensos rebaños salvajes,orbigny_tomo1
+42,0.613,candidate,Indias,region,high,-5.0,-60.0,destino general de expediciones,carvajal_1542_clean
+43,0.613,candidate,República de Bolivia,region,high,-17.0,-65.0,región donde se encontraron ejemplos de albinismo en naciones indígenas,orbigny_tomo2
+44,0.612,candidate,río Marañón,river,high,-3.5,-72.5,"río descubierto y conquistado por el Adelantado Orellana, también llamado río del Adelantado Orellana",carvajal_1542_clean
+45,0.612,candidate,río Marañen,river,high,-3.75,-73.25,río navegado por Orellana y Ginés Hernández en bergantín y canoas; más de mil quinientas leguas hasta la Mar del Norte,carvajal_1542_clean
+46,0.612,candidate,Coca,settlement,medium,-0.45,-76.98,valle por donde pasa un hermoso y caudaloso río,carvajal_1542_clean
+47,0.612,candidate,Isla de los Cararies,settlement,medium,-3.5,-72.5,isla donde salió García de Arce y la armada del gobernador Pedro de Ursúa,carvajal_1542_clean
+48,0.612,candidate,Caripuna,settlement,medium,-2.2,-70.8,pueblo de indios considerados contrarios,carvajal_1542_clean
+49,0.612,candidate,Río Maraflón,river,high,-3.75,-73.25,"río donde Diego de Ordaz intentó comenzar sus descubrimientos en 1531, con calmas, corrientes y bajíos",carvajal_1542_clean
+50,0.612,candidate,Ciudad de los Cofanes,settlement,medium,0.65,-76.8,ciudad en el gobierno de los Quixos,acuna_1641
+51,0.612,candidate,Baria,settlement,medium,-3.18,-64.85,"ilha com floresta e praias, visitada durante excursões",the_naturalist
+52,0.612,candidate,St. Paulo,settlement,medium,-3.75,-73.25,lugar donde se obtuvieron especimenes del Hapale pygmaeus,the_naturalist
+53,0.612,candidate,Caripi,settlement,medium,-0.5,-62.0,settlement where the author encountered a vampire bat in his chamber,the_naturalist
+54,0.609,candidate,Conmuta,settlement,medium,-2.5,-49.5,"aldea que en tiempos pasados fue de grande fama, donde se aprestauan las armadas, ubicada cuarenta leguas del Pacaxá",acuna_1641
+55,0.605,candidate,río Babahoyo,river,high,-1.79893999958,-79.53227,río en cuya boca se hizo primera fundación de Guayaquil,carvajal_1542_clean
+56,0.604,candidate,Brasil,region,high,-10.0,-55.0,"región donde vivían los botocudos, pueblo indígena con características físicas distintas a los patagones",orbigny_tomo2
+57,0.602,candidate,ciudad de Cali,settlement,high,3.73694901039,-76.4479567196,ciudad pacificada con el capitán Miguel Muñoz,carvajal_1542_clean
+58,0.602,candidate,Andes de Bolivia,mountain,high,-16.5,-65.5,cordillera donde se encontraban aves similares a las de la Patagonia,orbigny_tomo2
+59,0.595,candidate,Rio Curaray,river,medium,-1.5,-75.5,río que baja de las sierras de Macas,acuna_1641
+60,0.593,candidate,Mar del Norte,region,high,2.0,-60.0,océano donde desembocó el río Marañen tras navegación de más de mil quinientas leguas,carvajal_1542_clean
+61,0.593,candidate,Provincia de los Tupinambás,region,medium,-3.0,-59.0,última provincia donde se obtuvieron noticias sobre las Amazonas,acuna_1641
+62,0.592,candidate,Jacare,settlement,medium,-3.2,-64.88,banco de areia no ponto noroeste de Baria onde pararam para jantar,the_naturalist
+63,0.592,candidate,Tunantins,settlement,medium,-3.67,-67.87,asentamiento en el Solimoens donde se encontro el Parauacu,the_naturalist
+64,0.591,candidate,río del Marañón,river,high,-3.75,-73.25,"río navegado por Orellana y Ginés Hernández en busca de comida, descubrimiento de tierras",carvajal_1542_clean
+65,0.591,candidate,Río,river,high,-3.75,-73.25,"río de las Amazonas, destino de la expedición de Orellana",carvajal_1542_clean
+66,0.591,candidate,Marafión,river,high,-3.75,-73.25,río por el cual viajó Juan de Vargas con Orellana,carvajal_1542_clean
+67,0.591,candidate,Putumayo,river,high,0.5,-72.5,río al que se llega desde Pasto atravesando la Cordillera,acuna_1641
+68,0.591,candidate,río Putumayo,river,high,0.5,-72.5,río con naciones en él y en Yetaú,acuna_1641
+69,0.591,candidate,Yacuma,river,medium,-13.7449520004,-65.4270600001,río en la provincia de Moxos cuyo curso y afluentes fueron recorridos,orbigny_tomo1
+70,0.591,candidate,Teffe,river,high,-3.38,-64.72,rio cujo rio é alcançado por canal transversal,the_naturalist
+71,0.591,candidate,Madeira,river,high,-8.76,-63.9,river from which turtle oil is exported annually to Para,the_naturalist
+72,0.588,candidate,Cobija,settlement,high,-17.65,-68.75,puerto en la costa de Bolivia,orbigny_tomo2
+73,0.588,candidate,Nazareth,settlement,medium,-1.45,-48.48,bairro de Para onde o autor residiu,the_naturalist
+74,0.588,candidate,Curubarii,settlement,medium,-3.25,-64.35,location fifteen miles from Cayambe where the party encamped on the sands,the_naturalist
+75,0.587,candidate,provincia de la Canela,region,medium,-1.5,-76.5,provincia rica y poblada que se buscaba conquistar y descubrir,carvajal_1542_clean
+76,0.587,candidate,Canela,region,medium,-1.25,-76.5,provincias descubiertas por Gonzalo Pizarro,carvajal_1542_clean
+77,0.587,candidate,Pelayo,region,medium,-1.2,-76.5,tierra descubierta por Gonzalo Díaz de Pineda con noticia de esmeraldas y riqueza,carvajal_1542_clean
+78,0.587,candidate,valle de la Canela,region,medium,-1.5,-76.5,valle que Gonzalo Pizarro buscaba descubrir,carvajal_1542_clean
+79,0.582,candidate,cerro Iaquaracuru,mountain,medium,-3.6,-59.2,cerro mediano cuyas faldas baña un riacho con oro,acuna_1641
+80,0.578,candidate,Provincia de las Picotas,region,medium,-5.5,-63.0,"provincia con siete picotas clavadas con muchas cabezas de muertos, que duraba setenta leguas por el río abajo",carvajal_1542_clean
+81,0.577,candidate,río de la Madera,river,high,-8.76,-63.9,río con sus naciones,acuna_1641
+82,0.576,candidate,ciudad de Zamora,settlement,medium,-13.5,-70.15,ciudad donde se realizó la probanza de Ginés Hernández,carvajal_1542_clean
+83,0.574,candidate,Para,settlement,high,-1.46,-48.5,ciudad donde llegó la expedición en Diciembre de 1639; punto final de la navegación del Amazonas,acuna_1641
+84,0.571,candidate,Orinoco,river,high,2.5,-62.0,río donde se encuentran los cofrades del Botuto,orbigny_tomo2
+85,0.568,candidate,Cuenca,settlement,high,-2.9,-78.99,ciudad poblada en la provincia de Tomebamba donde se descubrieron minas ricas del río Santa Barbóla,carvajal_1542_clean
+86,0.568,candidate,Cochabamba,settlement,high,-17.41,-66.17,ciudad de Bolivia mencionada en relación a los contrafuertes de la cordillera de los Andes,orbigny_tomo1
+87,0.566,candidate,Macas,settlement,high,-2.3,-78.13,provincia conquistada y pacificada; ciudad poblada nuevamente bajo capitán Hernando de Benavente,carvajal_1542_clean
+88,0.565,candidate,Rio Tumguragua,river,medium,-2.5,-73.8,río famoso que baja por los Maynas con nombre de Marañón,acuna_1641
+89,0.563,candidate,Capitanía de Benito Maziel Pariente,region,medium,-3.8,-58.5,tierras del Gobernador del Marañón,acuna_1641
+90,0.557,candidate,Río de las Amazonas,river,high,-3.5,-60.0,río principal navegado durante la expedición,carvajal_1542_clean
+91,0.557,candidate,Iea,region,medium,-5.0,-62.0,"grandísimo señor la tierra adentro hacia el Sur, con muy gran riqueza de oro y plata",carvajal_1542_clean
+92,0.557,candidate,Provincia de los Negros,region,medium,-2.5,-63.5,"provincia poblada por gentes grandes y trasquiladas, tiznadas de negro",carvajal_1542_clean
+93,0.557,candidate,Comao,region,medium,-2.5,-70.0,"tierra con grandes sabanas y sementeras, poblada por indios",carvajal_1542_clean
+94,0.557,candidate,Provincia de los Encabellados,region,medium,0.5,-72.0,provincia en el norte del río Amazonas,acuna_1641
+95,0.557,candidate,Tupinambás,region,medium,-6.0,-62.0,nación con isla grande en el Amazonas,acuna_1641
+96,0.557,candidate,río Paranaíba,river,high,-10.5,-50.5,río con poblaciones,acuna_1641
+97,0.557,candidate,República del Alto Perú,region,medium,-17.0,-65.0,región donde se entierra sal cerca de parajes para atraer ganado,orbigny_tomo1
+98,0.556,candidate,Puerto de Ñapo,settlement,high,-1.04249599979,-77.7940030004,"puerto importante en el río Ñapo, referencia de distancias",acuna_1641
+99,0.55,candidate,San Francisco del Quito,settlement,high,-0.22,-78.51,ciudad donde se realizó la información de méritos de Pedro Domínguez Miradero,carvajal_1542_clean
+100,0.55,candidate,Ávila,settlement,high,-0.632340999937,-77.4244420002,"ciudad poblada por Andrés Contero, gobernación de Melchor Vázquez de Ávila",carvajal_1542_clean
+101,0.548,candidate,Aparia,settlement,high,-2.8,-61.5,"pueblo y señorío donde se construyó el bergantín, gobernado por un principal señor",carvajal_1542_clean
+102,0.546,candidate,Picuro,other,medium,-3.65,-59.25,sitio donde se ha sacado plata,acuna_1641
+103,0.543,candidate,Lucumbios,region,medium,0.3,-75.5,región cercana al río Aguarico,acuna_1641
+104,0.541,candidate,rio Ginipape,river,medium,-3.8,-58.5,río que corre por la vanda del Norte y desemboca en el Amazonas,acuna_1641
+105,0.537,candidate,Zaparará,region,medium,-1.5,-46.0,región ubicada a la banda del Sur de la desembocadura del Amazonas,acuna_1641
+106,0.535,candidate,Rio de los Encabellados,river,medium,0.3,-72.0,río en la provincia de los Encabellados,acuna_1641
+107,0.535,candidate,rio Vrixamina,river,medium,-2.0,-58.5,río mediano que desemboca en el Amazonas donde se estrecha,acuna_1641
+108,0.533,candidate,Provincia de Macas,region,medium,-2.3,-78.1,provincia de donde baja el río Curaray,acuna_1641
+109,0.532,candidate,Guayaquil,settlement,high,-2.11515932964,-79.8353971004,provincia conquistada y poblada con el capitán Francisco de Orellana,carvajal_1542_clean
+110,0.526,candidate,Pasto,settlement,high,1.21462899963,-77.2782519999,villa mencionada en relación a caminos,carvajal_1542_clean
+111,0.526,candidate,Ciudad de Pasto,settlement,high,1.21462899963,-77.2782519999,"ciudad jurisdicción del Gobierno de Popayán, segunda puerta al río Amazonas",acuna_1641
+112,0.526,candidate,Pueblo de Ambato,settlement,high,-1.0434929999,-78.5902480001,pueblo a dieciocho leguas de Quito,acuna_1641
+113,0.523,candidate,Maynas,region,medium,-4.66854400041,-77.2063469998,región donde corre el río Tunguragua,acuna_1641
+114,0.521,candidate,Yetaú,river,medium,0.3,-71.5,río con naciones,acuna_1641
+115,0.518,candidate,Carmen,settlement,high,-14.65,-65.1,fuerte y villorrio donde se organizó la defensa contra invasión indígena,orbigny_tomo2
+116,0.517,candidate,Zamora,settlement,high,-4.06742200023,-78.957421,ciudad conquistada y poblada por Alonso de Mercadillo y Hernando de Benavente; ciudad de los Alcaides,carvajal_1542_clean
+117,0.515,candidate,Ega,settlement,high,-3.12,-64.7,village where placards were posted announcing turtle egg excavations; home of Senhor Macedo and Bento the carpenter,the_naturalist
+118,0.511,candidate,Quijos,region,high,-0.5,-77.5,provincia conquistada por Gonzalo Pizarro,carvajal_1542_clean
+119,0.511,candidate,Mar del Sur,region,high,-5.0,-80.0,océano donde se pasó á embarcar después de volver á Nombre de Dios,carvajal_1542_clean
+120,0.511,candidate,Caguasqui,region,medium,0.513260999995,-78.2124850003,provincia de Quito donde estaban rebelados los indios,carvajal_1542_clean
+121,0.511,candidate,valle de Jauja,region,high,-12.27,-75.48,valle donde se juntó con el Presidente Gasea,carvajal_1542_clean
+122,0.511,candidate,Juteca,river,medium,-3.18,-64.45,"small river entering the Solimoens by a narrow channel, expanding into a lake with native rice",the_naturalist
+123,0.508,candidate,Popayán,settlement,high,2.44185199987,-76.6060619996,villa mencionada en relación a caminos,carvajal_1542_clean
+124,0.508,candidate,Cuzco,settlement,high,-13.5167180001,-71.9788799999,"ciudad donde estaba Hernando Pizarro, cercada por indios",carvajal_1542_clean
+125,0.508,candidate,Loja,settlement,high,-3.98652576985,-79.3605050704,"ciudad poblada después de la pacificación de Copiz, Cerrán y Goancabamba",carvajal_1542_clean
+126,0.508,candidate,Otavalo,settlement,high,0.228435999822,-78.2629629997,provincia cuyos caciques se habían concertado para alzarse contra los españoles,carvajal_1542_clean
+127,0.508,candidate,Jauja,settlement,high,-11.7759480003,-75.5002069998,valle cuarenta leguas de Lima donde estaba el presidente Pedro de la Gasea,carvajal_1542_clean
+128,0.508,candidate,Ciudad de Quito,settlement,high,-0.2201689997,-78.5120910004,ciudad referencia de distancias,acuna_1641
+129,0.506,candidate,Obydos,settlement,high,-1.95,-55.5,location in the Lower Amazons where lakes dry up in fine months,the_naturalist
+130,0.501,candidate,río Ginipape,river,medium,-10.0,-52.0,río con provincias,acuna_1641
+131,0.494,low_priority,Ciudad de Avila,settlement,medium,-0.632340999937,-77.4244420002,ciudad en el gobierno de los Quixos,acuna_1641
+132,0.493,low_priority,rio Pacaxá,river,medium,-1.8,-50.2,"río de donde tomaron nombre los Pacaxás, sale ochenta leguas del Paranaíba",acuna_1641
+133,0.493,low_priority,Lower Amazons,region,high,-2.5,-59.0,região inferior do Amazonas onde a qualidade do Pupunha é inferior,the_naturalist
+134,0.492,low_priority,Quema,settlement,medium,-1.5,-75.0,pueblo en unas cabanas ciento treinta leguas de Quito,carvajal_1542_clean
+135,0.492,low_priority,Juntas de los Ríos,settlement,medium,-0.95,-76.15,paraje donde desemboca el río Payamino entre Ñapo y Coca,acuna_1641
+136,0.492,low_priority,Cumpa,settlement,medium,-4.2,-58.0,gobernación treinta leguas más abajo del fuerte del Destierro,acuna_1641
+137,0.491,low_priority,Cangai,region,medium,-2.35,-77.85,provincia conquistada y pacificada,carvajal_1542_clean
+138,0.488,low_priority,Chuquisaca,settlement,high,-19.0478619999,-65.2596020002,ciudad donde se cuentan muchos notarios y abogados,orbigny_tomo2
+139,0.483,low_priority,Caguaqui,settlement,medium,0.65,-77.45,pueblo conquistado y pacificado,carvajal_1542_clean
+140,0.483,low_priority,Santiago de las Montañas,settlement,medium,-3.0,-71.5,lugar donde los Padres de la Compañía cultivan con su doctrina los principales raudales de la conquista,acuna_1641
+141,0.48,low_priority,Aldea de Curupatuba,settlement,medium,-3.5,-59.0,primera población de paz de los Portugueses,acuna_1641
+142,0.479,low_priority,rio Ñapo,river,high,-1.04249599979,-77.7940030004,río cuyo curso fue reconocido por Acuña en otra ocasión,acuna_1641
+143,0.478,low_priority,Irimara,settlement,medium,-2.25,-72.85,pueblo donde se tomó posesión,carvajal_1542_clean
+144,0.476,low_priority,Zumaco,settlement,high,-0.65,-77.45,"pueblo donde llegó Gonzalo Pizarro, donde hoy está fundada la ciudad de Ávila",carvajal_1542_clean
+145,0.476,low_priority,Lita,settlement,medium,0.784639999736,-78.6581609996,pueblo conquistado y pacificado,carvajal_1542_clean
+146,0.476,low_priority,Santiago de Guayaquil,settlement,high,-2.19,-79.9,ciudad donde estaban rebelados los naturales,carvajal_1542_clean
+147,0.476,low_priority,Gran Para,settlement,high,-1.46,-48.5,región en la desembocadura del Amazonas,acuna_1641
+148,0.474,low_priority,Fonte Boa,settlement,high,-2.51,-66.02,western limit of the Curl-crested Toucan's range on the south side of the river,the_naturalist
+149,0.473,low_priority,Cordillera de Bolivia,mountain,high,-17.5,-66.5,cordillera de donde se traen cueros de chinchilla,orbigny_tomo2
+150,0.472,low_priority,Baeza,settlement,high,-0.463397999918,-77.889474,ciudad poblada en 1558 por Rodrigo Núñez de Bonilla,carvajal_1542_clean
+151,0.472,low_priority,La Paz,settlement,high,-16.4962550002,-68.1341060004,ciudad en Bolivia donde se encontraban aves similares a las de la Patagonia,orbigny_tomo2
+152,0.471,low_priority,Rio Caquéta,river,high,-1.2,-72.5,"gran río que es dueño y señor de las vertientes de Santa Fe de Bogotá, Timaná y el Caguán",acuna_1641
+153,0.471,low_priority,Rio de la Coca,river,high,-0.8,-76.5,"río que se incorpora con el Ñapo, entrada al Amazonas",acuna_1641
+154,0.465,low_priority,río Ñapo,river,high,-1.04249599979,-77.7940030004,río tributario del Amazonas,acuna_1641
+155,0.464,low_priority,Nueva Granada,region,high,4.57,-74.3,provincia donde se localizan los Alcázares,carvajal_1542_clean
+156,0.464,low_priority,Colombia,region,high,4.57,-74.3,región donde se encuentra la doctrina de enfermedades por calentamiento o enfriamiento,orbigny_tomo1
+157,0.464,low_priority,Upper Amazons,region,high,-3.5,-65.0,region from which turtle oil is exported annually to Para; location of turtle egg excavations and settlements,the_naturalist
+158,0.463,low_priority,Provincia de los Aguas,region,high,-3.5,-70.0,la mejor y más dilatada provincia en el río Amazonas,acuna_1641
+159,0.463,low_priority,Provincia de los Tapajosos,region,high,-4.5,-55.5,nación y provincia que sustenta el río Tapajosos,acuna_1641
+160,0.462,low_priority,Guema,settlement,medium,-2.5,-75.5,pueblo de poca vecindad con algunas comidas,carvajal_1542_clean
+161,0.462,low_priority,ciudad de la Dávila,settlement,medium,-0.5,-77.0,ciudad poblada en la jornada de descubrimiento,carvajal_1542_clean
+162,0.462,low_priority,Arimaraeses,settlement,medium,-2.5,-74.8,pueblo de hasta 200 vecinos donde hallaron buena provisión de comida,carvajal_1542_clean
+163,0.462,low_priority,Punta de San Juan,settlement,medium,-2.5,-71.0,lugar donde Orellana buscaba rescatar oro o plata,carvajal_1542_clean
+164,0.462,low_priority,Tumburagua,settlement,medium,-3.5,-71.5,lugar en la boca del río Marañón,acuna_1641
+165,0.462,low_priority,fuerte del Destierro,settlement,medium,-4.5,-55.0,fuerte donde se juntaba gente para la guerra contra los Tapajosos,acuna_1641
+166,0.462,low_priority,Tabatinga,settlement,medium,-4.25,-69.95,asentamiento cerca de los Tucuna Indians donde se encontro una especie de marmoset,the_naturalist
+167,0.459,low_priority,rio Amazonas,river,high,-3.5,-59.0,gran rio descubierto y navegado desde su fin hasta sus primeros principios,acuna_1641
+168,0.459,low_priority,Alto Perú,region,high,-17.0,-66.0,región donde el autor observó ritos similares a los de Corrientes,orbigny_tomo1
+169,0.459,low_priority,Yungas,region,high,-16.3,-67.5,provincia de Bolivia con ríos de aguas blancas provenientes de fusión de nieve,orbigny_tomo1
+170,0.455,low_priority,tierra de los Quijos,region,medium,-0.5,-77.5,tierra descubierta por Gonzalo Días de Pineda,carvajal_1542_clean
+171,0.455,low_priority,Quixos,region,medium,-0.5,-77.5,provincia y jurisdiccion de Quito,acuna_1641
+172,0.455,low_priority,Gobierno de los Quixos,region,medium,-0.5,-77.5,región de donde vinieron algunos Aguas al río,acuna_1641
+173,0.452,low_priority,Timana,settlement,medium,1.97422900017,-75.9324560004,villa poblada por el Capitán Benalcázar después de pasar las sierras nevadas,carvajal_1542_clean
+174,0.452,low_priority,San Francisco de Quito,settlement,high,-0.22,-78.51,ciudad donde se rindió información en 1571,carvajal_1542_clean
+175,0.452,low_priority,villa de Timaná,settlement,medium,1.97422900017,-75.9324560004,villa fundada en la región de Popayán,carvajal_1542_clean
+176,0.452,low_priority,San Francisco de el Quito,settlement,high,-0.22,-78.51,"ciudad famosa de America, edificada sobre montes en la Cordillera, cabeza de provincia",acuna_1641
+177,0.452,low_priority,Real Audiencia de Quito,settlement,high,-0.22,-78.51,audiencia real donde se recibio noticia del descubrimiento,acuna_1641
+178,0.452,low_priority,Potosí,settlement,high,-19.5892809997,-65.7535109998,ciudad en Bolivia donde una compañía inglesa explotaba minas,orbigny_tomo1
+179,0.448,low_priority,Marribuique,settlement,medium,-2.3,-70.5,islas en el río,carvajal_1542_clean
+180,0.448,low_priority,Caritán,settlement,medium,-2.35,-70.45,islas en el río,carvajal_1542_clean
+181,0.448,low_priority,Andes,mountain,high,-16.5,-68.15,cordillera al pie de la cual se encuentran pueblos cazadores de los bosques,orbigny_tomo1
+182,0.445,low_priority,río Curaray,river,medium,-1.35,-75.5,río mencionado en relación al viaje de Orellana,carvajal_1542_clean
+183,0.445,low_priority,América,region,high,-15.0,-60.0,continente destino de la expedición del autor,orbigny_tomo1
+184,0.444,low_priority,Puerto de Páyamino,settlement,medium,-0.4,-77.3,"primera habitacion de Castellanos sujeta a la Provincia de los Quixos, jurisdiccion de Quito",acuna_1641
+185,0.444,low_priority,Cordilleras de Guanuco,mountain,medium,-12.07,-75.5,cordilleras de donde nace una laguna que alimenta el río Marañón,acuna_1641
+186,0.444,low_priority,Páramo de Antezana,mountain,medium,-0.5,-78.5,"páramo donde nace el río Ñapo, a dieciocho leguas de Quito",acuna_1641
+187,0.444,low_priority,Cordilleras de Guanuco de los Caballeros,mountain,medium,-12.07,-75.13,cordillera mencionada como origen del río,acuna_1641
+188,0.443,low_priority,Omagua,region,high,-3.5,-67.0,señorío y tierra donde se encontraban muchas poblaciones grandes y tierra fructífera,carvajal_1542_clean
+189,0.443,low_priority,Guayana,region,high,4.5,-59.0,región donde se apoderaron los holandeses,acuna_1641
+190,0.442,low_priority,Japura,river,high,-2.5,-65.5,"river near whose principal mouth the scarlet-faced monkeys (Uakari) were obtained, about thirty miles from Ega",the_naturalist
+191,0.442,low_priority,Quanaru,settlement,medium,-3.22,-64.92,ilha entre a qual e Baria corre um canal transversal,the_naturalist
+192,0.441,low_priority,río de la Trinidad,river,high,-2.8,-71.2,"río poderoso que entra por la mano diestra, mayor que el río principal, con tres islas en su entrada",carvajal_1542_clean
+193,0.441,low_priority,río Coca,river,high,-0.65,-76.98,río donde llegó el ejército de Pizarro durante la expedición,carvajal_1542_clean
+194,0.441,low_priority,Rio Payamino,river,medium,-0.488979846842,-77.2921735996,río por donde salió la Armada Portuguesa,acuna_1641
+195,0.441,low_priority,Rio Marañon,river,high,-3.5,-71.5,uno de los más caudalosos ríos que tributan al Amazonas,acuna_1641
+196,0.441,low_priority,Rio de los Tapajosos,river,high,-4.5,-55.5,río grande y vistoso que desemboca en el Amazonas,acuna_1641
+197,0.441,low_priority,rio de los Tocantines,river,high,-3.5,-49.0,"río que desemboca a las espaldas del Conmuta, conocido por su riqueza",acuna_1641
+198,0.441,low_priority,rio Tocantins,river,high,-3.5,-49.5,"rio com curso de 1,600 milhas, terceiro em importancia no sistema do Amazonas",the_naturalist
+199,0.44,low_priority,Zamora de los Alcaides,settlement,medium,-4.06742200023,-78.957421,lugar donde se realizó información de méritos y servicios,carvajal_1542_clean
+200,0.439,low_priority,Esmeraldas,region,high,0.963510999833,-79.6535400004,provincia descubierta en expedición con Francisco de Orellana,carvajal_1542_clean
+201,0.438,low_priority,Shimuni,settlement,medium,-3.1,-64.75,"localidade visitada para coleta de insetos, com sentinelas estacionadas",the_naturalist
+202,0.437,low_priority,Motín,region,medium,-1.0,-76.5,provincia donde estaba Gonzalo Pizarro con su real,carvajal_1542_clean
+203,0.437,low_priority,Capua,region,medium,-2.0,-76.0,provincia a la que se llegó desde la tierra de la Canela,carvajal_1542_clean
+204,0.437,low_priority,Chalcoma,region,medium,-1.25,-76.45,tierra descubierta por Gonzalo Díaz de Pineda con noticia de esmeraldas y riqueza,carvajal_1542_clean
+205,0.437,low_priority,la Canela,region,medium,-1.0,-76.5,tierra descubierta por Gonzalo Días de Pineda,carvajal_1542_clean
+206,0.437,low_priority,Prouincia de los Encabellados,region,medium,-1.5,-76.0,provincia numerosa en gente donde llegaron los Religiosos de San Francisco,acuna_1641
+207,0.432,low_priority,Santa Fe de Bogotá,settlement,high,4.71,-74.08,ciudad de donde vienen vertientes que alimentan el río Caquéta,acuna_1641
+208,0.428,low_priority,Nueva Castilla,region,medium,-9.0,-77.5,región donde se encuentra la ciudad de Santiago,carvajal_1542_clean
+209,0.428,low_priority,Viriayanca,region,medium,-4.55,-79.45,provincia cuyos indios habían muerto españoles mercaderes; ahora de jurisdición de Loja,carvajal_1542_clean
+210,0.428,low_priority,Curapatuba,settlement,medium,-9.5,-54.0,población en el Amazonas,acuna_1641
+211,0.423,low_priority,Aguas,region,medium,-2.0,-72.5,provincia de indios Aguas,acuna_1641
+212,0.421,low_priority,provincia de Guayaquil,region,high,-2.19,-79.89,provincia conquistada por Orellana,carvajal_1542_clean
+213,0.421,low_priority,Isla del Sol,settlement,medium,-0.8,-47.5,"isla ubicada catorce leguas más al mar del Para, con más de diez leguas de circuito, buenas aguas y mucho pescado",acuna_1641
+214,0.42,low_priority,Ciudad vieja,settlement,medium,-2.19,-79.89,sitio al que se trasladó Guayaquil,carvajal_1542_clean
+215,0.42,low_priority,pueblo de los lemos,settlement,medium,-2.19,-79.89,pueblo en encomienda de Rodrigo de Vargas,carvajal_1542_clean
+216,0.42,low_priority,Marajo,settlement,medium,-0.5,-51.5,ilha onde foi capturado um Hapale Jacchus,the_naturalist
+217,0.42,low_priority,Bahia de Goajara,river,high,-1.3,-48.7,"canal largo entre terra firme e ilhas, com quatro milhas de largura, onde desembocam tres rios grandes",the_naturalist
+218,0.419,low_priority,río Tunguragua,river,medium,-1.22,-78.44,río que corre por los Maynas,acuna_1641
+219,0.417,low_priority,Solimoens,river,high,-3.15,-64.5,major river with immense width and strong current; right bank was destination,the_naturalist
+220,0.416,low_priority,ciudad de Baeza,settlement,medium,-0.463397999918,-77.889474,ciudad poblada en la jornada de descubrimiento,carvajal_1542_clean
+221,0.416,low_priority,Chimbo,settlement,medium,-1.68495699977,-79.0251299999,pueblo donde se guardó un paso durante la rebelión de Francisco Hernández Girón,carvajal_1542_clean
+222,0.415,low_priority,Laguna del Dorado,river,medium,-1.5,-76.0,laguna legendaria asociada a tierra rica y poblada,carvajal_1542_clean
+223,0.415,low_priority,Tomebamba,region,high,-2.9,-78.99,provincia cincuenta leguas de Quito donde se desagravió á los naturales de vejaciones,carvajal_1542_clean
+224,0.414,low_priority,Santiago,settlement,medium,-16.27,-68.97,ciudad poblada y conquistada por Francisco de Orellana en nombre de Su Majestad,carvajal_1542_clean
+225,0.413,low_priority,Omaga,region,medium,-3.8,-60.2,"gran señor que confina con Machiparo, amigos que se juntan para dar guerra á otros señores",carvajal_1542_clean
+226,0.413,low_priority,Oníguayal,region,medium,-4.5,-59.5,"señorío no menor que Machiparo, al cual llegaron después de salir de Machiparo",carvajal_1542_clean
+227,0.413,low_priority,provincia de San Juan,region,medium,-2.5,-61.5,provincia poblada de más de ciento cincuenta leguas de costa donde se encontraron las amazonas,carvajal_1542_clean
+228,0.409,low_priority,batalla de las Salinas,route,medium,-13.67,-76.13,batalla después de la cual Pizarro envió a Orellana a conquistar Guayaquil,carvajal_1542_clean
+229,0.408,low_priority,Paguana,region,medium,-4.2,-66.5,"tierra y señorío de un señor llamado Paguana con mucha gente doméstica, rica en plata y ovejas del Perú",carvajal_1542_clean
+230,0.408,low_priority,Alcázares,region,medium,5.0,-73.5,tierra de los Alcázares en la provincia de Nueva Granada,carvajal_1542_clean
+231,0.407,low_priority,Qumaco,region,medium,-1.8,-77.0,"provincia a sesenta leguas de Quito, gran poblazón donde se sentó el real",carvajal_1542_clean
+232,0.407,low_priority,Dorado,region,medium,-1.0,-77.0,región descubierta en expedición con Gonzalo Pizarro,carvajal_1542_clean
+233,0.407,low_priority,Cofanes,region,medium,0.5,-76.5,provincia donde los Padres de la Compañia de Jesus comenzaron el descubrimiento,acuna_1641
+234,0.407,low_priority,Provincia de Micóa,region,medium,1.5,-72.0,"provincia que pertenece al Gobernador de Popayán, primera entrada al río Amazonas",acuna_1641
+235,0.407,low_priority,Provincia del Algodonal,region,medium,1.0,-71.5,provincia donde entró el Capitán Fernán Pérez de Quesada,acuna_1641
+236,0.407,low_priority,Provincia de los Maynas,region,medium,-3.0,-71.5,provincia donde está Santiago de las Montañas,acuna_1641
+237,0.407,low_priority,río de Tapajosos,river,high,-8.77,-55.75,río y nación,acuna_1641
+238,0.407,low_priority,río de los Tocantines,river,high,-10.2,-48.3,río tributario del Amazonas,acuna_1641
+239,0.407,low_priority,Jupura,river,high,-2.8,-65.5,grande afluente do Solimoens,the_naturalist
+240,0.406,low_priority,río de Santa Barbóla,river,medium,-0.8,-78.2,río donde se descubrieron minas ricas,carvajal_1542_clean
+241,0.403,low_priority,rio Curupahuba,river,medium,-3.5,-59.0,"río que desemboca en el Amazonas, llamado Iriquiriqui por los naturales",acuna_1641
+242,0.403,low_priority,Iriquiriqui,river,medium,-3.5,-59.0,nombre local del río Curupahuba,acuna_1641
+243,0.402,low_priority,Paraguaxo,mountain,medium,-3.7,-59.3,sierra que resplandece cuando le da el sol y reviente con estruendos,acuna_1641
+244,0.401,low_priority,Yumbo,region,medium,3.58202999968,-76.4927300001,provincia rebelada conquistada y pacificada por Ginés Hernández,carvajal_1542_clean
+245,0.397,low_priority,reino del Perú,region,high,-12.0,-75.0,reino donde retornaron los expedicionarios,carvajal_1542_clean
+246,0.397,low_priority,valle de Jaquijaguana,region,high,-13.65,-71.85,valle donde se dio batalla al tirano Gonzalo Pizarro,carvajal_1542_clean
+247,0.397,low_priority,provincias de Quito,region,high,-0.22,-78.51,provincias de donde salió Orellana con Gonzalo Pizarro,carvajal_1542_clean
+248,0.397,low_priority,provincia del Pirú,region,high,-12.0,-75.0,región donde aportó el piloto mayor Francisco López,carvajal_1542_clean
+249,0.397,low_priority,Provincia de Quito,region,high,-0.22,-78.51,provincia administrativa de donde partió la expedición,acuna_1641
+250,0.397,low_priority,Cassiquiare,river,high,-2.14,-65.92,rio donde Humboldt descubrio el Nyctipithecus trivirgatus,the_naturalist
+251,0.396,low_priority,Yacamiaba,mountain,medium,-1.0,-61.0,"cerro eminente donde habitan las Amazonas, escalvado y limpio de yerba",acuna_1641
+252,0.393,low_priority,Yoriman,region,medium,-4.0,-70.0,provincia donde se halló oro,acuna_1641
+253,0.393,low_priority,lago Titicaca,river,high,-15.84,-69.33,lago andino con aguas transparentes de pureza suficiente para ver el fondo a grandes profundidades,orbigny_tomo1
+254,0.386,low_priority,Cordillera de los Andes,mountain,high,-15.0,-70.0,cordillera que marca el límite oeste de la distribución de la nación guaraní,orbigny_tomo1
+255,0.385,low_priority,río del Cuzco,river,medium,-3.5,-72.0,río que entra en el de las Amazonas,acuna_1641
+256,0.385,low_priority,Machupo,river,medium,-14.5,-65.8,río en la provincia de Moxos cuyo curso y afluentes fueron recorridos,orbigny_tomo1
+257,0.385,low_priority,Ivari,river,medium,-14.8,-65.5,río en la provincia de Moxos cuyo curso y afluentes fueron recorridos,orbigny_tomo1
+258,0.385,low_priority,Anana,river,medium,-3.2,-71.8,one of the channels connected with the Japura,the_naturalist
+259,0.385,low_priority,Aningal,river,medium,-3.25,-71.85,pool about half a mile distant from the river bank,the_naturalist
+260,0.383,low_priority,Tierras del Tucujú,region,medium,-3.0,-57.5,tierras afamadas y dilatadas bajo jurisdicción de Ginipape,acuna_1641
+261,0.382,low_priority,Canaribamba,region,medium,-3.23604331205,-79.3399667069,provincia setenta leguas de Quito pacificada por Pero Martín Montanero; donde se descubrieron minas ricas,carvajal_1542_clean
+262,0.376,low_priority,Audiencia de Charcas,settlement,medium,-19.04,-65.26,institución que apoyó la demanda de los jesuitas contra el tratado de límites,orbigny_tomo1
+263,0.365,low_priority,Tuna,region,medium,-2.4,-78.1,provincia rebelada conquistada y pacificada,carvajal_1542_clean
+264,0.365,low_priority,repartimiento de Yagual,region,medium,-2.19,-79.89,repartimiento en la provincia de Guayaquil,carvajal_1542_clean
+265,0.365,low_priority,Lago Dorado,river,medium,-4.0,-69.0,lago mencionado en el contexto del Amazonas,acuna_1641
+266,0.365,low_priority,Grande,river,medium,-17.5,-63.5,río de Bolivia que cruza casi todas sus montañas secundarias,orbigny_tomo1
+267,0.365,low_priority,Junia,river,medium,-2.45,-67.15,river where Collinas live and speak mutually unintelligible languages,the_naturalist
+268,0.365,low_priority,Cupiyo,river,medium,-2.5,-68.0,interior water system connected with the Japura,the_naturalist
+269,0.365,low_priority,Carapanatiiba,river,medium,-3.25,-65.6,channel approximately 150 yards in width communicating with the Cupiyo,the_naturalist
+270,0.364,low_priority,Paranaiba,river,medium,-1.2,-50.8,"río caudaloso con dos leguas de boca que entra al principal, con poblaciones de Indios amigos en sus riberas",acuna_1641
+271,0.362,low_priority,sierra Paraguaxo,mountain,medium,-10.5,-51.0,sierra de rica pedrería,acuna_1641
+272,0.361,low_priority,Carapanatuba,river,medium,-3.05,-64.6,channel where the party slept two nights during turtle hunting,the_naturalist
+273,0.361,low_priority,Cayambe,river,medium,-3.22,-64.4,tributary stream larger than Juteca; forms a vast lake with picturesque scenery and islets,the_naturalist
+274,0.36,low_priority,Tomebaniba,settlement,medium,-0.35,-78.12,pueblo en tierra de Quito desde donde se escribió la carta,carvajal_1542_clean
+275,0.36,low_priority,Neiba,settlement,medium,1.8,-76.4,villa poblada por el Capitán Juan Cabrera y Cristóbal de Segovia,carvajal_1542_clean
+276,0.36,low_priority,Carangueques,settlement,medium,0.5,-78.0,pueblo de la provincia de Quito donde asentó real el corregidor,carvajal_1542_clean
+277,0.359,low_priority,Quilcaylita,region,medium,-0.3,-78.4,provincia de Quito donde estaban rebelados los indios,carvajal_1542_clean
+278,0.351,low_priority,río de los Gigantes,river,medium,-4.5,-68.5,río en el Amazonas,acuna_1641
+279,0.351,low_priority,río Basururú,river,medium,-5.0,-67.0,río con sus naciones,acuna_1641
+280,0.351,low_priority,río Pacaxa,river,medium,-11.0,-49.5,río en el Amazonas,acuna_1641
+281,0.35,low_priority,Cordillera,mountain,high,-1.0,-78.0,la más alta Cordillera que corre por todo aquel nuevo Orbe,acuna_1641
+282,0.343,low_priority,río de su nombre,river,medium,-2.19,-79.89,río donde Orellana hizo la población de Guayaquil,carvajal_1542_clean
+283,0.343,low_priority,Guama,river,medium,-1.5,-48.6,um dos tres rios grandes que desembocam na Bahia de Goajara,the_naturalist
+284,0.343,low_priority,Acara,river,medium,-1.45,-48.55,um dos tres rios grandes que desembocam na Bahia de Goajara,the_naturalist
+285,0.343,low_priority,Mojii,river,medium,-1.4,-48.5,um dos tres rios grandes que desembocam na Bahia de Goajara,the_naturalist
+286,0.341,low_priority,Lile,region,medium,2.5,-76.5,provincias conquistadas junto con Popayán,carvajal_1542_clean
+287,0.341,low_priority,nuevo reino de Granada,region,high,4.5,-74.0,región mencionada en contexto de entradas al río,acuna_1641
+288,0.334,low_priority,Cañares,region,medium,-6.04610999998,-79.2646999996,provincia donde se encuentra Tomebamba,carvajal_1542_clean
+289,0.334,low_priority,Cabo del Norte,mountain,medium,0.5,-46.0,cabo ubicado a la banda contraria (norte) de la desembocadura del Amazonas,acuna_1641
+290,0.333,low_priority,Quilca,settlement,medium,0.8,-77.15,pueblo conquistado y pacificado,carvajal_1542_clean
+291,0.333,low_priority,puente de Abancay,settlement,medium,-13.64,-72.63,lugar donde Alonso de Cabrera alcanzó al Presidente Gasea,carvajal_1542_clean
+292,0.305,low_priority,Culata,region,medium,-1.0,-78.0,región en gobernación junto a Quito y Puerto Viejo,carvajal_1542_clean
+293,0.305,low_priority,Guachicuna,region,medium,1.5,-76.0,provincias donde la expedición de Benalcázar sufrió hambre,carvajal_1542_clean
+294,0.305,low_priority,Chaparra,region,medium,-4.5,-79.5,provincia cuyos indios habían muerto españoles mercaderes y robado mercancías,carvajal_1542_clean
+295,0.305,low_priority,Cuna,region,medium,-2.4,-77.9,provincia conquistada y pacificada,carvajal_1542_clean
+296,0.305,low_priority,Jaquijaguana,region,medium,-13.5,-71.95,lugar de batalla contra Gonzalo Pizarro,carvajal_1542_clean
+297,0.305,low_priority,Rio Bamba,river,medium,-1.4,-78.6,río camino desde Ambato,acuna_1641
+298,0.305,low_priority,Yunga,region,medium,-16.5,-68.15,provincia de Bolivia donde el árbol curupai es llamado chirca por los aymaras,orbigny_tomo1
+299,0.302,low_priority,país de los Yuracarés,region,medium,-17.5,-64.5,región en la República de Bolivia con majestuosos bosques,orbigny_tomo1
+300,0.283,low_priority,río Santa Barbóla,river,medium,-2.95,-78.95,río donde se descubrieron minas ricas de oro en provincias de Canaribamba y Tomebamba,carvajal_1542_clean
+301,0.278,low_priority,Quisna,region,medium,-2.5,-78.0,provincia rebelada conquistada y pacificada,carvajal_1542_clean
+302,0.258,low_priority,Jaquijagoana,region,medium,-13.5,-75.8,valle donde se dio batalla en que Gonzalo Pizarro fué desbaratado,carvajal_1542_clean
