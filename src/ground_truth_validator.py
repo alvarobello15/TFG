@@ -1,6 +1,5 @@
 """
 TFG: Validacio contra Ground Truth (Walker et al. 2023)
-=========================================================
 Compara les hipotesis generades pel pipeline amb sitis
 arqueologics reals del dataset de Walker et al. 2023
 (earthworks, geoglyphs, Amazonian Dark Earth).

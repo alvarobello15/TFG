@@ -1,6 +1,5 @@
 """
 TFG: Base de Dades SQLite
-===========================
 Gestiona documents, entitats i hipòtesis.
 El fitxer tfg.db es crea automàticament a TFG/src/
 """
@@ -20,7 +19,7 @@ class DB:
         self.conn.row_factory = sqlite3.Row
         self.conn.execute("PRAGMA journal_mode=WAL")
         self._create_tables()
-        print(f"📂 Base de dades: {path}")
+        print(f"Base de dades: {path}")
 
     def _create_tables(self):
         self.conn.executescript("""
@@ -75,7 +74,7 @@ class DB:
         """)
         self.conn.commit()
 
-    # ── Documents ────────────────────────────────────────────────────────────
+    # Documents
 
     def add_document(self, title, content, author=None, year=None,
                      source_type="unknown", language="es", file_path=None) -> Optional[int]:
@@ -83,7 +82,7 @@ class DB:
             "SELECT id FROM documents WHERE title = ?", (title,)
         ).fetchone()
         if existing:
-            print(f"   ⚠️  Ja existeix: '{title}'")
+            print(f"   Ja existeix: '{title}'")
             return None  # None = no cal reprocessar
 
         cur = self.conn.execute(
@@ -92,7 +91,7 @@ class DB:
             (title, author, year, source_type, language, file_path, content, len(content)),
         )
         self.conn.commit()
-        print(f"   ✅ Afegit: '{title}' ({len(content):,} cars.)")
+        print(f"   Afegit: '{title}' ({len(content):,} cars.)")
         return cur.lastrowid
 
     def mark_processed(self, doc_id: int):
@@ -108,7 +107,7 @@ class DB:
         row = self.conn.execute("SELECT content FROM documents WHERE id=?", (doc_id,)).fetchone()
         return row["content"] if row else None
 
-    # ── Entitats ─────────────────────────────────────────────────────────────
+    # Entitats
 
     def add_entities(self, doc_id: int, entities: list[dict]) -> int:
         rows = [(
@@ -148,7 +147,7 @@ class DB:
                WHERE e.lat IS NOT NULL AND e.lon IS NOT NULL"""
         ).fetchall()
 
-    # ── Resum i export ────────────────────────────────────────────────────────
+    # Resum i export
 
     def summary(self):
         d = self.conn.execute("SELECT COUNT(*) t, SUM(processed) p FROM documents").fetchone()
@@ -207,7 +206,7 @@ class DB:
         Path(output_path).parent.mkdir(exist_ok=True, parents=True)
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump({"type": "FeatureCollection", "features": features}, f, ensure_ascii=False, indent=2)
-        print(f"🗺️  GeoJSON exportat: {output_path} ({len(features)} punts)")
+        print(f"GeoJSON exportat: {output_path} ({len(features)} punts)")
         return str(output_path)
 
     def close(self):

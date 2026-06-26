@@ -1,6 +1,5 @@
 """
 TFG: Sistema de Puntuacio d'Hipotesis Arqueologiques
-======================================================
 Avalua cada entitat geocodificada i genera hipotesis
 ordenades per score. Usa 6 senyals ponderades.
 """
@@ -8,8 +7,6 @@ ordenades per score. Usa 6 senyals ponderades.
 import csv
 import math
 from pathlib import Path
-
-# ── Pesos de les senyals ────────────────────────────────────────────────────
 
 WEIGHTS = {
     "confidence":    0.14,
@@ -22,10 +19,6 @@ WEIGHTS = {
     "terrain_suitability": 0.15,
 }
 
-# ── Rius principals de l'Amazonia (lat, lon) per calcular proximitat ────────
-
-# ── Bounding box Amazonia sud-occidental ───────────────────────────────────
-
 AMAZON_BBOX = {"lat_min": -20, "lat_max": 5, "lon_min": -80, "lon_max": -45}
 
 
@@ -34,8 +27,6 @@ def inside_amazon_bbox(lat, lon) -> bool:
     return (AMAZON_BBOX["lat_min"] <= lat <= AMAZON_BBOX["lat_max"]
             and AMAZON_BBOX["lon_min"] <= lon <= AMAZON_BBOX["lon_max"])
 
-
-# ── Rius principals de l'Amazonia (lat, lon) per calcular proximitat ────────
 
 MAJOR_RIVERS = [
     ("Amazonas",     -3.1300,  -60.0200),
@@ -69,8 +60,6 @@ def min_river_distance(lat, lon):
     """Distancia minima a un riu principal amazonic (km)."""
     return min(haversine_km(lat, lon, rlat, rlon) for _, rlat, rlon in MAJOR_RIVERS)
 
-
-# ── Funcions de scoring individual ──────────────────────────────────────────
 
 def score_confidence(confidence: str) -> float:
     return {"high": 1.0, "medium": 0.6, "low": 0.2}.get(confidence, 0.1)
@@ -156,8 +145,6 @@ def score_river_proximity(lat, lon) -> float:
     return 0.0
 
 
-# ── Senyals de terreny (SRTM) ─────────────────────────────────────────────
-
 def score_elevation_anomaly(lidar_anomaly) -> float:
     """
     Si lidar_anomaly == 1, el punt esta mes alt que el seu entorn.
@@ -198,8 +185,6 @@ def score_terrain_suitability(lidar_slope, lidar_elevation) -> float:
 
     return slope_score * 0.6 + elev_score * 0.4
 
-
-# ── Scoring complet ─────────────────────────────────────────────────────────
 
 def compute_score(entity, all_entities: list, hypothesis=None) -> float:
     """
@@ -248,7 +233,7 @@ def score_all(db) -> int:
     filtered = [e for e in entities if inside_amazon_bbox(e["lat"], e["lon"])]
     n_dropped = len(entities) - len(filtered)
     if n_dropped:
-        print(f"🗺️  Filtre geographic: {n_dropped} entitats descartades (fora bbox Amazonia)")
+        print(f"Filtre geographic: {n_dropped} entitats descartades (fora bbox Amazonia)")
     if not filtered:
         print("Cap entitat dins del bounding box amazonic.")
         return 0
@@ -329,7 +314,7 @@ def score_all(db) -> int:
     candidates = db.conn.execute(
         "SELECT COUNT(*) c FROM hypotheses WHERE status='candidate'"
     ).fetchone()["c"]
-    print(f"\n🏛️  Scoring completat: {count} hipotesis ({candidates} candidates, {count - candidates} low_priority)")
+    print(f"\nScoring completat: {count} hipotesis ({candidates} candidates, {count - candidates} low_priority)")
     return count
 
 
@@ -388,7 +373,7 @@ def rescore_with_terrain(db) -> int:
         "SELECT COUNT(*) c FROM hypotheses WHERE status='candidate'"
     ).fetchone()["c"]
     total = len(hypotheses)
-    print(f"\n🏛️  Re-scoring amb terreny: {updated} hipotesis actualitzades "
+    print(f"\nRe-scoring amb terreny: {updated} hipotesis actualitzades "
           f"({candidates} candidates, {total - candidates} low_priority)")
     return updated
 
@@ -446,5 +431,5 @@ def export_ranking_csv(db, output_path: str = None) -> str:
                 r["confidence"], r["lat"], r["lon"], r["description"], r["doc_title"],
             ])
 
-    print(f"📊 Ranking exportat a: {output_path} ({len(rows)} files)")
+    print(f"Ranking exportat a: {output_path} ({len(rows)} files)")
     return str(output_path)

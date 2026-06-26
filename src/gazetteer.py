@@ -1,6 +1,5 @@
 """
 TFG: Gazetteer Historic HGIS de las Indias
-=============================================
 Carrega 15.847 llocs colonials d'Hispanoamerica (1701-1808)
 i ofereix funcions de lookup per millorar la geocodificacio.
 
@@ -251,8 +250,6 @@ class HistoricalGazetteer:
         """Fa lookup de multiples noms. Retorna dict {name: result_or_None}."""
         return {name: self.lookup(name) for name in names}
 
-
-# ── CLI per testejar ──────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     gz = HistoricalGazetteer()

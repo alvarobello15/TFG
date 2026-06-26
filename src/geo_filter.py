@@ -1,6 +1,5 @@
 """
 TFG: Filtre Geogràfic
-=======================
 Descarta entitats geocodificades que cauen fora de la zona d'estudi
 amazònica. Els textos d'exploradors com Orbigny recorren tota
 Sud-amèrica (Buenos Aires, Patagònia, Estret de Magallanes...), però
@@ -22,8 +21,6 @@ i Colòmbia meridional.
 
 import argparse
 
-# ── Bounding box de la zona d'estudi ─────────────────────────────────────────
-
 LAT_MIN, LAT_MAX = -20.0, 5.0
 LON_MIN, LON_MAX = -80.0, -45.0
 
@@ -37,8 +34,6 @@ def is_within_study_area(lat: float, lon: float) -> bool:
         return False
     return (LAT_MIN <= lat <= LAT_MAX) and (LON_MIN <= lon <= LON_MAX)
 
-
-# ── Filtratge sobre la base de dades ─────────────────────────────────────────
 
 def filter_entities_db(db, dry_run: bool = False) -> dict:
     """
@@ -77,14 +72,13 @@ def filter_entities_db(db, dry_run: bool = False) -> dict:
     if not dry_run:
         db.conn.commit()
 
-    # ── Informe ──────────────────────────────────────────────────────────
     print("\n" + "=" * 55)
     print("  FILTRE GEOGRÀFIC — ZONA D'ESTUDI AMAZÒNICA")
     print(f"  Bounding box: lat [{LAT_MIN}, {LAT_MAX}], lon [{LON_MIN}, {LON_MAX}]")
     print("=" * 55)
     print(f"  Total entitats geocodificades: {total}")
-    print(f"  ✅ Dins de la zona:  {inside} ({inside/total*100:.1f}%)" if total else "  (cap entitat)")
-    print(f"  ❌ Fora de la zona:  {outside} ({outside/total*100:.1f}%)" if total else "")
+    print(f"  Dins de la zona:  {inside} ({inside/total*100:.1f}%)" if total else "  (cap entitat)")
+    print(f"  Fora de la zona:  {outside} ({outside/total*100:.1f}%)" if total else "")
 
     if outside_examples:
         print("\n  Exemples d'entitats descartades:")
@@ -92,15 +86,13 @@ def filter_entities_db(db, dry_run: bool = False) -> dict:
             print(f"     • {name} [{lat:.2f}, {lon:.2f}]  ({doc})")
 
     if dry_run:
-        print("\n  ⚠️  Mode informe: no s'ha modificat res.")
+        print("\n  Mode informe: no s'ha modificat res.")
     else:
-        print(f"\n  💾 {outside} entitats marcades com a 'out_of_area'.")
+        print(f"\n  {outside} entitats marcades com a 'out_of_area'.")
     print("=" * 55)
 
     return {"total": total, "inside": inside, "outside": outside}
 
-
-# ── Punt d'entrada ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

@@ -12,11 +12,9 @@ def haversine(lat1, lon1, lat2, lon2):
     a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2
     return R * 2 * atan2(sqrt(a), sqrt(1-a))
 
-# ─── Carrega Walker ───
 walker = [(s['lat'], s['lon']) for s in load_walker_sites()]
 print(f"Walker: {len(walker)} jaciments")
 
-# ─── Monte Carlo ───
 N_SIM = 1000
 N_CAND = 130
 THRESHOLD = 50
@@ -45,7 +43,6 @@ p_text = "< 0.001" if p_emp == 0 else f"= {p_emp:.4f}"
 print(f"\nAleatori: {mean_r:.1f}% ± {std_r:.1f}%")
 print(f"Observat: {OBSERVED}%   Z = {z:.1f}   p {p_text}")
 
-# ─── PALETA (igual que el TFG) ───
 INK   = "#14241F"
 GOLD  = "#C8973F"
 CLAY  = "#B85042"
@@ -53,7 +50,6 @@ MOSS  = "#5C8A5A"
 PAPER = "#F4F1E8"
 SLATE = "#5A6B63"
 
-# ─── GRÀFIC ───
 plt.rcParams['font.family'] = 'DejaVu Sans'
 fig, ax = plt.subplots(figsize=(11, 6), dpi=150)
 fig.patch.set_facecolor(PAPER)

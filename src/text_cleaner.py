@@ -1,6 +1,5 @@
 """
 TFG: Netejador de Textos Històrics
-=====================================
 Neteja el soroll típic d'OCR en llibres escaneats dels s. XVI-XIX:
 - 's' llarga (ſ) → s normal
 - Guions de final de línia
@@ -188,7 +187,7 @@ def clean_file(input_path: str | Path, output_path: str | Path = None) -> str:
     cleaned_len = len(cleaned)
 
     reduction = (1 - cleaned_len / original_len) * 100 if original_len else 0
-    print(f"   🧹 {input_path.name}: {original_len:,} → {cleaned_len:,} cars. (-{reduction:.1f}%)")
+    print(f"   {input_path.name}: {original_len:,} → {cleaned_len:,} cars. (-{reduction:.1f}%)")
 
     dest = Path(output_path) if output_path else input_path
     dest.write_text(cleaned, encoding="utf-8")
@@ -202,13 +201,13 @@ def clean_data_dir():
     txt_files = list(data_dir.glob("*.txt"))
 
     if not txt_files:
-        print("⚠️  No s'han trobat fitxers .txt a data/")
+        print("No s'han trobat fitxers .txt a data/")
         return
 
-    print(f"\n🧹 Netejant {len(txt_files)} fitxers de {data_dir}\n")
+    print(f"\nNetejant {len(txt_files)} fitxers de {data_dir}\n")
     for f in sorted(txt_files):
         clean_file(f)
-    print("\n✅ Neteja completada")
+    print("\nNeteja completada")
 
 
 if __name__ == "__main__":

@@ -1,6 +1,5 @@
 """
 TFG: Pipeline Principal
-=========================
 Orquestra tot el flux automaticament:
   fitxer raw -> DB -> LLM -> geocodificacio -> scoring -> GeoJSON
 
@@ -31,7 +30,7 @@ from gazetteer        import HistoricalGazetteer
 
 
 def ingest_and_process(db: DB, docs: list[dict]):
-    print(f"\n📥 Ingestio de {len(docs)} fitxers...\n")
+    print(f"\nIngestio de {len(docs)} fitxers...\n")
     new_ids = []
     for doc in docs:
         doc["text"] = clean_ocr_text(doc["text"])
@@ -46,16 +45,16 @@ def ingest_and_process(db: DB, docs: list[dict]):
 
     pending = db.get_pending()
     if not pending:
-        print("\n✅ No hi ha documents nous per processar.")
+        print("\nNo hi ha documents nous per processar.")
         return
 
-    print(f"\n🤖 Extraient entitats de {len(pending)} documents amb LLM...\n")
+    print(f"\nExtraient entitats de {len(pending)} documents amb LLM...\n")
     for doc in pending:
         content = db.get_content(doc["id"])
         if not content:
             continue
 
-        print(f"\n📄 '{doc['title']}' ({doc['char_count']:,} cars.)")
+        print(f"\n'{doc['title']}' ({doc['char_count']:,} cars.)")
         entities = extract_entities(content, source_name=doc["title"])
 
         entity_dicts = [{
@@ -70,7 +69,7 @@ def ingest_and_process(db: DB, docs: list[dict]):
 
         n = db.add_entities(doc["id"], entity_dicts)
         db.mark_processed(doc["id"])
-        print(f"   💾 {n} entitats guardades")
+        print(f"   {n} entitats guardades")
 
         # Copiar coordenades LLM a lat/lon i marcar com llm_estimated
         db.conn.execute(
@@ -89,7 +88,7 @@ def ingest_and_process(db: DB, docs: list[dict]):
     ).rowcount
     db.conn.commit()
     if deleted:
-        print(f"\n🗺️  Filtre bbox: {deleted} entitats eliminades (fora Amazonia)")
+        print(f"\nFiltre bbox: {deleted} entitats eliminades (fora Amazonia)")
 
 
 def _haversine(lat1, lon1, lat2, lon2):
@@ -105,7 +104,7 @@ def geocode_with_gazetteer(db: DB, max_distance_km=500):
     Geocodificacio en cascada: busca entitats al gazetteer HGIS
     i actualitza coordenades si el match es fiable (< max_distance_km del LLM).
     """
-    print("\n🗺️  Geocodificacio en cascada amb gazetteer HGIS...\n")
+    print("\nGeocodificacio en cascada amb gazetteer HGIS...\n")
 
     gz = HistoricalGazetteer()
     if gz.df.empty:
@@ -139,7 +138,7 @@ def geocode_with_gazetteer(db: DB, max_distance_km=500):
 
         if dist > max_distance_km:
             skipped_far += 1
-            print(f"   ⚠️  {ent['name']}: gazetteer ({result['lat']:.2f}, {result['lon']:.2f}) "
+            print(f"   {ent['name']}: gazetteer ({result['lat']:.2f}, {result['lon']:.2f}) "
                   f"massa lluny del LLM ({ent['lat']:.2f}, {ent['lon']:.2f}) "
                   f"— {dist:.0f}km > {max_distance_km}km — ignorat")
             continue
@@ -148,7 +147,7 @@ def geocode_with_gazetteer(db: DB, max_distance_km=500):
         matched += 1
         distances.append(dist)
 
-        print(f"   ✅ {ent['name']}: LLM ({ent['lat']:.2f}, {ent['lon']:.2f}) "
+        print(f"   {ent['name']}: LLM ({ent['lat']:.2f}, {ent['lon']:.2f}) "
               f"→ Gazetteer ({result['lat']:.2f}, {result['lon']:.2f}) "
               f"[Δ {dist:.0f}km] [{result['pais']}]")
 
@@ -181,7 +180,7 @@ def normalize_coordinates(db: DB):
     copia lat/lon/lat_llm/lon_llm de l'entitat amb la confidence mes alta
     a totes les altres del mateix nom.
     """
-    print("\n🔧 Normalitzant coordenades d'entitats duplicades...\n")
+    print("\nNormalitzant coordenades d'entitats duplicades...\n")
 
     rows = db.conn.execute(
         "SELECT id, name, confidence, lat, lon, lat_llm, lon_llm FROM entities"
@@ -234,7 +233,7 @@ def reset_database(db: DB):
     Neteja la DB: esborra entitats i hipotesis, re-aplica la neteja
     de text als documents ja guardats, i marca tot com a no processat.
     """
-    print("\n🔄 RESET: Netejant base de dades...\n")
+    print("\nRESET: Netejant base de dades...\n")
 
     # Esborrar entitats i hipotesis
     n_ent = db.conn.execute("SELECT COUNT(*) c FROM entities").fetchone()["c"]
@@ -242,11 +241,11 @@ def reset_database(db: DB):
     db.conn.execute("DELETE FROM entities")
     db.conn.execute("DELETE FROM hypotheses")
     db.conn.commit()
-    print(f"   🗑️  Esborrades {n_ent} entitats i {n_hyp} hipotesis")
+    print(f"   Esborrades {n_ent} entitats i {n_hyp} hipotesis")
 
     # Re-aplicar neteja de text
     docs = db.conn.execute("SELECT id, title, content, char_count FROM documents").fetchall()
-    print(f"\n   🧹 Re-netejant {len(docs)} documents...\n")
+    print(f"\n   Re-netejant {len(docs)} documents...\n")
     for doc in docs:
         original = doc["content"]
         original_len = doc["char_count"] or len(original)
@@ -258,10 +257,10 @@ def reset_database(db: DB):
             "UPDATE documents SET content=?, char_count=?, processed=0 WHERE id=?",
             (cleaned, new_len, doc["id"]),
         )
-        print(f"   📄 {doc['title']}: {original_len:,} -> {new_len:,} chars (-{reduction:.1f}%)")
+        print(f"   {doc['title']}: {original_len:,} -> {new_len:,} chars (-{reduction:.1f}%)")
 
     db.conn.commit()
-    print("\n✅ Reset completat. Tots els documents marcats com a pendents.")
+    print("\nReset completat. Tots els documents marcats com a pendents.")
     db.summary()
 
 
@@ -274,7 +273,7 @@ def run_full_pipeline(files: list[str] = None):
         docs = load_from_data_dir()
 
     if not docs:
-        print("\n⚠️  No s'han trobat fitxers per processar.")
+        print("\nNo s'han trobat fitxers per processar.")
         print("   Posa els teus PDFs o TXTs a: TFG/data/")
         db.summary()
         db.close()
@@ -287,10 +286,10 @@ def run_full_pipeline(files: list[str] = None):
         "SELECT COUNT(*) c FROM entities WHERE lat IS NULL AND geo_status IS NULL"
     ).fetchone()["c"]
     if pending_geo > 0:
-        print(f"\n🌍 {pending_geo} entitats sense coordenades LLM → geocodificant amb Nominatim...")
+        print(f"\n{pending_geo} entitats sense coordenades LLM -> geocodificant amb Nominatim...")
         geocode_all_db(db)
     else:
-        print("\n✅ Totes les entitats ja tenen coordenades (estimades pel LLM).")
+        print("\nTotes les entitats ja tenen coordenades (estimades pel LLM).")
 
     score_all(db)
 
@@ -311,8 +310,6 @@ def run_full_pipeline(files: list[str] = None):
     db.summary()
     db.close()
 
-
-# ── CLI ───────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -335,7 +332,7 @@ if __name__ == "__main__":
     if args.normalize:
         db = DB()
         normalize_coordinates(db)
-        print("\n♻️  Regenerant scoring...")
+        print("\nRegenerant scoring...")
         score_all(db)
         show_ranking(db)
         db.summary()
@@ -370,7 +367,7 @@ if __name__ == "__main__":
             db.summary()
         elif args.geocode:
             geocode_with_gazetteer(db)
-            print("\n♻️  Regenerant scoring...")
+            print("\nRegenerant scoring...")
             score_all(db)
             show_ranking(db)
             db.summary()

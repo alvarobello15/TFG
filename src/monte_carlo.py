@@ -1,6 +1,5 @@
 """
 TFG: Test de Significança Estadística (Monte Carlo)
-=====================================================
 Verifica que el hit rate observat del sistema (43,1%) no és atribuïble
 a l'atzar. Per fer-ho, genera milers de distribucions aleatòries de
 punts dins de la zona d'estudi i calcula quin hit rate s'obtindria per
@@ -29,8 +28,6 @@ from math import radians, sin, cos, sqrt, atan2
 from pathlib import Path
 from statistics import mean, pstdev
 
-# ── Configuració per defecte ─────────────────────────────────────────────────
-
 WALKER_CSV   = Path("data/walker_2023/submit.csv")  # columnes: type, x=lon, y=lat
 N_SIM        = 1000      # nombre de simulacions
 N_CAND       = 130       # nombre de punts per simulació (= hipòtesis candidates)
@@ -41,8 +38,6 @@ OBSERVED     = 43.1      # hit rate observat del sistema (%)
 LAT_MIN, LAT_MAX = -20.0, 5.0
 LON_MIN, LON_MAX = -80.0, -45.0
 
-
-# ── Utilitats ────────────────────────────────────────────────────────────────
 
 def haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Distància en km entre dos punts (fórmula Haversine)."""
@@ -89,8 +84,6 @@ def random_hit_rate(walker: list[tuple[float, float]],
     return hits / n_points * 100
 
 
-# ── Simulació principal ──────────────────────────────────────────────────────
-
 def run_simulation(n_sim: int = N_SIM, n_cand: int = N_CAND,
                    threshold: float = THRESHOLD_KM,
                    observed: float = OBSERVED) -> dict:
@@ -116,7 +109,6 @@ def run_simulation(n_sim: int = N_SIM, n_cand: int = N_CAND,
             print(f"     {i}/{n_sim}...")
         hit_rates.append(random_hit_rate(walker, n_cand, threshold))
 
-    # ── Estadístiques ────────────────────────────────────────────────────
     mu = mean(hit_rates)
     sigma = pstdev(hit_rates)
     z_score = (observed - mu) / sigma if sigma > 0 else float("inf")
@@ -126,7 +118,6 @@ def run_simulation(n_sim: int = N_SIM, n_cand: int = N_CAND,
     p_empiric = n_exceed / n_sim
     p_text = "< 0,001" if p_empiric == 0 else f"= {p_empiric:.4f}"
 
-    # ── Resultats ────────────────────────────────────────────────────────
     print("\n" + "-" * 55)
     print("  RESULTATS")
     print("-" * 55)
@@ -137,12 +128,12 @@ def run_simulation(n_sim: int = N_SIM, n_cand: int = N_CAND,
     print("-" * 55)
 
     if z_score > 3:
-        print(f"\n  ✅ El resultat és estadísticament significatiu (p {p_text}).")
+        print(f"\n  El resultat és estadísticament significatiu (p {p_text}).")
         print(f"     El {observed}% se situa a {z_score:.1f} desviacions estàndard")
         print("     per sobre de la mitjana aleatòria. La correlació entre les")
         print("     hipòtesis i els jaciments coneguts NO és atribuïble a l'atzar.")
     else:
-        print(f"\n  ⚠️  El resultat NO és clarament significatiu (Z = {z_score:.1f}).")
+        print(f"\n  El resultat NO és clarament significatiu (Z = {z_score:.1f}).")
     print("=" * 55)
 
     return {
@@ -154,8 +145,6 @@ def run_simulation(n_sim: int = N_SIM, n_cand: int = N_CAND,
         "hit_rates": hit_rates,
     }
 
-
-# ── Punt d'entrada ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

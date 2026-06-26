@@ -1,6 +1,5 @@
 """
 TFG: Entry point amb navegacio
-================================
 Configura st.navigation per controlar noms de pagines,
 ordre i sidebar logo.
 
@@ -11,8 +10,6 @@ import streamlit as st
 
 st.set_page_config(page_title="TFG - Hipotesis Arqueologiques", layout="wide",
                    page_icon="🏛️")
-
-# ── Shared CSS (titols bonics, sidebar logo) ──────────────────────────────────
 
 SHARED_CSS = """
 <style>
@@ -76,8 +73,6 @@ SHARED_CSS = """
 
 st.markdown(SHARED_CSS, unsafe_allow_html=True)
 
-# ── Sidebar logo (above navigation) ──────────────────────────────────────────
-
 st.sidebar.markdown("""
 <div class="sidebar-brand">
     <div class="sb-icon">🏛️</div>
@@ -85,8 +80,6 @@ st.sidebar.markdown("""
     <div class="sb-sub">Pipeline LLM + LiDAR</div>
 </div>
 """, unsafe_allow_html=True)
-
-# ── Navigation ────────────────────────────────────────────────────────────────
 
 dashboard = st.Page("pages/dashboard.py", title="Dashboard", icon="📊", default=True)
 analytics = st.Page("pages/analytics.py", title="Analytics", icon="📈")

@@ -1,6 +1,5 @@
 """
 TFG: Pagina d'Analytics
-=========================
 Metriques i analisi del rendiment del sistema.
 Segona pagina de l'app Streamlit (multi-page).
 """
@@ -16,8 +15,6 @@ import plotly.graph_objects as go
 
 DB_PATH = Path(__file__).resolve().parent.parent / "tfg.db"
 
-# ── Paleta ────────────────────────────────────────────────────────────────────
-
 BLUE    = "#2196F3"
 GREEN   = "#4CAF50"
 AMBER   = "#FF9800"
@@ -26,8 +23,6 @@ GRAY    = "#9E9E9E"
 CYAN    = "#00BCD4"
 PURPLE  = "#9C27B0"
 COLOR_SEQ = [BLUE, GREEN, AMBER, RED, CYAN, PURPLE, "#78909C", "#FF5722"]
-
-# ── Scoring weights (mirall de hypothesis_scorer.py) ──────────────────────────
 
 WEIGHTS = {
     "confidence":          0.14,
@@ -55,8 +50,6 @@ SIGNAL_NAMES = [
     "Cross-reference", "Proximitat rius", "Anomalia terreny", "Aptitud terreny",
 ]
 SIGNAL_TO_WEIGHT = dict(zip(SIGNAL_NAMES, WEIGHTS.values()))
-
-# ── CSS ───────────────────────────────────────────────────────────────────────
 
 CSS = """
 <style>
@@ -140,8 +133,6 @@ CSS = """
 </style>
 """
 
-# ── Plotly theme helper ───────────────────────────────────────────────────────
-
 def apply_plotly_theme(fig, height=400):
     """Apply consistent dark theme to all plotly figures."""
     fig.update_layout(
@@ -157,8 +148,6 @@ def apply_plotly_theme(fig, height=400):
     )
     return fig
 
-
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 @st.cache_resource
 def get_connection():
@@ -189,8 +178,6 @@ def haversine_km(lat1, lon1, lat2, lon2):
 def min_river_distance(lat, lon):
     return min(haversine_km(lat, lon, rlat, rlon) for _, rlat, rlon in MAJOR_RIVERS)
 
-
-# ── Signal recomputation ─────────────────────────────────────────────────────
 
 def _s_confidence(c):
     return {"high": 1.0, "medium": 0.6, "low": 0.2}.get(c, 0.1)
@@ -261,8 +248,6 @@ def compute_signal_breakdown(rows_df, all_names_docs):
     return pd.DataFrame(records)
 
 
-# ── Ground truth ──────────────────────────────────────────────────────────────
-
 def _load_gt_sites():
     import sys
     sys.path.insert(0, str(DB_PATH.parent))
@@ -330,10 +315,6 @@ def run_validation(conn, threshold_km=50):
     }
 
 
-# =============================================================================
-#  MAIN
-# =============================================================================
-
 def main():
     st.markdown(CSS, unsafe_allow_html=True)
 
@@ -352,7 +333,6 @@ def main():
 
     conn = get_connection()
 
-    # ── Pre-load data ─────────────────────────────────────────────────────
     n_docs = conn.execute("SELECT COUNT(*) c FROM documents").fetchone()["c"]
     n_ents = conn.execute("SELECT COUNT(*) c FROM entities").fetchone()["c"]
     n_geo = conn.execute(
@@ -364,7 +344,6 @@ def main():
     ).fetchone()["c"]
     validation = run_validation(conn)
 
-    # ── KPI row ───────────────────────────────────────────────────────────
     st.markdown('<div class="section-title">Estat del pipeline</div>',
                 unsafe_allow_html=True)
 
@@ -392,9 +371,6 @@ def main():
 
     st.markdown("", unsafe_allow_html=True)
 
-    # ══════════════════════════════════════════════════════════════════════
-    #  TABS
-    # ══════════════════════════════════════════════════════════════════════
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "Resum i distribucio",
         "Fonts i scoring",
@@ -403,13 +379,11 @@ def main():
         "Cobertura",
     ])
 
-    # ── TAB 1: Resum i distribucio ────────────────────────────────────────
     with tab1:
         st.markdown('<p class="tab-intro">'
                     'Distribucio dels scores i classificacio de les entitats extretes.'
                     '</p>', unsafe_allow_html=True)
 
-        # -- Score histogram --
         st.markdown('<div class="section-title">Com es distribueixen els scores?</div>',
                     unsafe_allow_html=True)
 
@@ -445,7 +419,6 @@ def main():
 
         st.markdown("", unsafe_allow_html=True)
 
-        # -- Entities by type --
         st.markdown('<div class="section-title">Quins tipus d\'entitats ha extret el pipeline?</div>',
                     unsafe_allow_html=True)
 
@@ -473,7 +446,6 @@ def main():
         else:
             st.info("No hi ha dades d'entitats.")
 
-        # -- Full data table --
         st.markdown("", unsafe_allow_html=True)
         st.markdown('<div class="section-title">Taula completa d\'hipotesis</div>',
                     unsafe_allow_html=True)
@@ -507,13 +479,11 @@ def main():
         else:
             st.info("No hi ha hipotesis a la base de dades.")
 
-    # ── TAB 2: Fonts i scoring ────────────────────────────────────────────
     with tab2:
         st.markdown('<p class="tab-intro">'
                     'Analisi per document font i desglose de les senyals que componen cada score.'
                     '</p>', unsafe_allow_html=True)
 
-        # -- By document --
         st.markdown('<div class="section-title">Quantes entitats aporta cada document?</div>',
                     unsafe_allow_html=True)
 
@@ -559,7 +529,6 @@ def main():
 
         st.markdown("", unsafe_allow_html=True)
 
-        # -- Scoring breakdown --
         st.markdown('<div class="section-title">Com es compon el score de les millors hipotesis?</div>',
                     unsafe_allow_html=True)
         st.markdown('<p class="section-desc">'
@@ -630,7 +599,6 @@ def main():
         else:
             st.info("No hi ha hipotesis per desglosar.")
 
-    # ── TAB 3: Validacio ──────────────────────────────────────────────────
     with tab3:
         st.markdown('<p class="tab-intro">'
                     'Comparacio de les hipotesis generades amb els jaciments arqueologics '
@@ -721,7 +689,6 @@ def main():
         else:
             st.info("No hi ha dades de ground truth disponibles (Walker et al. 2023).")
 
-    # ── TAB 4: Terreny ────────────────────────────────────────────────────
     with tab4:
         st.markdown('<p class="tab-intro">'
                     'Analisi topografic basat en dades SRTM: elevacions, pendents i '
@@ -798,7 +765,6 @@ def main():
             st.info("No hi ha dades SRTM disponibles. "
                     "Executa `terrain_analyzer.py` per obtenir-les.")
 
-    # ── TAB 5: Cobertura ──────────────────────────────────────────────────
     with tab5:
         st.markdown('<p class="tab-intro">'
                     'Mapes de densitat per visualitzar on es concentren les hipotesis '
@@ -854,7 +820,6 @@ def main():
         else:
             st.info("No hi ha hipotesis amb coordenades.")
 
-    # ── Footer ────────────────────────────────────────────────────────────
     st.markdown("""
     <div class="footer">
         TFG Enginyeria de Dades — UAB 2026 — Alvaro Bello Marabe

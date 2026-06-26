@@ -27,8 +27,6 @@ RIVERS = [("Amazonas",-3.13,-60.02),("Napo",-1.07,-75.56),("Maranon",-4.45,-77.5
           ("Putumayo",-1.50,-73.00),("Xingu",-3.20,-52.20)]
 TYPE_COLORS = {"settlement":GREEN,"route":AMBER,"region":BLUE,"mountain":PURPLE,"river":CYAN,"other":GRAY}
 
-# ── CSS ───────────────────────────────────────────────────────────────────────
-
 st.markdown("""<style>
 .pipeline-diagram{display:flex;flex-direction:column;align-items:center;gap:0;padding:.8rem 0}
 .pipeline-step{background:#1E2329;border:1px solid #2A2F35;border-radius:12px;
@@ -64,8 +62,6 @@ st.markdown("""<style>
 .tech-card .tech-name{font-weight:700;color:#FAFAFA;font-size:.82rem}
 .tech-card .tech-role{font-size:.68rem;color:#6B7280;margin-top:.15rem}
 </style>""", unsafe_allow_html=True)
-
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 @st.cache_resource
 def get_conn():
@@ -135,8 +131,6 @@ def tbadge(t):
     c=TYPE_COLORS.get(t,GRAY)
     return f'<span style="background:{c}22;color:{c};padding:2px 8px;border-radius:4px;font-size:.78rem;">{t}</span>'
 
-# ══════════════════════════════════════════════════════════════════════════════
-
 conn = get_conn()
 
 st.markdown("""<div class="main-header">
@@ -150,10 +144,6 @@ st.markdown('<div class="page-title"><div class="pt-accent"></div><h2>Flowchart<
 
 if not DB_PATH.exists():
     st.error("Base de dades no trobada."); st.stop()
-
-# ══════════════════════════════════════════════════════════════════════════════
-#  DIAGRAMA
-# ══════════════════════════════════════════════════════════════════════════════
 
 st.markdown('<div class="section-title">Arquitectura del pipeline</div>', unsafe_allow_html=True)
 st.caption("Cada etapa transforma les dades. Selecciona un pas a sota per veure el detall.")
@@ -178,10 +168,6 @@ for i,(ico,nm,fp,desc) in enumerate(STEPS):
     if i < len(STEPS)-1: dhtml += '<div class="pipeline-arrow">&#9660;</div>'
 dhtml += '</div>'
 st.markdown(dhtml, unsafe_allow_html=True)
-
-# ══════════════════════════════════════════════════════════════════════════════
-#  EXEMPLE INTERACTIU
-# ══════════════════════════════════════════════════════════════════════════════
 
 st.markdown("", unsafe_allow_html=True)
 st.markdown('<div class="section-title">Exemple real pas a pas</div>', unsafe_allow_html=True)
@@ -221,14 +207,10 @@ ent = picks[sel]
 # Cross-ref data
 all_nd = [(r["name"].lower().strip(),r["doc_id"]) for r in conn.execute("SELECT name,doc_id FROM entities").fetchall()]
 
-# ── Tabs per pas ──────────────────────────────────────────────────────────────
-
 t1,t2,t3,t4,t5,t6,t7 = st.tabs([
     "Text original", "Neteja", "Extraccio LLM",
     "Geocodificacio", "Scoring", "Terreny SRTM", "Validacio + Mapa"
 ])
-
-# ── Tab 1: Text ──────────────────────────────────────────────────────────────
 
 with t1:
     doc = ent["doc_content"] or ""
@@ -245,8 +227,6 @@ with t1:
     st.markdown(f'<div class="manuscript"><div style="font-size:.65rem;color:#8B7355;margin-bottom:.4rem;">'
                 f'Font: {ent["doc_title"]}</div>{hl}</div>', unsafe_allow_html=True)
 
-# ── Tab 2: Neteja ────────────────────────────────────────────────────────────
-
 with t2:
     st.markdown('<div class="step-result">'
                 '<strong>text_cleaner.py</strong> aplica: eliminacio de capcaleres/peus repetits, '
@@ -260,8 +240,6 @@ with t2:
         clean_len = len(ent["doc_content"] or "")
         st.markdown(f'<div class="step-result">Document <strong>{ent["doc_title"]}</strong>: '
                     f'{raw_len["char_count"]:,} caracters finals despres de neteja.</div>', unsafe_allow_html=True)
-
-# ── Tab 3: Extraccio LLM ────────────────────────────────────────────────────
 
 with t3:
     st.caption("Claude Haiku analitza cada chunk de text i retorna un JSON estructurat per entitat.")
@@ -283,8 +261,6 @@ with t3:
                 f'<tr><td style="padding:3px 8px;color:#9E9E9E;">Confianca</td><td style="padding:3px 8px;">{ent["confidence"]}</td></tr>'
                 f'</table></div>', unsafe_allow_html=True)
 
-# ── Tab 4: Geocodificacio ────────────────────────────────────────────────────
-
 with t4:
     c1,c2 = st.columns(2)
     with c1:
@@ -298,8 +274,6 @@ with t4:
                     f'Metode: <strong>{geo_lbl}</strong>.</div>', unsafe_allow_html=True)
     st.markdown('<div class="step-result">El pipeline usa les coordenades del LLM directament. '
                 'Si el LLM no en proporciona, es fa fallback a Nominatim/OpenStreetMap.</div>', unsafe_allow_html=True)
-
-# ── Tab 5: Scoring ───────────────────────────────────────────────────────────
 
 with t5:
     st.caption("8 senyals ponderades determinen el score final de cada hipotesi.")
@@ -352,8 +326,6 @@ with t5:
                           for k in sn)
                 + '</table></div>', unsafe_allow_html=True)
 
-# ── Tab 6: SRTM ──────────────────────────────────────────────────────────────
-
 with t6:
     el,sl,an = ent.get("lidar_elevation"),ent.get("lidar_slope"),ent.get("lidar_anomaly")
     if el is not None:
@@ -371,8 +343,6 @@ with t6:
                     f'(possible plataforma artificial).</div>', unsafe_allow_html=True)
     else:
         st.info("No hi ha dades SRTM per a aquesta entitat.")
-
-# ── Tab 7: Validacio + Mapa ──────────────────────────────────────────────────
 
 with t7:
     gts = gt_sites()
@@ -405,10 +375,6 @@ with t7:
             folium.PolyLine([[ent["lat"],ent["lon"]],[bs["lat"],bs["lon"]]],
                 color="#9E9E9E",weight=1,dash_array="5").add_to(mp)
         st_folium(mp, width=None, height=400)
-
-# ══════════════════════════════════════════════════════════════════════════════
-#  ESTADISTIQUES + TECNOLOGIES
-# ══════════════════════════════════════════════════════════════════════════════
 
 st.markdown("", unsafe_allow_html=True)
 st.markdown('<div class="section-title">Estadistiques del pipeline</div>', unsafe_allow_html=True)

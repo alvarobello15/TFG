@@ -1,6 +1,5 @@
 """
 TFG: Geocodificació d'Entitats
-================================
 Converteix noms de lloc en coordenades reals via Nominatim (OpenStreetMap).
 Gratuït, sense API key.
 
@@ -44,7 +43,7 @@ def geocode_one(name: str, entity_type: str) -> tuple[Optional[float], Optional[
         except GeocoderTimedOut:
             time.sleep(2)
         except GeocoderServiceError as e:
-            print(f"   ⚠️  Error servei Nominatim: {e}")
+            print(f"   Error servei Nominatim: {e}")
             return None, None, "", "error"
 
     return None, None, "", "not_found"
@@ -74,7 +73,7 @@ def geocode_all_db(db) -> int:
     """
     pending = db.get_entities_without_coords()
     if not pending:
-        print("✅ Totes les entitats ja estan geocodificades.")
+        print("Totes les entitats ja estan geocodificades.")
         return 0
 
     # Agrupar per nom normalitzat: geocodificar una sola vegada per nom
@@ -85,7 +84,7 @@ def geocode_all_db(db) -> int:
 
     unique_names = len(groups)
     saved_calls = len(pending) - unique_names
-    print(f"\n🌍 Geocodificant {len(pending)} entitats ({unique_names} noms unics, {saved_calls} crides estalviades)...\n")
+    print(f"\nGeocodificant {len(pending)} entitats ({unique_names} noms unics, {saved_calls} crides estalviades)...\n")
 
     ok = 0
     for key, entity_group in groups.items():

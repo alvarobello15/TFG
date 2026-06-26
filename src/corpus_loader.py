@@ -1,6 +1,5 @@
 """
 TFG: Carregador de Documents
-==============================
 Llegeix qualsevol fitxer de TFG/data/ i retorna el text net.
 Suporta: .txt, .pdf, carpetes senceres.
 
@@ -41,7 +40,7 @@ def load_file(path: str | Path) -> Optional[dict]:
     """
     path = Path(path)
     if not path.exists():
-        print(f"   ⚠️  No trobat: {path}")
+        print(f"   No trobat: {path}")
         return None
 
     if path.suffix.lower() == ".txt":
@@ -49,11 +48,11 @@ def load_file(path: str | Path) -> Optional[dict]:
     elif path.suffix.lower() == ".pdf":
         text = read_pdf(path)
     else:
-        print(f"   ⚠️  Format no suportat: {path.suffix}")
+        print(f"   Format no suportat: {path.suffix}")
         return None
 
     if not text.strip():
-        print(f"   ⚠️  Fitxer buit: {path.name}")
+        print(f"   Fitxer buit: {path.name}")
         return None
 
     return {
@@ -69,13 +68,13 @@ def load_from_data_dir(extensions: list[str] = [".txt", ".pdf"]) -> list[dict]:
     que siguin .txt o .pdf.
     """
     if not DATA_DIR.exists():
-        print(f"⚠️  Carpeta data/ no trobada: {DATA_DIR}")
+        print(f"Carpeta data/ no trobada: {DATA_DIR}")
         return []
 
     files  = [f for f in DATA_DIR.iterdir() if f.suffix.lower() in extensions]
     docs   = []
 
-    print(f"\n📁 Carregant fitxers de {DATA_DIR}")
+    print(f"\nCarregant fitxers de {DATA_DIR}")
     print(f"   Trobats: {len(files)} fitxers\n")
 
     for f in sorted(files):

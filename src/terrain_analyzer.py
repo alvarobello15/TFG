@@ -1,6 +1,5 @@
 """
 TFG: Analisi Topografic SRTM
-===============================
 Per a cada hipotesi amb coordenades, descarrega elevacio SRTM
 i calcula anomalies topografiques que podrien indicar estructures
 precolombines (plataformes elevades, rases, geoglifs).
@@ -19,15 +18,12 @@ from pathlib import Path
 
 DB_PATH = Path(__file__).parent / "tfg.db"
 
-# ── Configuracio ──────────────────────────────────────────────────────────────
 
 RING_RADIUS_KM = 1.5          # Radi de l'anell de mostreig (km)
 RING_POINTS = 12               # Punts distribuits en l'anell
 ANOMALY_THRESHOLD_M = 2.0     # Metres per sobre de la mitjana per marcar anomalia
 API_DELAY_S = 0.3              # Delay entre peticions API (segons)
 
-
-# ── Utilitats geodesiques ─────────────────────────────────────────────────────
 
 def offset_point(lat, lon, bearing_deg, distance_km):
     """
@@ -86,8 +82,6 @@ def calculate_slope(elevations_ring, radius_km):
     return round(max_slope, 2)
 
 
-# ── Proveidor d'elevacio: srtm library ───────────────────────────────────────
-
 def _get_srtm_provider():
     """Intenta importar i retornar el proveidor srtm."""
     try:
@@ -118,8 +112,6 @@ def get_elevations_batch_srtm(srtm_data, points):
     return results
 
 
-# ── Proveidor d'elevacio: Open-Elevation API ─────────────────────────────────
-
 def get_elevations_batch_api(points, delay=API_DELAY_S):
     """
     Obte elevacions per a una llista de punts usant l'API Open-Elevation.
@@ -147,8 +139,6 @@ def get_elevations_batch_api(points, delay=API_DELAY_S):
         print(f"   [!] Error API Open-Elevation: {e}")
         return [None] * len(points)
 
-
-# ── Analisi d'un punt ─────────────────────────────────────────────────────────
 
 def analyze_point(lat, lon, srtm_data=None):
     """
@@ -200,8 +190,6 @@ def analyze_point(lat, lon, srtm_data=None):
     }
 
 
-# ── Analisi massiu: totes les hipotesis ──────────────────────────────────────
-
 def analyze_all(db_path=DB_PATH):
     """
     Analitza totes les hipotesis amb coordenades.
@@ -221,7 +209,7 @@ def analyze_all(db_path=DB_PATH):
         return 0
 
     total = len(hypotheses)
-    print(f"\n🏔️  Analisi topografic SRTM: {total} punts\n")
+    print(f"\nAnalisi topografic SRTM: {total} punts\n")
 
     # Intentar usar srtm library
     srtm_data = _get_srtm_provider()
@@ -285,10 +273,10 @@ def analyze_all(db_path=DB_PATH):
     ).fetchone()[0]
     conn2.close()
 
-    print(f"\n🏔️  Analisi completat: {analyzed}/{total} punts analitzats")
+    print(f"\nAnalisi completat: {analyzed}/{total} punts analitzats")
     if errors:
-        print(f"   ⚠️  {errors} punts sense dades SRTM")
-    print(f"   🔺 {n_anom} anomalies topografiques detectades")
+        print(f"   {errors} punts sense dades SRTM")
+    print(f"   {n_anom} anomalies topografiques detectades")
 
     return analyzed
 
@@ -306,7 +294,7 @@ def analyze_all_with_db(db):
         return 0
 
     total = len(hypotheses)
-    print(f"\n🏔️  Analisi topografic SRTM: {total} punts\n")
+    print(f"\nAnalisi topografic SRTM: {total} punts\n")
 
     srtm_data = _get_srtm_provider()
     if srtm_data:
@@ -363,15 +351,15 @@ def analyze_all_with_db(db):
         "SELECT COUNT(*) c FROM hypotheses WHERE lidar_anomaly = 1"
     ).fetchone()["c"]
 
-    print(f"\n🏔️  Analisi completat: {analyzed}/{total} punts analitzats")
+    print(f"\nAnalisi completat: {analyzed}/{total} punts analitzats")
     if errors:
-        print(f"   ⚠️  {errors} punts sense dades SRTM")
-    print(f"   🔺 {n_anom} anomalies topografiques detectades")
+        print(f"   {errors} punts sense dades SRTM")
+    print(f"   {n_anom} anomalies topografiques detectades")
 
     return analyzed
 
 
-# ── Execucio independent ─────────────────────────────────────────────────────
+ ─────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     print("=" * 60)

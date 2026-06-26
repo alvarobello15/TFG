@@ -1,6 +1,5 @@
 """
 TFG: Dashboard Principal
-==========================
 Mapa, filtres, agent IA i ranking d'hipotesis.
 """
 
@@ -24,8 +23,6 @@ BLUE, GREEN, AMBER, RED, GRAY, CYAN, PURPLE = (
 
 TYPE_COLORS = {"settlement": GREEN, "route": AMBER, "region": BLUE,
                "mountain": PURPLE, "river": CYAN, "other": GRAY}
-
-# ── Page CSS ──────────────────────────────────────────────────────────────────
 
 st.markdown("""<style>
 .kpi-row { display:flex; gap:.6rem; margin-bottom:.5rem; }
@@ -52,8 +49,6 @@ st.markdown("""<style>
                    text-transform:uppercase; letter-spacing:.05em;
                    margin-top:.7rem; margin-bottom:.25rem; }
 </style>""", unsafe_allow_html=True)
-
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def kpi_card(icon, label, value, css=""):
     return (f'<div class="kpi-card {css}"><div class="kpi-icon">{icon}</div>'
@@ -88,8 +83,6 @@ def load_all(conn):
            LEFT JOIN hypotheses h ON h.entity_id=e.id
            WHERE e.lat IS NOT NULL AND e.lon IS NOT NULL""").fetchall()
     return pd.DataFrame([dict(r) for r in rows]) if rows else pd.DataFrame()
-
-# ── Agent ─────────────────────────────────────────────────────────────────────
 
 def get_client():
     from dotenv import load_dotenv
@@ -155,8 +148,6 @@ def apply_agent(df, f):
     if f.get("name_search"): m &= df["name"].str.contains(f["name_search"],case=False,na=False)
     return df[m]
 
-# ── Map ───────────────────────────────────────────────────────────────────────
-
 def build_map(df, sw, sa):
     center = [df["lat"].mean(), df["lon"].mean()] if not df.empty else [-5,-62]
     m = folium.Map(location=center, zoom_start=5, tiles="OpenStreetMap")
@@ -187,8 +178,6 @@ def build_map(df, sw, sa):
             tooltip=r["name"]).add_to(m)
     return m
 
-# ══════════════════════════════════════════════════════════════════════════════
-
 conn = get_conn()
 df_all = load_all(conn)
 
@@ -199,8 +188,6 @@ if "messages" not in st.session_state: st.session_state.messages = []
 if "agent_filters" not in st.session_state: st.session_state.agent_filters = {}
 client = get_client()
 
-# ── Header ────────────────────────────────────────────────────────────────────
-
 st.markdown("""<div class="main-header">
 <h1>Generacio i Validacio d'Hipotesis Arqueologiques</h1>
 <div class="subtitle">Pipeline LLM + LiDAR per a la prospeccio a l'Amazonia — TFG Enginyeria de Dades, UAB 2026</div>
@@ -209,8 +196,6 @@ st.markdown("""<div class="main-header">
 
 st.markdown('<div class="page-title"><div class="pt-accent"></div><h2>Dashboard</h2></div>',
             unsafe_allow_html=True)
-
-# ── Sidebar filters ──────────────────────────────────────────────────────────
 
 with st.sidebar:
     all_types = sorted(df_all["entity_type"].dropna().unique())
@@ -236,8 +221,6 @@ with st.sidebar:
     st.markdown('<div class="sidebar-section">Ground Truth</div>', unsafe_allow_html=True)
     show_w = st.toggle("Walker et al. 2023", value=True, key="tgl_w")
     show_a = st.toggle("Coomes et al. 2021", value=True, key="tgl_a")
-
-# ── Apply filters ─────────────────────────────────────────────────────────────
 
 mask = pd.Series(True, index=df_all.index)
 mask &= df_all["entity_type"].isin(sel_types) if sel_types else False
@@ -267,8 +250,6 @@ with st.sidebar:
         n_nom = int((df_all["geo_status"] == "found").sum())
         st.caption(f"Geo: {n_gz} gazetteer, {n_llm} LLM, {n_nom} Nominatim")
 
-# ── KPIs ──────────────────────────────────────────────────────────────────────
-
 dn = conn.execute("SELECT COUNT(*)c FROM documents").fetchone()["c"]
 en = conn.execute("SELECT COUNT(*)c FROM entities").fetchone()["c"]
 gn = conn.execute("SELECT COUNT(*)c FROM entities WHERE lat IS NOT NULL").fetchone()["c"]
@@ -280,8 +261,6 @@ st.markdown('<div class="kpi-row">'
     + kpi_card("&#127759;","Geocodificades",gn,"kpi-blue")
     + kpi_card("&#11088;","Candidates",cn,"kpi-green")
     + '</div>', unsafe_allow_html=True)
-
-# ── Map ───────────────────────────────────────────────────────────────────────
 
 st.markdown('<div class="section-title">Mapa d\'hipotesis</div>', unsafe_allow_html=True)
 mp = build_map(filtered, show_w, show_a)
@@ -295,8 +274,6 @@ st.markdown("""<div class="legend-bar">
 <div class="legend-item"><span class="legend-dot" style="background:#F44336;"></span> &lt; 0.4</div>
 <div class="legend-item"><span class="legend-dot" style="background:#9E9E9E;"></span> Sense score</div>
 </div>""", unsafe_allow_html=True)
-
-# ── Agent ─────────────────────────────────────────────────────────────────────
 
 st.markdown("", unsafe_allow_html=True)
 st.markdown('<div class="section-title">Agent arqueologic</div>', unsafe_allow_html=True)
@@ -351,8 +328,6 @@ else:
 
         st.session_state.messages.append({"role":"assistant","content":rtxt})
         st.rerun()
-
-# ── Ranking ───────────────────────────────────────────────────────────────────
 
 st.markdown("", unsafe_allow_html=True)
 st.markdown('<div class="section-title">Ranking d\'hipotesis</div>', unsafe_allow_html=True)

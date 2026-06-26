@@ -1,7 +1,6 @@
 """
 TFG: Generació i Validació d'Hipòtesis Arqueològiques
 Pipeline LLM - Extracció d'Entitats Geogràfiques
-=====================================================
 Intenta usar Claude (cloud) i fa fallback a Ollama (local).
 Configuració via .env — veure .env per detalls.
 """
@@ -15,10 +14,7 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-# Carregar variables d'entorn
 load_dotenv(Path(__file__).parent / ".env")
-
-# ── Configuració ─────────────────────────────────────────────────────────────
 
 LLM_PROVIDER    = os.getenv("LLM_PROVIDER", "claude").lower()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
@@ -32,8 +28,6 @@ OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
-# ── Dataclass per a cada entitat extreta ──────────────────────────────────────
-
 @dataclass
 class GeographicEntity:
     name: str                          # Nom del lloc
@@ -45,8 +39,6 @@ class GeographicEntity:
     confidence: str = "low"            # 'high' | 'medium' | 'low'
     source_text: str = ""              # Nom del text font
 
-
-# ── Prompt principal ──────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT = """You are a geographic entity extraction API specialized in historical and archaeological texts from South American expeditions (16th-19th centuries). These texts may be written in old Spanish, Portuguese, or include indigenous language place names (Quechua, Aymara, Guarani, Tupi, Mojeno, etc.). Place names may use archaic spelling (e.g., "Mojos" for "Moxos", "Chiquitos" for "Chiquitania").
 
@@ -190,8 +182,6 @@ USER_PROMPT_TEMPLATE = """Extract ONLY proper-named geographic entities from the
 """
 
 
-# ── Funcions per cridar els LLMs ─────────────────────────────────────────────
-
 def _query_claude(user_message: str) -> str:
     """Envia un prompt a Claude (Anthropic) i retorna la resposta com a string."""
     import anthropic
@@ -239,15 +229,14 @@ def query_llm(user_message: str) -> str:
             result = fn(user_message)
             return result
         except Exception as e:
-            print(f"   ⚠️  {name} ha fallat: {e}")
+            print(f"   {name} ha fallat: {e}")
             if name == providers[0][0] and len(providers) > 1:
-                print(f"   🔄 Fallback a {providers[1][0]}...")
+                print(f"   Fallback a {providers[1][0]}...")
             continue
 
     raise RuntimeError("Cap provider LLM disponible (Claude i Ollama han fallat)")
 
 
-# ── Funció per netejar i parsejar JSON ───────────────────────────────────────
 
 def _sanitize_json_escapes(s: str) -> str:
     """
@@ -348,7 +337,7 @@ def _aggressive_json_cleanup(s: str) -> str:
 
 def _extract_list_from_parsed(parsed) -> list[dict]:
     """
-    FIX 1: Si el LLM retorna un dict en lloc d'una llista,
+    Si el LLM retorna un dict en lloc d'una llista,
     busca dins del dict alguna key que contingui una llista d'entitats.
     """
     # Ja és una llista
@@ -409,7 +398,7 @@ def parse_json_response(raw: str) -> list[dict]:
             aggressive = _aggressive_json_cleanup(json_str)
             return json.loads(aggressive)
         except json.JSONDecodeError as e:
-            print(f"⚠️  Error parsejant JSON (després de 3 intents): {e}")
+            print(f"Error parsejant JSON (despres de 3 intents): {e}")
             print("JSON intentat:", json_str[:300])
             return []
 
@@ -420,7 +409,7 @@ def parse_json_response(raw: str) -> list[dict]:
         for suffix in ("]", "}]"):
             try:
                 recovered = json.loads(truncated + suffix)
-                print(f"⚠️  JSON truncat recuperat parcialment ({len(recovered)} entitats)")
+                print(f"JSON truncat recuperat parcialment ({len(recovered)} entitats)")
                 return _extract_list_from_parsed(recovered)
             except json.JSONDecodeError:
                 continue
@@ -429,11 +418,11 @@ def parse_json_response(raw: str) -> list[dict]:
         if last_brace != -1:
             try:
                 recovered = json.loads(truncated[:last_brace + 1] + "]")
-                print(f"⚠️  JSON truncat recuperat parcialment ({len(recovered)} entitats)")
+                print(f"JSON truncat recuperat parcialment ({len(recovered)} entitats)")
                 return _extract_list_from_parsed(recovered)
             except json.JSONDecodeError:
                 pass
-        print("⚠️  JSON truncat: no s'ha pogut recuperar cap entitat.")
+        print("JSON truncat: no s'ha pogut recuperar cap entitat.")
 
     # Intent 4: sanititzar tot el text (pot ser un dict amb escapes)
     try:
@@ -443,12 +432,11 @@ def parse_json_response(raw: str) -> list[dict]:
     except json.JSONDecodeError:
         pass
 
-    print("⚠️  No s'ha trobat cap JSON vàlid a la resposta.")
+    print("No s'ha trobat cap JSON valid a la resposta.")
     print("Resposta raw:", raw[:500])
     return []
 
 
-# ── Pipeline principal ────────────────────────────────────────────────────────
 
 def is_useful_chunk(chunk: str, min_words: int = 30, min_alpha_ratio: float = 0.5) -> bool:
     """
@@ -469,7 +457,7 @@ def extract_entities(text: str, source_name: str = "unknown") -> list[Geographic
     Donada una cadena de text, retorna una llista d'entitats geogràfiques
     extretes pel LLM.
     """
-    print(f"\n📄 Processant: '{source_name}' ({len(text)} caràcters)")
+    print(f"\nProcessant: '{source_name}' ({len(text)} caracters)")
 
     chunks = split_text(text, max_chars=20000)
     all_entities: list[GeographicEntity] = []
@@ -480,17 +468,17 @@ def extract_entities(text: str, source_name: str = "unknown") -> list[Geographic
             skipped += 1
             continue
         active = CLAUDE_MODEL if LLM_PROVIDER == "claude" else OLLAMA_MODEL
-        print(f"   🔍 Chunk {i+1}/{len(chunks)} → enviant a {active}...")
+        print(f"   Chunk {i+1}/{len(chunks)} -> enviant a {active}...")
         try:
             user_msg = USER_PROMPT_TEMPLATE.format(text=chunk)
             raw      = query_llm(user_msg)
             entities = parse_json_response(raw)
         except Exception as e:
-            print(f"   ⚠️  Error al chunk {i+1}: {e}")
+            print(f"   Error al chunk {i+1}: {e}")
             continue
 
         for e in entities:
-            # FIX 2: saltar elements que no siguin dicts
+            # Saltar elements que no siguin dicts
             if not isinstance(e, dict):
                 continue
 
@@ -510,8 +498,8 @@ def extract_entities(text: str, source_name: str = "unknown") -> list[Geographic
             all_entities.append(entity)
 
     if skipped:
-        print(f"   ⏭️  {skipped}/{len(chunks)} chunks saltats (basura detectada)")
-    print(f"   ✅ {len(all_entities)} entitats extretes")
+        print(f"   {skipped}/{len(chunks)} chunks saltats (basura detectada)")
+    print(f"   {len(all_entities)} entitats extretes")
     return all_entities
 
 
@@ -534,7 +522,6 @@ def split_text(text: str, max_chars: int = 20000) -> list[str]:
     return chunks
 
 
-# ── Guardar resultats ─────────────────────────────────────────────────────────
 
 def save_results(entities: list[GeographicEntity], filename: str = "entities.json"):
     """Guarda les entitats en JSON i mostra un resum."""
@@ -544,7 +531,7 @@ def save_results(entities: list[GeographicEntity], filename: str = "entities.jso
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"\n💾 Guardat a: {output_path}")
+    print(f"\nGuardat a: {output_path}")
     print_summary(entities)
     return output_path
 
@@ -560,17 +547,16 @@ def print_summary(entities: list[GeographicEntity]):
         by_type.setdefault(e.entity_type, []).append(e)
 
     for etype, ents in sorted(by_type.items()):
-        print(f"\n  📍 {etype.upper()} ({len(ents)})")
+        print(f"\n  {etype.upper()} ({len(ents)})")
         for e in ents:
             coords = f" [{e.lat}, {e.lon}]" if e.lat else ""
             print(f"     • {e.name}{coords}  [{e.confidence}]")
 
     with_coords = [e for e in entities if e.lat and e.lon]
-    print(f"\n  🗺️  Entitats amb coordenades: {len(with_coords)}/{len(entities)}")
+    print(f"\n  Entitats amb coordenades: {len(with_coords)}/{len(entities)}")
     print("="*55)
 
 
-# ── Punt d'entrada ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     sample_text = """
@@ -589,7 +575,7 @@ if __name__ == "__main__":
     para protegerse de las inundaciones estacionales del río Iténez.
     """
 
-    print("🏛️  TFG - Pipeline d'Extracció d'Entitats Geogràfiques")
+    print("TFG - Pipeline d'Extraccio d'Entitats Geografiques")
     active = CLAUDE_MODEL if LLM_PROVIDER == "claude" else OLLAMA_MODEL
     print(f"   Provider: {LLM_PROVIDER} | Model: {active}")
 
